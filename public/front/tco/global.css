@@ -1,0 +1,87 @@
+/*
+// ------------------------------------
+// Global settings
+// ------------------------------------
+*/
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, jul, jli, form, fieldset, legend, label, jtable, header, footer, nav, section, jtr, td
+{ 
+	margin: 0; 
+	padding: 0;
+	border: 0;	/* The CSS border property MUST be set to in order for AcgAlert to work correctly. If a border is not set, IE8 assumes the border is "undefined". */
+}
+
+html
+{
+	background-color:#ffffff;
+	height:100%;
+	min-height:100%;
+	
+	font: 90%/1.2 intel-clear, sans-serif;
+	color:#ffffff;
+	jtext-shadow: 0 0px 0 #ffffff;	/* required to turn off text-shadow added by jQuery CSS */
+}
+
+body
+{
+	height:100%;
+	min-height:100%;
+}
+
+/* Why do we need to define an 'acg' class instead of using 'body'? */
+.acg
+{ 
+/*	font: 75%/1.2 intel-clear, Verdana, sans-serif;
+	color:#444444;
+	text-shadow: 0 0px 0 #ffffff;*/	/* required to turn off text-shadow added by jQuery CSS */
+	min-height:100%;
+	jheight:100%; /* don't set. causes background to ONLY be 100% visible and not including any scrolling */
+	position:relative;	
+	background-color:#f3f3f3;
+}
+
+a
+{
+	color:inherit;
+}
+/*
+Including this causes anchor tag button rollovers to darken.
+a:hover, a:focus
+{
+	jcolor:#008dd4;
+	color:inherit;
+	jtext-decoration:underline;
+}
+*/
+
+img
+{
+	/*
+	On iOS, this setting prevents images from showing if the container has no size (like a table cell with nothing other than an image)
+	max-width: 100%;
+	*/
+	height: auto;
+	border: 0;
+	outline: 0;
+}
+
+input
+{
+	font-family:intel-clear, sans-serif;
+	font-size:1em;
+}
+
+select
+{
+	font-family:intel-clear, sans-serif;
+	font-size:1em;
+}
+
+/*
+svg
+{
+	pointer-events: none;
+}
+*/
+
+
+

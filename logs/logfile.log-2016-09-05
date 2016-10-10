@@ -1,0 +1,192 @@
+[2016-09-05 10:55:32.271] [INFO] fileLog - GET /
+[2016-09-05 10:55:32.523] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 10:55:32.525] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 10:55:32.527] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 10:55:36.020] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 10:55:40.310] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 10:55:43.015] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 10:55:43.166] [INFO] fileLog - POST /api/v1/menu
+[2016-09-05 10:55:43.204] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 10:55:43.247] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-09-05 10:55:43.250] [INFO] fileLog - POST /api/v1/my
+[2016-09-05 10:55:46.566] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 10:55:46.612] [INFO] fileLog - POST /api/v1/getPoster
+[2016-09-05 10:55:47.325] [INFO] fileLog - 获取产品分类
+[2016-09-05 10:55:47.340] [INFO] fileLog - POST /api/v1/series
+[2016-09-05 10:55:47.342] [INFO] fileLog - POST /api/v1/productCate
+[2016-09-05 10:55:47.356] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 10:55:47.493] [INFO] fileLog - GET /uploads/product/xfile-1465977266894.jpeg
+[2016-09-05 10:55:47.494] [INFO] fileLog - GET /uploads/product/xfile-1465977253025.jpeg
+[2016-09-05 10:55:47.495] [INFO] fileLog - GET /uploads/product/xfile-1465977238805.jpeg
+[2016-09-05 10:55:47.497] [INFO] fileLog - GET /uploads/product/xfile-1467098980063.png
+[2016-09-05 10:55:47.511] [INFO] fileLog - GET /uploads/product/xfile-1465977197953.png
+[2016-09-05 10:55:47.511] [INFO] fileLog - GET /uploads/product/xfile-1465977130138.png
+[2016-09-05 10:55:47.512] [INFO] fileLog - GET /uploads/product/xfile-1465977110816.png
+[2016-09-05 10:55:47.514] [INFO] fileLog - GET /uploads/product/xfile-1465977096138.png
+[2016-09-05 10:55:47.515] [INFO] fileLog - GET /uploads/product/xfile-1465977080998.png
+[2016-09-05 10:55:47.592] [INFO] fileLog - GET /uploads/product/xfile-1465977063527.jpeg
+[2016-09-05 10:55:48.081] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 10:55:55.285] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 10:55:55.303] [INFO] fileLog - POST /api/v1/activity
+[2016-09-05 10:55:55.796] [INFO] fileLog - GET /api/v1/getVideo
+[2016-09-05 10:55:55.850] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 10:55:56.332] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 11:06:43.425] [INFO] fileLog - PUT /api/v1/loginOut
+[2016-09-05 11:06:43.501] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 11:06:45.023] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 11:06:45.026] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 11:06:46.279] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 11:06:46.280] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 11:25:01.439] [INFO] fileLog - GET /login
+[2016-09-05 11:25:01.597] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 11:26:54.155] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 11:26:54.157] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 11:26:54.210] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 11:26:54.212] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 11:26:55.763] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 11:26:55.765] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 12:34:09.139] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 12:34:09.234] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 13:51:13.509] [INFO] fileLog - 验证吻合用户：1
+[2016-09-05 13:51:13.520] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 13:51:29.606] [INFO] fileLog - 验证吻合用户：1
+[2016-09-05 13:51:29.622] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 13:51:29.998] [INFO] fileLog - POST /api/v1/menu
+[2016-09-05 13:51:30.114] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-09-05 13:51:30.162] [INFO] fileLog - POST /api/v1/my
+[2016-09-05 13:51:30.323] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 13:52:08.948] [INFO] fileLog - POST /api/v1/whitePage
+[2016-09-05 13:52:09.044] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 13:52:09.218] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 13:52:09.442] [INFO] fileLog - POST /api/v1/activity
+[2016-09-05 13:52:10.229] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 13:52:10.318] [INFO] fileLog - GET /api/v1/getVideo
+[2016-09-05 13:52:11.122] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 13:52:12.173] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 13:52:12.177] [INFO] fileLog - POST /api/v1/getUser
+[2016-09-05 13:52:13.071] [INFO] fileLog - 获取产品分类
+[2016-09-05 13:52:13.341] [INFO] fileLog - GET /uploads/product/xfile-1465977266894.jpeg
+[2016-09-05 13:52:13.355] [INFO] fileLog - GET /uploads/product/xfile-1465977253025.jpeg
+[2016-09-05 13:52:13.356] [INFO] fileLog - GET /uploads/product/xfile-1467098980063.png
+[2016-09-05 13:52:13.729] [INFO] fileLog - GET /uploads/product/xfile-1465977130138.png
+[2016-09-05 13:52:13.731] [INFO] fileLog - GET /uploads/product/xfile-1465977080998.png
+[2016-09-05 13:52:13.901] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 13:52:13.933] [INFO] fileLog - POST /api/v1/productCate
+[2016-09-05 13:52:14.040] [INFO] fileLog - GET /uploads/product/xfile-1465977197953.png
+[2016-09-05 13:52:14.041] [INFO] fileLog - GET /uploads/product/xfile-1465977238805.jpeg
+[2016-09-05 13:52:14.206] [INFO] fileLog - GET /uploads/product/xfile-1465977063527.jpeg
+[2016-09-05 13:52:14.262] [INFO] fileLog - GET /uploads/product/xfile-1465977096138.png
+[2016-09-05 13:52:14.330] [INFO] fileLog - POST /api/v1/series
+[2016-09-05 13:52:14.367] [INFO] fileLog - GET /uploads/product/xfile-1465977110816.png
+[2016-09-05 14:04:34.098] [INFO] fileLog - GET /dist18e1c743246ff674346e.hot-update.json
+[2016-09-05 14:04:34.109] [INFO] fileLog - GET /dist0.18e1c743246ff674346e.hot-update.js
+[2016-09-05 14:04:45.801] [INFO] fileLog - PUT /api/v1/loginOut
+[2016-09-05 14:04:45.906] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 14:04:56.727] [INFO] fileLog - GET /login
+[2016-09-05 14:04:56.923] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 14:04:56.924] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 14:04:56.926] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 14:04:56.927] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 14:04:59.624] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 14:05:30.735] [INFO] fileLog - POST /api/v1/userMgmt/login.do
+[2016-09-05 14:18:16.723] [INFO] fileLog - GET /
+[2016-09-05 14:18:16.886] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 14:18:16.910] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 14:18:16.916] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 14:18:16.971] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 14:18:18.990] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 14:28:25.495] [INFO] fileLog - GET /dista40c1c09720d97f6f019.hot-update.json
+[2016-09-05 14:28:25.500] [INFO] fileLog - GET /dist0.a40c1c09720d97f6f019.hot-update.js
+[2016-09-05 14:29:01.752] [INFO] fileLog - GET /login
+[2016-09-05 14:29:01.885] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 14:29:01.894] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 14:29:01.992] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 14:29:02.071] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 14:29:04.561] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 15:08:11.887] [INFO] fileLog - GET /dist845087fb9905409ee5bd.hot-update.json
+[2016-09-05 15:08:29.527] [INFO] fileLog - GET /login
+[2016-09-05 15:08:30.374] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 15:08:30.413] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 15:08:30.430] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 15:08:30.545] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 15:08:31.265] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 15:08:34.358] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 15:14:54.678] [INFO] fileLog - GET /login
+[2016-09-05 15:14:54.783] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 15:14:54.791] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 15:14:54.794] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 15:14:54.826] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 15:14:57.360] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:34:09.701] [INFO] fileLog - GET /dist9c5319fd312b9f1fb4de.hot-update.json
+[2016-09-05 16:47:48.286] [INFO] fileLog - GET /login
+[2016-09-05 16:47:52.650] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 16:47:52.658] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 16:47:52.660] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 16:47:52.661] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 16:47:57.159] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 16:47:57.293] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 16:48:05.874] [INFO] fileLog - GET /login
+[2016-09-05 16:48:06.035] [INFO] fileLog - GET /login
+[2016-09-05 16:48:06.210] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 16:48:06.214] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 16:48:06.218] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 16:48:06.220] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 16:48:06.222] [INFO] fileLog - GET /login
+[2016-09-05 16:48:06.258] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:48:06.266] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:48:06.280] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:48:06.288] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:48:06.294] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:48:06.300] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:48:08.970] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 16:48:08.971] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 16:48:08.972] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 16:48:08.973] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 16:48:11.113] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 16:54:18.740] [INFO] fileLog - GET /dist297165878c2876bef4be.hot-update.json
+[2016-09-05 16:54:18.753] [INFO] fileLog - GET /dist0.297165878c2876bef4be.hot-update.js
+[2016-09-05 17:00:23.158] [INFO] fileLog - GET /
+[2016-09-05 17:00:23.367] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 17:00:23.370] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 17:00:23.371] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 17:00:23.373] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 17:00:32.886] [INFO] fileLog - POST /api/v1/login
+[2016-09-05 17:00:34.995] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 17:00:54.110] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 17:00:55.103] [INFO] fileLog - GET /login
+[2016-09-05 17:00:55.355] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 17:00:55.446] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 17:00:55.448] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 17:00:55.597] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 17:00:55.741] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 17:00:59.007] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 17:01:03.563] [INFO] fileLog - POST /api/v1/login
+[2016-09-05 17:04:28.437] [INFO] fileLog - GET /dist8695e1d02467a49c8672.hot-update.json
+[2016-09-05 17:05:01.500] [INFO] fileLog - GET /login
+[2016-09-05 17:05:01.585] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 17:05:01.588] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 17:05:01.590] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 17:05:01.592] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 17:05:05.147] [INFO] fileLog - GET /favicon.ico
+[2016-09-05 17:05:23.694] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 17:05:23.697] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 17:05:30.842] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 17:05:30.844] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 17:05:45.036] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 17:05:45.038] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 17:05:50.275] [INFO] fileLog - 验证吻合用户：0
+[2016-09-05 17:05:50.277] [INFO] fileLog - PUT /api/v1/login
+[2016-09-05 17:05:59.464] [INFO] fileLog - GET /api/v1/login
+[2016-09-05 17:05:59.498] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-09-05 17:05:59.521] [INFO] fileLog - GET /dist/bundle.js
+[2016-09-05 17:05:59.522] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-09-05 17:05:59.524] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-09-05 17:06:01.002] [INFO] fileLog - GET /favicon.ico

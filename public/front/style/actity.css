@@ -1,0 +1,281 @@
+body {
+    /*    background: -moz-linear-gradient(90deg, #99C1F3, #6CA1DC);
+    background: -webkit-gradient(linear, 50% 100%, 50% 0%, from(#99C1F3), to(#6CA1DC));
+    background: -webkit-linear-gradient(90deg, #99C1F3, #6CA1DC);
+    background: -o-linear-gradient(90deg, #99C1F3, #6CA1DC);*/
+ /*   background: #d4d6d9;*/
+ background: #f2f2f2;
+    font-family: "Intel Clear";
+}
+
+.actity .content{
+    background:none;
+}
+
+.actity .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.actity .glyphicon {
+    top: 0;
+}
+.actity .content h3{
+    padding-left:16px;
+}
+.actity .top {
+    overflow: hidden;
+    height: 50px;
+    padding: 10px 20px 0px 20px;
+    border-bottom: 1px solid #CFD1CE;
+    background: #0071c5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+@media screen and (min-width: 1024px) {
+    .content .top {
+        width: 740px;
+    }
+}
+
+.actity .top .search i {
+    margin-top: 8px;
+}
+
+.actity .top .search .searchText {
+    float: left;
+    margin-right: 10px;
+}
+
+.actity .top .search .searchText input {
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+
+.actity .form-control {
+    height: 30px;
+    line-height: 30px;
+}
+
+.bgline {
+    margin-top: 76px;
+    background: url(../images/activity_line.png) repeat-y;
+    display: none;
+}
+
+ul.list {
+    padding-left: 0px;
+    padding-top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+ul.list li {
+    padding-bottom: 30px;
+}
+
+ul.list li h3 {
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+    width: 22%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-indent: 15px;
+    color: #999;
+}
+
+ul.list li span {
+    display: block;
+    font-size: 12px;
+}
+
+ul.list li .right {
+    width: 78%;
+    overflow: hidden;
+}
+
+ul.list li span {
+    display: block;
+    font-size: 12px;
+}
+
+ul.list li dl {
+    float: right;
+    color: #000;
+    font-size: 13px;
+    width: 79%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #fff;
+    border-right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    background-image: url(../images/activity_line.png) center repeat-y;
+    margin-bottom: 0;
+}
+
+ul.list li dl dt a {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+ul.list li .right div.circle {
+    width: 50px;
+    height: 50px;
+    line-height: 37px;
+    border-radius: 25px;
+    border: solid 5px #EAC67B;
+    background: #EFA95B;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    z-index: 9999;
+}
+
+ul.list li:first-child dl div.circle {
+    background: #F38B07;
+    border: solid 5px #F4B70D;
+}
+
+ul.list li:last-child {
+    /* background: -moz-linear-gradient(bottom, #99C1F3, #6CA1DC);
+    background: -webkit-gradient(linear, 50% 100%, 50% 0%, from(#99C1F3), to(#6CA1DC));
+    background: -webkit-linear-gradient(top,#99C1F3, #6CA1DC);
+    background: -o-linear-gradient(bottom, #99C1F3, #6CA1DC);*/
+    /*background: #d4d6d9;*/
+    background: #f2f2f2;
+}
+
+
+/*详细页面*/
+
+.ac_detail {
+    background: #fff;
+}
+
+.ac_detail .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ac_detail .context_text a.handpoint {
+    background: url(../images/hand-point.png) left center no-repeat;
+    padding-left: 20px;
+}
+
+
+/*视频*/
+.video_cat {
+    background-color: #f2f2f2;
+}
+.video_cat .row {
+    margin: 15px;
+}
+
+.video_cat .video_ul {}
+
+.video_cat .video_ul li {
+    padding: 20px;
+    font-size: 24px;
+    border-bottom: 1px solid #e1dede;
+    text-align: center;
+   
+}
+
+.video_cat .video_ul li  a{
+     color: #1ca8ee;
+}
+
+/*视频详细*/
+
+.video .row {
+    margin: 5px;
+}
+
+.video .video_det .video_ul {
+    margin-top: 10px;
+}
+
+.video .video_det .video_ul li {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.video .video_det .video_ul li +li {
+    padding-top: 10px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.video .video_det .video_ul li .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.video .video_det .video_ul li .title .num {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid #1ca8ee;
+    display: inline-block;
+    margin-right: 10px;
+    color:#1ca8ee;
+}
+
+.video .video_det .video_ul li .videobox img {
+    width: 100%;
+}
+
+.video .video_det .video_ul li p {
+    color: #6f6f6f;
+}
+
+.video .video_det .video_ul p.tags {
+    color: #111;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+/*常见问题回答*/
+.actity  .content .faqItem{
+    color: #000;
+    padding-left:10px;
+
+}
+.actity  .content .faqItem .faqname{
+    color:#0088CC;
+    margin :5px 0 10px 0;
+    font: 16px/1.6 '微软雅黑',tahoma,arial,Hiragino Sans GB;
+    background: url("../images/icon_mid.png") no-repeat left center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.actity  .content .faqItem .faqContent {
+    margin:0 0 25px 0;
+}
+.actity  .content .faqItem .faqContent p{
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-indent: 26px;
+    line-height: 180%;
+}
+.actity  .content .faqItem .expand{
+  background:   url("../images/icon_down.png") no-repeat left center !important;
+}

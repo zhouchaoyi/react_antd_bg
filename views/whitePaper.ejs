@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SSD微信公众号-白皮书</title>
+    <% include public/head%>
+
+    <link rel="stylesheet" type="text/css" href="./../public/front/style/whiteP.css">
+
+</head>
+
+<body class="whiteP">
+<div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="navbar-header">
+
+            <a href="../index" class="navbar-brand back">back</a>
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </nav>
+    <div class="content mgtop">
+        <ul>
+            <li class="title">白皮书</li>
+            <% result.forEach(function(x){  %>
+            <li>
+                <div class="triangle_right"></div>
+                <%  if(x.Url==null){%>
+                    <a href="#"><%= x.Name%></a></li>
+                <%}else{%>
+                  <a href="./pageOnline?url=<%= x.Url%>"><%= x.Name%></a></li>
+                <%}%>
+            <li>
+
+             <% }) %>
+
+        </ul>
+    </div>
+</div>
+<!--/.container-fluid-->
+</body>
+
+</html>

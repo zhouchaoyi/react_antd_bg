@@ -1,0 +1,1742 @@
+[2016-06-16 09:07:01.850] [INFO] fileLog - GET /login
+[2016-06-16 09:07:01.858] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:07:01.873] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:07:01.893] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:07:01.928] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:07:03.262] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:07:09.981] [INFO] fileLog - 验证吻合用户：1
+[2016-06-16 09:07:09.984] [INFO] fileLog - PUT /api/v1/login
+[2016-06-16 09:07:10.014] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:07:10.025] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:07:10.027] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:07:10.061] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:23:07.831] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:23:07.834] [INFO] fileLog - POST /api/v1/whitePage
+[2016-06-16 09:23:33.432] [INFO] fileLog - 添加白皮书数据------ { Name: '616' }
+[2016-06-16 09:23:33.496] [INFO] fileLog - 白皮书添加成功
+[2016-06-16 09:23:33.497] [INFO] fileLog - POST /api/v1/addWhitePage
+[2016-06-16 09:32:56.304] [INFO] fileLog - GET /dist1ddb7dbbef3d0aca4dcb.hot-update.json
+[2016-06-16 09:32:56.337] [INFO] fileLog - GET /dist0.1ddb7dbbef3d0aca4dcb.hot-update.js
+[2016-06-16 09:33:01.759] [INFO] fileLog - GET /dist813060a5721f60883907.hot-update.json
+[2016-06-16 09:33:01.762] [INFO] fileLog - GET /dist0.813060a5721f60883907.hot-update.js
+[2016-06-16 09:33:03.661] [INFO] fileLog - GET /dist04cda2de03ba30396f79.hot-update.json
+[2016-06-16 09:33:03.683] [INFO] fileLog - GET /dist0.04cda2de03ba30396f79.hot-update.js
+[2016-06-16 09:33:25.734] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:33:25.750] [INFO] fileLog - POST /api/v1/activity
+[2016-06-16 09:33:26.349] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:33:26.364] [INFO] fileLog - POST /api/v1/whitePage
+[2016-06-16 09:33:44.029] [INFO] fileLog - GET /distcdd5278f9ec4c6f8eb1d.hot-update.json
+[2016-06-16 09:33:44.032] [INFO] fileLog - GET /dist0.cdd5278f9ec4c6f8eb1d.hot-update.js
+[2016-06-16 09:33:49.838] [INFO] fileLog - GET /distef5da823725c3b260d05.hot-update.json
+[2016-06-16 09:33:49.841] [INFO] fileLog - GET /dist0.ef5da823725c3b260d05.hot-update.js
+[2016-06-16 09:33:52.873] [INFO] fileLog - GET /whitePage
+[2016-06-16 09:33:52.882] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:33:52.884] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:33:52.884] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:33:52.902] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:33:53.707] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:33:53.709] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:33:53.721] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:33:53.738] [INFO] fileLog - POST /api/v1/whitePage
+[2016-06-16 09:33:53.828] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:33:56.154] [INFO] fileLog - GET /video
+[2016-06-16 09:33:56.164] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:33:56.166] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:33:56.167] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:33:56.182] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:33:56.889] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:33:56.889] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:33:56.913] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:33:56.945] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:34:49.688] [INFO] fileLog - GET /video
+[2016-06-16 09:34:49.698] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:34:49.700] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:34:49.715] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:34:49.716] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:34:50.459] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:34:50.460] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:34:50.476] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:34:50.522] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:35:19.608] [INFO] fileLog - GET /video
+[2016-06-16 09:35:19.616] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:35:19.618] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:35:19.618] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:35:19.638] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:35:20.384] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:35:20.395] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:35:20.405] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:35:20.434] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:35:22.211] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:35:22.714] [INFO] fileLog - POST /api/v1/activity
+[2016-06-16 09:35:22.715] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:35:23.621] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:38:01.980] [INFO] fileLog - GET /dist2d6657dfada0a80b6985.hot-update.json
+[2016-06-16 09:38:01.984] [INFO] fileLog - GET /dist0.2d6657dfada0a80b6985.hot-update.js
+[2016-06-16 09:38:05.483] [INFO] fileLog - GET /dist20baebccb06e9a49c3a3.hot-update.json
+[2016-06-16 09:38:05.536] [INFO] fileLog - GET /dist0.20baebccb06e9a49c3a3.hot-update.js
+[2016-06-16 09:38:12.576] [INFO] fileLog - GET /distaf2fb642f6a70371a752.hot-update.json
+[2016-06-16 09:38:12.579] [INFO] fileLog - GET /dist0.af2fb642f6a70371a752.hot-update.js
+[2016-06-16 09:38:17.386] [INFO] fileLog - GET /dist167a3cf1317097f1a395.hot-update.json
+[2016-06-16 09:38:17.394] [INFO] fileLog - GET /dist0.167a3cf1317097f1a395.hot-update.js
+[2016-06-16 09:38:28.639] [INFO] fileLog - GET /distfc6b4e0bf28efc14adc6.hot-update.json
+[2016-06-16 09:38:28.643] [INFO] fileLog - GET /dist0.fc6b4e0bf28efc14adc6.hot-update.js
+[2016-06-16 09:38:37.160] [INFO] fileLog - GET /dist7dfff05c0614687f20ae.hot-update.json
+[2016-06-16 09:38:37.183] [INFO] fileLog - GET /dist0.7dfff05c0614687f20ae.hot-update.js
+[2016-06-16 09:38:51.813] [INFO] fileLog - GET /distd5d07460e484e4140927.hot-update.json
+[2016-06-16 09:38:51.817] [INFO] fileLog - GET /dist0.d5d07460e484e4140927.hot-update.js
+[2016-06-16 09:38:58.801] [INFO] fileLog - GET /dist62a95111b2c553b76e8a.hot-update.json
+[2016-06-16 09:38:58.805] [INFO] fileLog - GET /dist0.62a95111b2c553b76e8a.hot-update.js
+[2016-06-16 09:39:11.083] [INFO] fileLog - GET /dist8157c13bb5b0a1f2069c.hot-update.json
+[2016-06-16 09:39:11.086] [INFO] fileLog - GET /dist0.8157c13bb5b0a1f2069c.hot-update.js
+[2016-06-16 09:39:36.172] [INFO] fileLog - GET /dist1757389e044096801db4.hot-update.json
+[2016-06-16 09:39:36.177] [INFO] fileLog - GET /dist0.1757389e044096801db4.hot-update.js
+[2016-06-16 09:39:39.203] [INFO] fileLog - GET /dist380183eb3ca11696a8f7.hot-update.json
+[2016-06-16 09:39:39.206] [INFO] fileLog - GET /dist0.380183eb3ca11696a8f7.hot-update.js
+[2016-06-16 09:39:41.167] [INFO] fileLog - GET /dist8e5b6717ff58224f9a67.hot-update.json
+[2016-06-16 09:39:41.180] [INFO] fileLog - GET /dist0.8e5b6717ff58224f9a67.hot-update.js
+[2016-06-16 09:39:46.219] [INFO] fileLog - GET /dist09e297337c2f26b92cdf.hot-update.json
+[2016-06-16 09:39:46.229] [INFO] fileLog - GET /dist0.09e297337c2f26b92cdf.hot-update.js
+[2016-06-16 09:39:49.168] [INFO] fileLog - GET /distfa70f972a4ec03d61257.hot-update.json
+[2016-06-16 09:39:49.172] [INFO] fileLog - GET /dist0.fa70f972a4ec03d61257.hot-update.js
+[2016-06-16 09:40:07.252] [INFO] fileLog - GET /dist25311c73593747b6f6b3.hot-update.json
+[2016-06-16 09:40:07.260] [INFO] fileLog - GET /dist0.25311c73593747b6f6b3.hot-update.js
+[2016-06-16 09:40:09.503] [INFO] fileLog - GET /distce323fa33c4d8a0c3907.hot-update.json
+[2016-06-16 09:40:09.519] [INFO] fileLog - GET /dist0.ce323fa33c4d8a0c3907.hot-update.js
+[2016-06-16 09:40:10.844] [INFO] fileLog - GET /dist61248d31f3e3a2e7a477.hot-update.json
+[2016-06-16 09:40:10.854] [INFO] fileLog - GET /dist0.61248d31f3e3a2e7a477.hot-update.js
+[2016-06-16 09:40:31.821] [INFO] fileLog - GET /dist2d33800ef9cf69118dcd.hot-update.json
+[2016-06-16 09:40:31.828] [INFO] fileLog - GET /dist0.2d33800ef9cf69118dcd.hot-update.js
+[2016-06-16 09:40:43.938] [INFO] fileLog - GET /dist28f1e45f4a22b900ca83.hot-update.json
+[2016-06-16 09:40:43.944] [INFO] fileLog - GET /dist0.28f1e45f4a22b900ca83.hot-update.js
+[2016-06-16 09:40:45.021] [INFO] fileLog - GET /dist25c8d444230a12b8e2bb.hot-update.json
+[2016-06-16 09:40:45.032] [INFO] fileLog - GET /dist0.25c8d444230a12b8e2bb.hot-update.js
+[2016-06-16 09:40:56.989] [INFO] fileLog - GET /distf1a4f15cc2d54b600441.hot-update.json
+[2016-06-16 09:40:56.996] [INFO] fileLog - GET /dist0.f1a4f15cc2d54b600441.hot-update.js
+[2016-06-16 09:41:10.222] [INFO] fileLog - GET /distb7cea260b31d3e949374.hot-update.json
+[2016-06-16 09:41:10.248] [INFO] fileLog - GET /dist0.b7cea260b31d3e949374.hot-update.js
+[2016-06-16 09:47:14.886] [INFO] fileLog - GET /dist7e9963e30ddff7333c8e.hot-update.json
+[2016-06-16 09:47:14.889] [INFO] fileLog - GET /dist0.7e9963e30ddff7333c8e.hot-update.js
+[2016-06-16 09:47:15.738] [INFO] fileLog - GET /dist3d10283aa547ef2cb06f.hot-update.json
+[2016-06-16 09:47:15.741] [INFO] fileLog - GET /dist0.3d10283aa547ef2cb06f.hot-update.js
+[2016-06-16 09:47:28.764] [INFO] fileLog - GET /dist599d0bd078167c3723ef.hot-update.json
+[2016-06-16 09:47:28.767] [INFO] fileLog - GET /dist0.599d0bd078167c3723ef.hot-update.js
+[2016-06-16 09:47:34.065] [INFO] fileLog - GET /video
+[2016-06-16 09:47:34.075] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:47:34.095] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:47:34.096] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:47:34.097] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:47:34.859] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:47:34.861] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:47:34.889] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:47:34.946] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:48:05.441] [INFO] fileLog - GET /diste410e63932faff1962a8.hot-update.json
+[2016-06-16 09:48:05.445] [INFO] fileLog - GET /dist0.e410e63932faff1962a8.hot-update.js
+[2016-06-16 09:48:08.036] [INFO] fileLog - GET /video
+[2016-06-16 09:48:08.046] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:48:08.047] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:48:08.048] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:48:08.066] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:48:08.818] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:48:08.819] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:48:08.840] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:48:08.887] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:48:41.712] [INFO] fileLog - GET /dist686dcaa027b0908701e9.hot-update.json
+[2016-06-16 09:48:41.716] [INFO] fileLog - GET /dist0.686dcaa027b0908701e9.hot-update.js
+[2016-06-16 09:48:48.226] [INFO] fileLog - GET /dist085c2309511dce368fd2.hot-update.json
+[2016-06-16 09:48:48.248] [INFO] fileLog - GET /dist0.085c2309511dce368fd2.hot-update.js
+[2016-06-16 09:49:36.693] [INFO] fileLog - GET /dist80f2df1022225aae8067.hot-update.json
+[2016-06-16 09:49:36.715] [INFO] fileLog - GET /dist0.80f2df1022225aae8067.hot-update.js
+[2016-06-16 09:50:11.502] [INFO] fileLog - GET /distd8f7f726e005732344ff.hot-update.json
+[2016-06-16 09:50:11.505] [INFO] fileLog - GET /dist0.d8f7f726e005732344ff.hot-update.js
+[2016-06-16 09:50:14.826] [INFO] fileLog - GET /distd4f0620a94c78220d611.hot-update.json
+[2016-06-16 09:50:14.829] [INFO] fileLog - GET /dist0.d4f0620a94c78220d611.hot-update.js
+[2016-06-16 09:50:31.878] [INFO] fileLog - GET /distd1aa8b6732c43507be07.hot-update.json
+[2016-06-16 09:50:31.881] [INFO] fileLog - GET /dist0.d1aa8b6732c43507be07.hot-update.js
+[2016-06-16 09:50:45.980] [INFO] fileLog - GET /dist42ffb2a2bfd8d53c04c9.hot-update.json
+[2016-06-16 09:50:45.983] [INFO] fileLog - GET /dist0.42ffb2a2bfd8d53c04c9.hot-update.js
+[2016-06-16 09:51:07.053] [INFO] fileLog - GET /dist4c71f2732168ba734ac2.hot-update.json
+[2016-06-16 09:51:07.058] [INFO] fileLog - GET /dist0.4c71f2732168ba734ac2.hot-update.js
+[2016-06-16 09:51:12.190] [INFO] fileLog - GET /dist776100b36ff754523b28.hot-update.json
+[2016-06-16 09:51:12.194] [INFO] fileLog - GET /dist0.776100b36ff754523b28.hot-update.js
+[2016-06-16 09:51:45.796] [INFO] fileLog - GET /dist6cd7ca86607e85c29a7b.hot-update.json
+[2016-06-16 09:51:45.800] [INFO] fileLog - GET /dist0.6cd7ca86607e85c29a7b.hot-update.js
+[2016-06-16 09:51:58.993] [INFO] fileLog - GET /distf7b01788d1a53f9828d6.hot-update.json
+[2016-06-16 09:51:59.009] [INFO] fileLog - GET /dist0.f7b01788d1a53f9828d6.hot-update.js
+[2016-06-16 09:52:03.804] [INFO] fileLog - GET /dist4e622b90aadeb05541c9.hot-update.json
+[2016-06-16 09:52:03.808] [INFO] fileLog - GET /dist0.4e622b90aadeb05541c9.hot-update.js
+[2016-06-16 09:52:33.241] [INFO] fileLog - GET /dist5447f3b7da592824741f.hot-update.json
+[2016-06-16 09:52:33.244] [INFO] fileLog - GET /dist0.5447f3b7da592824741f.hot-update.js
+[2016-06-16 09:52:35.256] [INFO] fileLog - GET /video
+[2016-06-16 09:52:35.264] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:52:35.265] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:52:35.284] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:52:35.285] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:52:36.052] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:52:36.054] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:52:36.067] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:52:36.105] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:52:50.065] [INFO] fileLog - GET /distfdd477ea1cf1dc61c43f.hot-update.json
+[2016-06-16 09:52:50.069] [INFO] fileLog - GET /video
+[2016-06-16 09:52:50.071] [INFO] fileLog - GET /dist0.fdd477ea1cf1dc61c43f.hot-update.js
+[2016-06-16 09:52:50.088] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:52:50.089] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:52:50.089] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:52:50.108] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:52:51.138] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:52:51.139] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:52:51.173] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:52:51.234] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:53:24.717] [INFO] fileLog - GET /dist103ae4607eee7856dfaa.hot-update.json
+[2016-06-16 09:53:24.722] [INFO] fileLog - GET /dist0.103ae4607eee7856dfaa.hot-update.js
+[2016-06-16 09:53:26.628] [INFO] fileLog - GET /video
+[2016-06-16 09:53:26.667] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 09:53:26.667] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 09:53:26.667] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 09:53:26.668] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 09:53:27.747] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 09:53:27.750] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 09:53:27.790] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 09:53:27.894] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 09:55:09.754] [INFO] fileLog - GET /dista1f77431106b2c021461.hot-update.json
+[2016-06-16 09:55:09.758] [INFO] fileLog - GET /dist0.a1f77431106b2c021461.hot-update.js
+[2016-06-16 10:09:26.860] [INFO] fileLog - GET /dist4d7fecde2875a0d76ff5.hot-update.json
+[2016-06-16 10:10:23.593] [INFO] fileLog - GET /video
+[2016-06-16 10:10:23.636] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:10:23.637] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:10:23.637] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:10:23.638] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:10:24.855] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:10:28.959] [INFO] fileLog - 验证吻合用户：1
+[2016-06-16 10:10:28.961] [INFO] fileLog - PUT /api/v1/login
+[2016-06-16 10:10:28.987] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:10:28.998] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:10:29.010] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:10:29.019] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:10:31.980] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:10:31.986] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:11:26.962] [INFO] fileLog - GET /distd8244bb951467d092fd8.hot-update.json
+[2016-06-16 10:11:26.965] [INFO] fileLog - GET /dist0.d8244bb951467d092fd8.hot-update.js
+[2016-06-16 10:11:29.754] [INFO] fileLog - GET /distad2037db48fdf0c0e43f.hot-update.json
+[2016-06-16 10:11:29.758] [INFO] fileLog - GET /dist0.ad2037db48fdf0c0e43f.hot-update.js
+[2016-06-16 10:12:03.959] [INFO] fileLog - GET /distad52c9a874a60a625366.hot-update.json
+[2016-06-16 10:12:03.963] [INFO] fileLog - GET /dist0.ad52c9a874a60a625366.hot-update.js
+[2016-06-16 10:12:04.891] [INFO] fileLog - GET /video
+[2016-06-16 10:12:04.932] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:12:04.933] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:12:04.934] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:12:04.934] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:12:06.021] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:12:06.023] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:12:06.053] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:12:06.060] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:12:06.163] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:12:25.493] [INFO] fileLog - GET /dist393727351f523af704c7.hot-update.json
+[2016-06-16 10:12:25.497] [INFO] fileLog - GET /video
+[2016-06-16 10:12:25.499] [INFO] fileLog - GET /dist0.393727351f523af704c7.hot-update.js
+[2016-06-16 10:12:25.516] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:12:25.520] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:12:25.520] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:12:25.539] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:12:26.607] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:12:26.608] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:12:26.638] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:12:26.648] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:12:26.742] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:12:34.127] [INFO] fileLog - GET /distac86939942e871a8d402.hot-update.json
+[2016-06-16 10:12:34.128] [INFO] fileLog - GET /video
+[2016-06-16 10:12:34.132] [INFO] fileLog - GET /dist0.ac86939942e871a8d402.hot-update.js
+[2016-06-16 10:12:34.148] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:12:34.167] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:12:34.168] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:12:34.168] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:12:35.235] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:12:35.236] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:12:35.270] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:12:35.278] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:12:35.381] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:13:57.237] [INFO] fileLog - GET /video
+[2016-06-16 10:13:57.272] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:13:57.273] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:13:57.274] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:13:57.274] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:13:58.386] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:13:58.396] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:13:58.404] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:13:58.413] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:13:58.522] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:14:25.981] [INFO] fileLog - GET /distad5f6b81444844a773da.hot-update.json
+[2016-06-16 10:14:26.006] [INFO] fileLog - GET /dist0.ad5f6b81444844a773da.hot-update.js
+[2016-06-16 10:14:28.686] [INFO] fileLog - GET /video
+[2016-06-16 10:14:28.703] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:14:28.722] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:14:28.723] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:14:28.723] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:14:29.817] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:14:29.817] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:14:29.850] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:14:29.862] [INFO] fileLog - POST /api/v1/getVideo
+[2016-06-16 10:14:29.974] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:14:38.491] [INFO] fileLog - GET /dist6593b16f32b25a46a0bd.hot-update.json
+[2016-06-16 10:14:38.510] [INFO] fileLog - GET /dist0.6593b16f32b25a46a0bd.hot-update.js
+[2016-06-16 10:16:33.055] [INFO] fileLog - GET /video
+[2016-06-16 10:16:33.091] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:16:33.093] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:16:33.093] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:16:33.093] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:16:34.202] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:16:34.212] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:16:34.217] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:16:34.228] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:16:34.346] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:28:21.484] [INFO] fileLog - GET /distad5f6b81444844a773da.hot-update.json
+[2016-06-16 10:28:21.488] [INFO] fileLog - GET /dist0.ad5f6b81444844a773da.hot-update.js
+[2016-06-16 10:30:23.610] [INFO] fileLog - GET /distaf29ea65cf93937f75e8.hot-update.json
+[2016-06-16 10:30:23.613] [INFO] fileLog - GET /dist0.af29ea65cf93937f75e8.hot-update.js
+[2016-06-16 10:30:54.274] [INFO] fileLog - GET /dist98c833ffc2928e95cbab.hot-update.json
+[2016-06-16 10:30:54.279] [INFO] fileLog - GET /dist0.98c833ffc2928e95cbab.hot-update.js
+[2016-06-16 10:31:05.235] [INFO] fileLog - GET /dist3f98b3d70659c0141415.hot-update.json
+[2016-06-16 10:31:05.240] [INFO] fileLog - GET /dist0.3f98b3d70659c0141415.hot-update.js
+[2016-06-16 10:31:06.082] [INFO] fileLog - GET /distdaa4bdd6b7ff2563e680.hot-update.json
+[2016-06-16 10:31:06.111] [INFO] fileLog - GET /dist0.daa4bdd6b7ff2563e680.hot-update.js
+[2016-06-16 10:31:07.159] [INFO] fileLog - GET /video
+[2016-06-16 10:31:07.198] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:31:07.199] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:31:07.199] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:31:07.199] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:31:08.341] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:31:08.343] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:31:08.370] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:31:08.380] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:31:08.490] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:31:28.013] [INFO] fileLog - GET /dist99859bfefa71214f2f93.hot-update.json
+[2016-06-16 10:31:28.018] [INFO] fileLog - GET /dist0.99859bfefa71214f2f93.hot-update.js
+[2016-06-16 10:31:46.094] [INFO] fileLog - GET /dist0abfecad24df58156cef.hot-update.json
+[2016-06-16 10:31:46.115] [INFO] fileLog - GET /dist0.0abfecad24df58156cef.hot-update.js
+[2016-06-16 10:31:51.536] [INFO] fileLog - GET /distf765f489357bfd5af289.hot-update.json
+[2016-06-16 10:31:51.540] [INFO] fileLog - GET /dist0.f765f489357bfd5af289.hot-update.js
+[2016-06-16 10:32:13.175] [INFO] fileLog - GET /dist86c14b4d61f75998c989.hot-update.json
+[2016-06-16 10:32:13.182] [INFO] fileLog - GET /dist0.86c14b4d61f75998c989.hot-update.js
+[2016-06-16 10:32:14.583] [INFO] fileLog - GET /distad63f9a7416910ba8349.hot-update.json
+[2016-06-16 10:32:14.621] [INFO] fileLog - GET /dist0.ad63f9a7416910ba8349.hot-update.js
+[2016-06-16 10:32:27.570] [INFO] fileLog - GET /dist7a410f5caa189054db4d.hot-update.json
+[2016-06-16 10:32:27.575] [INFO] fileLog - GET /dist0.7a410f5caa189054db4d.hot-update.js
+[2016-06-16 10:32:43.242] [INFO] fileLog - GET /distb48095c567c1c69d3a91.hot-update.json
+[2016-06-16 10:32:43.259] [INFO] fileLog - GET /dist0.b48095c567c1c69d3a91.hot-update.js
+[2016-06-16 10:32:49.475] [INFO] fileLog - GET /dist4ee2da0bfb5a411f170e.hot-update.json
+[2016-06-16 10:32:49.478] [INFO] fileLog - GET /dist0.4ee2da0bfb5a411f170e.hot-update.js
+[2016-06-16 10:32:59.199] [INFO] fileLog - GET /dist4ac8c38ca4f4e67250b7.hot-update.json
+[2016-06-16 10:32:59.202] [INFO] fileLog - GET /dist0.4ac8c38ca4f4e67250b7.hot-update.js
+[2016-06-16 10:33:01.940] [INFO] fileLog - GET /distd24c25e07d3920f1a4f1.hot-update.json
+[2016-06-16 10:33:01.957] [INFO] fileLog - GET /dist0.d24c25e07d3920f1a4f1.hot-update.js
+[2016-06-16 10:33:11.936] [INFO] fileLog - GET /dist5b0d15d4ff446b08cadc.hot-update.json
+[2016-06-16 10:33:11.939] [INFO] fileLog - GET /dist0.5b0d15d4ff446b08cadc.hot-update.js
+[2016-06-16 10:33:32.500] [INFO] fileLog - GET /distd7bbda732ccd4e955024.hot-update.json
+[2016-06-16 10:33:32.503] [INFO] fileLog - GET /dist0.d7bbda732ccd4e955024.hot-update.js
+[2016-06-16 10:33:57.294] [INFO] fileLog - GET /dist2f448d6ef8992d6256f2.hot-update.json
+[2016-06-16 10:33:57.300] [INFO] fileLog - GET /dist0.2f448d6ef8992d6256f2.hot-update.js
+[2016-06-16 10:33:57.305] [INFO] fileLog - GET /video
+[2016-06-16 10:33:57.321] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:33:57.322] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:33:57.346] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:33:57.364] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:33:58.445] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:33:58.447] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:33:58.473] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:33:58.482] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:33:58.590] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:34:34.815] [INFO] fileLog - GET /dist02c7c219dcfabcf1a9d9.hot-update.json
+[2016-06-16 10:34:34.835] [INFO] fileLog - GET /dist0.02c7c219dcfabcf1a9d9.hot-update.js
+[2016-06-16 10:34:47.541] [INFO] fileLog - GET /dist13d1b23d84ae144b10d8.hot-update.json
+[2016-06-16 10:34:47.545] [INFO] fileLog - GET /dist0.13d1b23d84ae144b10d8.hot-update.js
+[2016-06-16 10:35:01.199] [INFO] fileLog - GET /dist4ae43f2bdc9afd176618.hot-update.json
+[2016-06-16 10:35:01.203] [INFO] fileLog - GET /dist0.4ae43f2bdc9afd176618.hot-update.js
+[2016-06-16 10:35:02.459] [INFO] fileLog - GET /video
+[2016-06-16 10:35:02.476] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:35:02.478] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:35:02.478] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:35:02.497] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:35:03.553] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:35:03.554] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:35:03.591] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:35:03.600] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:35:03.697] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:35:33.232] [INFO] fileLog - GET /distea9849f994c836fe18f0.hot-update.json
+[2016-06-16 10:35:33.236] [INFO] fileLog - GET /dist0.ea9849f994c836fe18f0.hot-update.js
+[2016-06-16 10:35:43.529] [INFO] fileLog - GET /dist39f3553e23bd75e966bf.hot-update.json
+[2016-06-16 10:35:43.559] [INFO] fileLog - GET /dist0.39f3553e23bd75e966bf.hot-update.js
+[2016-06-16 10:35:58.465] [INFO] fileLog - GET /dist42b2a413aa09cca5fa53.hot-update.json
+[2016-06-16 10:35:58.468] [INFO] fileLog - GET /dist0.42b2a413aa09cca5fa53.hot-update.js
+[2016-06-16 10:36:13.771] [INFO] fileLog - GET /distc105395b31e9994485e5.hot-update.json
+[2016-06-16 10:36:13.775] [INFO] fileLog - GET /dist0.c105395b31e9994485e5.hot-update.js
+[2016-06-16 10:36:16.338] [INFO] fileLog - GET /distdd2d3193188d2fe8fbb2.hot-update.json
+[2016-06-16 10:36:16.342] [INFO] fileLog - GET /dist0.dd2d3193188d2fe8fbb2.hot-update.js
+[2016-06-16 10:36:20.444] [INFO] fileLog - GET /distf18751f0a9111f3a6d53.hot-update.json
+[2016-06-16 10:36:20.483] [INFO] fileLog - GET /dist0.f18751f0a9111f3a6d53.hot-update.js
+[2016-06-16 10:36:28.199] [INFO] fileLog - GET /dist3fc744d3a7b86370beba.hot-update.json
+[2016-06-16 10:36:28.204] [INFO] fileLog - GET /dist0.3fc744d3a7b86370beba.hot-update.js
+[2016-06-16 10:36:34.111] [INFO] fileLog - GET /distefeac8aadf40010fd0e9.hot-update.json
+[2016-06-16 10:36:34.115] [INFO] fileLog - GET /dist0.efeac8aadf40010fd0e9.hot-update.js
+[2016-06-16 10:36:37.806] [INFO] fileLog - GET /dist612b59cbba46e092e68f.hot-update.json
+[2016-06-16 10:36:37.810] [INFO] fileLog - GET /dist0.612b59cbba46e092e68f.hot-update.js
+[2016-06-16 10:37:10.859] [INFO] fileLog - GET /dist266e301f234211c969c3.hot-update.json
+[2016-06-16 10:37:10.895] [INFO] fileLog - GET /dist0.266e301f234211c969c3.hot-update.js
+[2016-06-16 10:37:20.071] [INFO] fileLog - GET /dist32f9e1dbccea777c189f.hot-update.json
+[2016-06-16 10:37:20.075] [INFO] fileLog - GET /dist0.32f9e1dbccea777c189f.hot-update.js
+[2016-06-16 10:37:27.968] [INFO] fileLog - GET /dist6d85bcd432e1c7668de9.hot-update.json
+[2016-06-16 10:37:27.972] [INFO] fileLog - GET /dist0.6d85bcd432e1c7668de9.hot-update.js
+[2016-06-16 10:37:33.618] [INFO] fileLog - GET /distb09a8954bf1be4f74cdd.hot-update.json
+[2016-06-16 10:37:33.621] [INFO] fileLog - GET /dist0.b09a8954bf1be4f74cdd.hot-update.js
+[2016-06-16 10:37:47.434] [INFO] fileLog - GET /distb9fb85b60d8b03e60862.hot-update.json
+[2016-06-16 10:37:47.437] [INFO] fileLog - GET /dist0.b9fb85b60d8b03e60862.hot-update.js
+[2016-06-16 10:38:27.921] [INFO] fileLog - GET /dist4c7b9e8a530fdb6c063a.hot-update.json
+[2016-06-16 10:38:27.950] [INFO] fileLog - GET /dist0.4c7b9e8a530fdb6c063a.hot-update.js
+[2016-06-16 10:38:34.918] [INFO] fileLog - GET /dist9b1d4f02682f8d228708.hot-update.json
+[2016-06-16 10:38:34.969] [INFO] fileLog - GET /dist0.9b1d4f02682f8d228708.hot-update.js
+[2016-06-16 10:38:44.266] [INFO] fileLog - GET /dist1f26ff1ebe92ec680379.hot-update.json
+[2016-06-16 10:38:44.270] [INFO] fileLog - GET /dist0.1f26ff1ebe92ec680379.hot-update.js
+[2016-06-16 10:39:24.170] [INFO] fileLog - GET /dist99742625e6ddbecb2098.hot-update.json
+[2016-06-16 10:39:24.179] [INFO] fileLog - GET /dist0.99742625e6ddbecb2098.hot-update.js
+[2016-06-16 10:39:33.330] [INFO] fileLog - GET /dist031b6b8e9de958992fb8.hot-update.json
+[2016-06-16 10:39:33.335] [INFO] fileLog - GET /dist0.031b6b8e9de958992fb8.hot-update.js
+[2016-06-16 10:39:46.248] [INFO] fileLog - GET /distf9bfd44f1b0d960d6491.hot-update.json
+[2016-06-16 10:39:46.254] [INFO] fileLog - GET /dist0.f9bfd44f1b0d960d6491.hot-update.js
+[2016-06-16 10:39:55.928] [INFO] fileLog - GET /distcf32fef6b0cfa7a717d5.hot-update.json
+[2016-06-16 10:39:55.936] [INFO] fileLog - GET /dist0.cf32fef6b0cfa7a717d5.hot-update.js
+[2016-06-16 10:40:02.838] [INFO] fileLog - GET /dist377b2be5f23bae428491.hot-update.json
+[2016-06-16 10:40:02.845] [INFO] fileLog - GET /dist0.377b2be5f23bae428491.hot-update.js
+[2016-06-16 10:40:29.485] [INFO] fileLog - GET /dist390cb0e072db4d2842f8.hot-update.json
+[2016-06-16 10:40:29.499] [INFO] fileLog - GET /dist0.390cb0e072db4d2842f8.hot-update.js
+[2016-06-16 10:40:32.384] [INFO] fileLog - GET /distf7a938d9fd9d54710678.hot-update.json
+[2016-06-16 10:40:32.390] [INFO] fileLog - GET /dist0.f7a938d9fd9d54710678.hot-update.js
+[2016-06-16 10:41:05.127] [INFO] fileLog - GET /dist3fc6f3ab42429c592a00.hot-update.json
+[2016-06-16 10:41:05.131] [INFO] fileLog - GET /dist0.3fc6f3ab42429c592a00.hot-update.js
+[2016-06-16 10:41:05.137] [INFO] fileLog - GET /diste56f84d1bc3d4d6cff8b.hot-update.json
+[2016-06-16 10:41:05.161] [INFO] fileLog - GET /dist0.e56f84d1bc3d4d6cff8b.hot-update.js
+[2016-06-16 10:41:47.483] [INFO] fileLog - GET /dist66714ea6b210b30c23f5.hot-update.json
+[2016-06-16 10:41:47.506] [INFO] fileLog - GET /dist0.66714ea6b210b30c23f5.hot-update.js
+[2016-06-16 10:41:50.157] [INFO] fileLog - GET /dist934e6ec043da9e6a71ab.hot-update.json
+[2016-06-16 10:41:50.163] [INFO] fileLog - GET /dist0.934e6ec043da9e6a71ab.hot-update.js
+[2016-06-16 10:42:00.463] [INFO] fileLog - GET /dista0357b2b291fc50c7477.hot-update.json
+[2016-06-16 10:42:00.470] [INFO] fileLog - GET /dist0.a0357b2b291fc50c7477.hot-update.js
+[2016-06-16 10:42:06.917] [INFO] fileLog - GET /distc47fac9af23635aa34c5.hot-update.json
+[2016-06-16 10:42:06.927] [INFO] fileLog - GET /dist0.c47fac9af23635aa34c5.hot-update.js
+[2016-06-16 10:42:14.342] [INFO] fileLog - GET /dist9cc139898245af8aa03c.hot-update.json
+[2016-06-16 10:42:14.365] [INFO] fileLog - GET /dist0.9cc139898245af8aa03c.hot-update.js
+[2016-06-16 10:42:15.812] [INFO] fileLog - GET /video
+[2016-06-16 10:42:15.831] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:42:15.834] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:42:15.852] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:42:15.852] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:42:16.959] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:42:16.961] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:42:16.985] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:42:16.994] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:42:17.099] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:42:28.466] [INFO] fileLog - GET /login
+[2016-06-16 10:42:28.472] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:42:28.473] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:42:28.490] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:42:28.490] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:42:29.504] [INFO] fileLog - GET /index
+[2016-06-16 10:42:29.538] [INFO] fileLog - GET /public/front/style/index.css
+[2016-06-16 10:42:29.571] [INFO] fileLog - GET /public/front/images/index_pic.png
+[2016-06-16 10:42:29.580] [INFO] fileLog - GET /public/front/images/index_pro.png
+[2016-06-16 10:42:29.581] [INFO] fileLog - GET /public/front/images/index_sou.png
+[2016-06-16 10:42:29.582] [INFO] fileLog - GET /public/front/images/index_page.png
+[2016-06-16 10:42:29.608] [INFO] fileLog - GET /public/front/images/index_support.png
+[2016-06-16 10:42:29.609] [INFO] fileLog - GET /public/front/images/index_vi.png
+[2016-06-16 10:42:29.664] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 10:42:29.666] [INFO] fileLog - GET /public/front/images/index_ci.png
+[2016-06-16 10:42:29.667] [INFO] fileLog - GET /public/front/images/index_center.png
+[2016-06-16 10:42:29.696] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:42:31.982] [INFO] fileLog - GET /web/video_cate
+[2016-06-16 10:42:31.992] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 10:42:31.993] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 10:42:31.996] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 10:42:31.996] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 10:42:31.997] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 10:42:32.055] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 10:42:32.056] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 10:42:32.057] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 10:42:32.157] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 10:42:32.158] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 10:42:32.177] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:42:46.196] [INFO] fileLog - GET /distcfa0f03c67d4b971705f.hot-update.json
+[2016-06-16 10:42:46.200] [INFO] fileLog - GET /dist0.cfa0f03c67d4b971705f.hot-update.js
+[2016-06-16 10:42:51.027] [INFO] fileLog - GET /distd402b79d7196cf83c7e7.hot-update.json
+[2016-06-16 10:42:51.032] [INFO] fileLog - GET /dist0.d402b79d7196cf83c7e7.hot-update.js
+[2016-06-16 10:42:55.036] [INFO] fileLog - GET /diste0bc5a5577f6d623ec04.hot-update.json
+[2016-06-16 10:42:55.040] [INFO] fileLog - GET /dist0.e0bc5a5577f6d623ec04.hot-update.js
+[2016-06-16 10:42:58.943] [INFO] fileLog - GET /diste3602fb738fbfe8dda36.hot-update.json
+[2016-06-16 10:42:58.946] [INFO] fileLog - GET /dist0.e3602fb738fbfe8dda36.hot-update.js
+[2016-06-16 10:43:03.482] [INFO] fileLog - GET /distfbe6065ec58278c0e861.hot-update.json
+[2016-06-16 10:43:03.485] [INFO] fileLog - GET /dist0.fbe6065ec58278c0e861.hot-update.js
+[2016-06-16 10:44:25.960] [INFO] fileLog - GET /dist32f4a1f986f663066eeb.hot-update.json
+[2016-06-16 10:44:25.964] [INFO] fileLog - GET /dist0.32f4a1f986f663066eeb.hot-update.js
+[2016-06-16 10:44:30.827] [INFO] fileLog - GET /video
+[2016-06-16 10:44:30.846] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:44:30.848] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:44:30.867] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:44:30.867] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:44:31.958] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:44:31.961] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:44:31.982] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:44:31.991] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:44:32.091] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:45:04.000] [INFO] fileLog - GET /dist74757bd850e654191396.hot-update.json
+[2016-06-16 10:45:04.005] [INFO] fileLog - GET /dist0.74757bd850e654191396.hot-update.js
+[2016-06-16 10:45:15.615] [INFO] fileLog - GET /distfa442b25c100de22209b.hot-update.json
+[2016-06-16 10:45:15.631] [INFO] fileLog - GET /dist0.fa442b25c100de22209b.hot-update.js
+[2016-06-16 10:45:18.087] [INFO] fileLog - GET /video
+[2016-06-16 10:45:18.109] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:45:18.109] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:45:18.128] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:45:18.129] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:45:19.220] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:45:19.221] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:45:19.258] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:45:19.266] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:45:19.367] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:46:29.424] [INFO] fileLog - GET /dist8e37dbfc5c25d4fc3340.hot-update.json
+[2016-06-16 10:46:29.428] [INFO] fileLog - GET /dist0.8e37dbfc5c25d4fc3340.hot-update.js
+[2016-06-16 10:46:39.996] [INFO] fileLog - GET /dist5c36cbe9468c714d4905.hot-update.json
+[2016-06-16 10:46:40.000] [INFO] fileLog - GET /dist0.5c36cbe9468c714d4905.hot-update.js
+[2016-06-16 10:46:42.952] [INFO] fileLog - GET /video
+[2016-06-16 10:46:42.992] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:46:42.993] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:46:42.993] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:46:42.993] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:46:44.099] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:46:44.100] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:46:44.130] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:46:44.138] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:46:44.240] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:48:27.755] [INFO] fileLog - GET /dist5e19ee2ab7d30a6c5eb9.hot-update.json
+[2016-06-16 10:48:27.759] [INFO] fileLog - GET /dist0.5e19ee2ab7d30a6c5eb9.hot-update.js
+[2016-06-16 10:48:29.560] [INFO] fileLog - GET /video
+[2016-06-16 10:48:29.580] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:48:29.581] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:48:29.600] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:48:29.600] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:48:30.686] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:48:30.687] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:48:30.721] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:48:30.729] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:48:30.827] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:49:47.274] [INFO] fileLog - GET /dist3c47880e5a088e15329f.hot-update.json
+[2016-06-16 10:49:47.278] [INFO] fileLog - GET /dist0.3c47880e5a088e15329f.hot-update.js
+[2016-06-16 10:49:52.535] [INFO] fileLog - GET /dist81bfc02db43ad2f1ac2f.hot-update.json
+[2016-06-16 10:49:52.555] [INFO] fileLog - GET /dist0.81bfc02db43ad2f1ac2f.hot-update.js
+[2016-06-16 10:49:54.183] [INFO] fileLog - GET /video
+[2016-06-16 10:49:54.203] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:49:54.203] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:49:54.204] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:49:54.221] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:49:55.306] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:49:55.307] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:49:55.344] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:49:55.353] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:49:55.454] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:50:53.670] [INFO] fileLog - GET /dist9235ad12f0cffa5994f4.hot-update.json
+[2016-06-16 10:50:53.674] [INFO] fileLog - GET /dist0.9235ad12f0cffa5994f4.hot-update.js
+[2016-06-16 10:50:56.303] [INFO] fileLog - GET /dist2137c875d1d0faf349ca.hot-update.json
+[2016-06-16 10:50:56.307] [INFO] fileLog - GET /dist0.2137c875d1d0faf349ca.hot-update.js
+[2016-06-16 10:51:05.090] [INFO] fileLog - GET /dist88eaf8dacfdef603f46f.hot-update.json
+[2016-06-16 10:51:05.094] [INFO] fileLog - GET /dist0.88eaf8dacfdef603f46f.hot-update.js
+[2016-06-16 10:51:08.360] [INFO] fileLog - GET /dist89be44db19555e70cf89.hot-update.json
+[2016-06-16 10:51:08.364] [INFO] fileLog - GET /dist0.89be44db19555e70cf89.hot-update.js
+[2016-06-16 10:51:08.410] [INFO] fileLog - GET /video
+[2016-06-16 10:51:08.450] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:51:08.451] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:51:08.452] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:51:08.452] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:51:09.562] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:51:09.564] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:51:09.598] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:51:09.607] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:51:09.707] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:51:32.148] [INFO] fileLog - GET /dist8a39417c0e57e5036b4d.hot-update.json
+[2016-06-16 10:51:32.152] [INFO] fileLog - GET /dist0.8a39417c0e57e5036b4d.hot-update.js
+[2016-06-16 10:51:36.679] [INFO] fileLog - GET /video
+[2016-06-16 10:51:36.722] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:51:36.723] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:51:36.723] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:51:36.724] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:51:37.807] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:51:37.808] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:51:37.848] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:51:37.857] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:51:37.960] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:52:18.653] [INFO] fileLog - GET /dist457bb73151421a63f272.hot-update.json
+[2016-06-16 10:52:18.657] [INFO] fileLog - GET /dist0.457bb73151421a63f272.hot-update.js
+[2016-06-16 10:52:20.288] [INFO] fileLog - GET /video
+[2016-06-16 10:52:20.327] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:52:20.327] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:52:20.328] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:52:20.328] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:52:21.446] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:52:21.447] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:52:21.482] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:52:21.490] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:52:21.587] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:52:59.751] [INFO] fileLog - GET /dist67190fc64e4e1f4f2513.hot-update.json
+[2016-06-16 10:52:59.753] [INFO] fileLog - GET /dist0.67190fc64e4e1f4f2513.hot-update.js
+[2016-06-16 10:53:00.543] [INFO] fileLog - GET /video
+[2016-06-16 10:53:00.561] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:53:00.563] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:53:00.563] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:53:00.580] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:53:01.676] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:53:01.677] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:53:01.709] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:53:01.721] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:53:01.810] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:53:15.414] [INFO] fileLog - GET /distd88439c36a49c75e4295.hot-update.json
+[2016-06-16 10:53:15.418] [INFO] fileLog - GET /dist0.d88439c36a49c75e4295.hot-update.js
+[2016-06-16 10:53:17.067] [INFO] fileLog - GET /dist3dc1a7eca16df8d663b8.hot-update.json
+[2016-06-16 10:53:17.071] [INFO] fileLog - GET /dist0.3dc1a7eca16df8d663b8.hot-update.js
+[2016-06-16 10:53:22.003] [INFO] fileLog - GET /dist66f4d5b15ce94ac9727f.hot-update.json
+[2016-06-16 10:53:22.007] [INFO] fileLog - GET /dist0.66f4d5b15ce94ac9727f.hot-update.js
+[2016-06-16 10:53:41.361] [INFO] fileLog - GET /dist1017ee3c9d3336c9a973.hot-update.json
+[2016-06-16 10:53:41.379] [INFO] fileLog - GET /dist0.1017ee3c9d3336c9a973.hot-update.js
+[2016-06-16 10:53:48.534] [INFO] fileLog - GET /video
+[2016-06-16 10:53:48.573] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 10:53:48.573] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 10:53:48.573] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 10:53:48.574] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 10:53:49.656] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 10:53:49.657] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 10:53:49.698] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 10:53:49.706] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 10:53:49.809] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 10:54:42.620] [INFO] fileLog - GET /dista1a1b59fa9a2acb10ede.hot-update.json
+[2016-06-16 10:54:42.637] [INFO] fileLog - GET /dist0.a1a1b59fa9a2acb10ede.hot-update.js
+[2016-06-16 10:54:51.477] [INFO] fileLog - GET /dist43f80fe5939894505815.hot-update.json
+[2016-06-16 10:54:51.490] [INFO] fileLog - GET /dist0.43f80fe5939894505815.hot-update.js
+[2016-06-16 10:55:06.700] [INFO] fileLog - GET /dist9c44d38a7c0e048df693.hot-update.json
+[2016-06-16 10:55:06.704] [INFO] fileLog - GET /dist0.9c44d38a7c0e048df693.hot-update.js
+[2016-06-16 10:55:32.026] [INFO] fileLog - GET /dist2c5626b9b0bfa735b4e6.hot-update.json
+[2016-06-16 10:55:32.029] [INFO] fileLog - GET /dist0.2c5626b9b0bfa735b4e6.hot-update.js
+[2016-06-16 10:55:50.324] [INFO] fileLog - GET /distcc2673a2e5326fa09146.hot-update.json
+[2016-06-16 10:55:50.348] [INFO] fileLog - GET /dist0.cc2673a2e5326fa09146.hot-update.js
+[2016-06-16 10:55:53.556] [INFO] fileLog - GET /diste9fe8dfef909fb935026.hot-update.json
+[2016-06-16 10:55:53.589] [INFO] fileLog - GET /dist0.e9fe8dfef909fb935026.hot-update.js
+[2016-06-16 10:55:57.460] [INFO] fileLog - GET /dist1b3566123c21ac6ed91a.hot-update.json
+[2016-06-16 10:55:57.502] [INFO] fileLog - GET /dist0.1b3566123c21ac6ed91a.hot-update.js
+[2016-06-16 10:56:13.303] [INFO] fileLog - GET /distfdb6ba1ce3e278dddfea.hot-update.json
+[2016-06-16 10:56:13.307] [INFO] fileLog - GET /dist0.fdb6ba1ce3e278dddfea.hot-update.js
+[2016-06-16 10:56:24.955] [INFO] fileLog - GET /diste9f0a2b90f155eae1ed2.hot-update.json
+[2016-06-16 10:56:24.959] [INFO] fileLog - GET /dist0.e9f0a2b90f155eae1ed2.hot-update.js
+[2016-06-16 10:56:25.811] [INFO] fileLog - GET /dist3ab275a99441b79bd255.hot-update.json
+[2016-06-16 10:56:25.833] [INFO] fileLog - GET /dist0.3ab275a99441b79bd255.hot-update.js
+[2016-06-16 10:56:28.552] [INFO] fileLog - GET /dist376c75d321a7d46c6fd5.hot-update.json
+[2016-06-16 10:56:28.597] [INFO] fileLog - GET /dist0.376c75d321a7d46c6fd5.hot-update.js
+[2016-06-16 10:56:41.830] [INFO] fileLog - GET /distba067aa83726e95982b1.hot-update.json
+[2016-06-16 10:56:41.835] [INFO] fileLog - GET /dist0.ba067aa83726e95982b1.hot-update.js
+[2016-06-16 10:56:48.909] [INFO] fileLog - GET /dist984160cb1956b9b2aff7.hot-update.json
+[2016-06-16 10:56:48.936] [INFO] fileLog - GET /dist0.984160cb1956b9b2aff7.hot-update.js
+[2016-06-16 10:57:06.943] [INFO] fileLog - GET /dist5d3301b88fa1d94cecf9.hot-update.json
+[2016-06-16 10:57:06.949] [INFO] fileLog - GET /dist0.5d3301b88fa1d94cecf9.hot-update.js
+[2016-06-16 10:57:28.387] [INFO] fileLog - GET /distcdcf4ea737b48291705b.hot-update.json
+[2016-06-16 10:57:28.391] [INFO] fileLog - GET /dist0.cdcf4ea737b48291705b.hot-update.js
+[2016-06-16 10:57:41.786] [INFO] fileLog - GET /dist091f5bc2e2f9a4d4b739.hot-update.json
+[2016-06-16 10:57:41.790] [INFO] fileLog - GET /dist0.091f5bc2e2f9a4d4b739.hot-update.js
+[2016-06-16 10:57:46.693] [INFO] fileLog - GET /dist0faedc186004e01cc92e.hot-update.json
+[2016-06-16 10:57:46.698] [INFO] fileLog - GET /dist0.0faedc186004e01cc92e.hot-update.js
+[2016-06-16 10:57:53.171] [INFO] fileLog - GET /dist975ce21b4fb842839f70.hot-update.json
+[2016-06-16 10:57:53.198] [INFO] fileLog - GET /dist0.975ce21b4fb842839f70.hot-update.js
+[2016-06-16 10:57:59.460] [INFO] fileLog - GET /dist78c3e1ea9f1a7673ba45.hot-update.json
+[2016-06-16 10:57:59.464] [INFO] fileLog - GET /dist0.78c3e1ea9f1a7673ba45.hot-update.js
+[2016-06-16 10:58:27.928] [INFO] fileLog - GET /dist2a04d0bf8b008d4e3dd5.hot-update.json
+[2016-06-16 10:58:27.931] [INFO] fileLog - GET /dist0.2a04d0bf8b008d4e3dd5.hot-update.js
+[2016-06-16 10:59:21.751] [INFO] fileLog - GET /dist4e3058f70276b11b60ce.hot-update.json
+[2016-06-16 10:59:21.780] [INFO] fileLog - GET /dist0.4e3058f70276b11b60ce.hot-update.js
+[2016-06-16 11:06:33.095] [INFO] fileLog - GET /dist4e1bff5843be4bdb4227.hot-update.json
+[2016-06-16 11:06:33.098] [INFO] fileLog - GET /dist0.4e1bff5843be4bdb4227.hot-update.js
+[2016-06-16 11:20:31.865] [INFO] fileLog - GET /video
+[2016-06-16 11:20:31.884] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:20:31.885] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:20:31.886] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:20:31.908] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:20:33.109] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:20:37.079] [INFO] fileLog - 验证吻合用户：1
+[2016-06-16 11:20:37.081] [INFO] fileLog - PUT /api/v1/login
+[2016-06-16 11:20:37.108] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:20:37.120] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:20:37.134] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:20:37.145] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:20:39.008] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:20:39.508] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:20:39.510] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:20:54.930] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:21:55.015] [INFO] fileLog - GET /video
+[2016-06-16 11:21:55.033] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:21:55.051] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:21:55.051] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:21:55.053] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:21:56.188] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:21:56.199] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:21:56.204] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:21:56.213] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:21:56.319] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:22:02.560] [INFO] fileLog - 添加视频数据------ undefined
+[2016-06-16 11:22:02.568] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:23:34.437] [INFO] fileLog - GET /dist64ba67db0b16c95a7825.hot-update.json
+[2016-06-16 11:23:34.441] [INFO] fileLog - GET /dist0.64ba67db0b16c95a7825.hot-update.js
+[2016-06-16 11:23:43.719] [INFO] fileLog - GET /video
+[2016-06-16 11:23:43.740] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:23:43.741] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:23:43.760] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:23:43.762] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:23:44.849] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:23:44.850] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:23:44.881] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:23:44.893] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:23:44.993] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:23:50.759] [INFO] fileLog - 添加视频数据------ undefined
+[2016-06-16 11:23:50.760] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:24:05.160] [INFO] fileLog - GET /diste2b63c205044033301ef.hot-update.json
+[2016-06-16 11:24:05.166] [INFO] fileLog - GET /dist0.e2b63c205044033301ef.hot-update.js
+[2016-06-16 11:24:05.169] [INFO] fileLog - GET /video
+[2016-06-16 11:24:05.191] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:24:05.196] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:24:05.214] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:24:05.216] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:24:06.307] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:24:06.308] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:24:06.341] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:24:06.351] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:24:06.455] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:24:11.865] [INFO] fileLog - 添加视频数据------ undefined
+[2016-06-16 11:24:11.866] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:24:30.014] [INFO] fileLog - GET /dist769e174090ce98f7cbf2.hot-update.json
+[2016-06-16 11:24:30.017] [INFO] fileLog - GET /dist0.769e174090ce98f7cbf2.hot-update.js
+[2016-06-16 11:24:43.851] [INFO] fileLog - GET /distc8aa02fff6e0cec8c592.hot-update.json
+[2016-06-16 11:24:43.855] [INFO] fileLog - GET /dist0.c8aa02fff6e0cec8c592.hot-update.js
+[2016-06-16 11:24:45.336] [INFO] fileLog - GET /video
+[2016-06-16 11:24:45.377] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:24:45.379] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:24:45.379] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:24:45.401] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:24:46.476] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:24:46.477] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:24:46.511] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:24:46.521] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:24:46.612] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:25:00.925] [INFO] fileLog - GET /diste2dda211d58219243c7a.hot-update.json
+[2016-06-16 11:25:00.929] [INFO] fileLog - GET /dist0.e2dda211d58219243c7a.hot-update.js
+[2016-06-16 11:25:11.401] [INFO] fileLog - 添加视频数据------ undefined
+[2016-06-16 11:25:11.403] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:25:42.521] [INFO] fileLog - GET /dist20f196291edace370f86.hot-update.json
+[2016-06-16 11:25:42.528] [INFO] fileLog - GET /dist0.20f196291edace370f86.hot-update.js
+[2016-06-16 11:25:43.487] [INFO] fileLog - GET /video
+[2016-06-16 11:25:43.508] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:25:43.509] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:25:43.529] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:25:43.530] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:25:44.612] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:25:44.613] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:25:44.649] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:25:44.657] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:25:44.754] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:25:52.895] [INFO] fileLog - 添加视频数据------ { Name: '22', Url: 'http://22', Cate: '技术' }
+[2016-06-16 11:25:53.353] [INFO] fileLog - 视频添加成功
+[2016-06-16 11:25:53.355] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:26:25.916] [INFO] fileLog - GET /dist9d34549b8ad9fc316d82.hot-update.json
+[2016-06-16 11:26:25.920] [INFO] fileLog - GET /dist0.9d34549b8ad9fc316d82.hot-update.js
+[2016-06-16 11:26:30.763] [INFO] fileLog - GET /dist8295dd09a9027e204251.hot-update.json
+[2016-06-16 11:26:30.767] [INFO] fileLog - GET /dist0.8295dd09a9027e204251.hot-update.js
+[2016-06-16 11:26:46.599] [INFO] fileLog - GET /video
+[2016-06-16 11:26:46.619] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:26:46.619] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:26:46.639] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:26:46.640] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:26:47.732] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:26:47.733] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:26:47.763] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:26:47.777] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:26:47.861] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:28:40.136] [INFO] fileLog - GET /distf640ac1834c0f0e14cfd.hot-update.json
+[2016-06-16 11:28:40.140] [INFO] fileLog - GET /dist0.f640ac1834c0f0e14cfd.hot-update.js
+[2016-06-16 11:28:50.299] [INFO] fileLog - GET /dist0d687fbe215e7b007860.hot-update.json
+[2016-06-16 11:28:50.303] [INFO] fileLog - GET /dist0.0d687fbe215e7b007860.hot-update.js
+[2016-06-16 11:29:45.963] [INFO] fileLog - GET /distb983d73f479ba61f9481.hot-update.json
+[2016-06-16 11:29:45.967] [INFO] fileLog - GET /dist0.b983d73f479ba61f9481.hot-update.js
+[2016-06-16 11:29:54.201] [INFO] fileLog - GET /dist7590fcae4fb6f47f3768.hot-update.json
+[2016-06-16 11:29:54.230] [INFO] fileLog - GET /dist0.7590fcae4fb6f47f3768.hot-update.js
+[2016-06-16 11:30:56.044] [INFO] fileLog - GET /distf8bce8a25d4bb07af95e.hot-update.json
+[2016-06-16 11:30:56.048] [INFO] fileLog - GET /dist0.f8bce8a25d4bb07af95e.hot-update.js
+[2016-06-16 11:31:01.845] [INFO] fileLog - GET /distf27c5ac24051902eb55a.hot-update.json
+[2016-06-16 11:31:01.848] [INFO] fileLog - GET /dist0.f27c5ac24051902eb55a.hot-update.js
+[2016-06-16 11:31:03.506] [INFO] fileLog - GET /diste8da76a25eef00c0ddfe.hot-update.json
+[2016-06-16 11:31:03.510] [INFO] fileLog - GET /dist0.e8da76a25eef00c0ddfe.hot-update.js
+[2016-06-16 11:31:28.679] [INFO] fileLog - GET /dist1b9e1263241615d6d780.hot-update.json
+[2016-06-16 11:31:28.682] [INFO] fileLog - GET /dist0.1b9e1263241615d6d780.hot-update.js
+[2016-06-16 11:31:33.763] [INFO] fileLog - GET /dist7fbe3723dac4eeec7b08.hot-update.json
+[2016-06-16 11:31:33.767] [INFO] fileLog - GET /dist0.7fbe3723dac4eeec7b08.hot-update.js
+[2016-06-16 11:31:36.209] [INFO] fileLog - GET /video
+[2016-06-16 11:31:36.233] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:31:36.233] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:31:36.234] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:31:36.252] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:31:37.337] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:31:37.340] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:31:37.364] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:31:37.374] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:31:37.466] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:32:54.179] [INFO] fileLog - GET /dist89f33f4e4a05eb2d4a27.hot-update.json
+[2016-06-16 11:32:54.184] [INFO] fileLog - GET /dist0.89f33f4e4a05eb2d4a27.hot-update.js
+[2016-06-16 11:33:02.022] [INFO] fileLog - GET /distf53da8bff2f6784cda65.hot-update.json
+[2016-06-16 11:33:02.028] [INFO] fileLog - GET /dist0.f53da8bff2f6784cda65.hot-update.js
+[2016-06-16 11:33:03.350] [INFO] fileLog - GET /video
+[2016-06-16 11:33:03.390] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:33:03.390] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:33:03.391] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:33:03.391] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:33:04.469] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:33:04.470] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:33:04.503] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:33:04.515] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:33:04.617] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:33:26.609] [INFO] fileLog - GET /dist7864b64befcabeb56e97.hot-update.json
+[2016-06-16 11:33:26.615] [INFO] fileLog - GET /dist0.7864b64befcabeb56e97.hot-update.js
+[2016-06-16 11:33:50.147] [INFO] fileLog - GET /dist3513be0b8f7020ba7cf6.hot-update.json
+[2016-06-16 11:33:50.152] [INFO] fileLog - GET /dist0.3513be0b8f7020ba7cf6.hot-update.js
+[2016-06-16 11:34:05.691] [INFO] fileLog - GET /dist7d7613b83ee6302d90e3.hot-update.json
+[2016-06-16 11:34:05.695] [INFO] fileLog - GET /dist0.7d7613b83ee6302d90e3.hot-update.js
+[2016-06-16 11:34:14.679] [INFO] fileLog - GET /dist952b28071a57f7928e5c.hot-update.json
+[2016-06-16 11:34:14.686] [INFO] fileLog - GET /dist0.952b28071a57f7928e5c.hot-update.js
+[2016-06-16 11:34:18.706] [INFO] fileLog - GET /dist40c516b43ba2f6825035.hot-update.json
+[2016-06-16 11:34:18.732] [INFO] fileLog - GET /dist0.40c516b43ba2f6825035.hot-update.js
+[2016-06-16 11:34:45.755] [INFO] fileLog - GET /diste5158e007add31aa707f.hot-update.json
+[2016-06-16 11:34:45.759] [INFO] fileLog - GET /dist0.e5158e007add31aa707f.hot-update.js
+[2016-06-16 11:35:09.945] [INFO] fileLog - GET /dist4c0c9dc944612988fb86.hot-update.json
+[2016-06-16 11:35:09.949] [INFO] fileLog - GET /dist0.4c0c9dc944612988fb86.hot-update.js
+[2016-06-16 11:35:27.757] [INFO] fileLog - GET /dist612a27317e01155d1de8.hot-update.json
+[2016-06-16 11:35:27.761] [INFO] fileLog - GET /dist0.612a27317e01155d1de8.hot-update.js
+[2016-06-16 11:35:40.373] [INFO] fileLog - GET /dist65e22f6e3f5ced8b31b9.hot-update.json
+[2016-06-16 11:35:40.379] [INFO] fileLog - GET /dist0.65e22f6e3f5ced8b31b9.hot-update.js
+[2016-06-16 11:36:01.950] [INFO] fileLog - GET /distd0129b352d950fae9045.hot-update.json
+[2016-06-16 11:36:01.952] [INFO] fileLog - GET /dist0.d0129b352d950fae9045.hot-update.js
+[2016-06-16 11:36:48.426] [INFO] fileLog - GET /distc4ed14c18c63d1e7f56a.hot-update.json
+[2016-06-16 11:36:48.430] [INFO] fileLog - GET /dist0.c4ed14c18c63d1e7f56a.hot-update.js
+[2016-06-16 11:37:27.095] [INFO] fileLog - GET /dist523e9cd904fae5989651.hot-update.json
+[2016-06-16 11:37:27.099] [INFO] fileLog - GET /dist0.523e9cd904fae5989651.hot-update.js
+[2016-06-16 11:39:55.124] [INFO] fileLog - GET /video
+[2016-06-16 11:39:55.143] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:39:55.144] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:39:55.165] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:39:55.167] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:39:56.286] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:39:56.299] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:39:56.301] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:39:56.312] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:39:56.415] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:39:59.370] [INFO] fileLog - 视频删除成功----id： 3
+[2016-06-16 11:39:59.370] [INFO] fileLog - POST /api/v1/delVideo
+[2016-06-16 11:40:24.044] [INFO] fileLog - GET /video
+[2016-06-16 11:40:24.081] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:40:24.082] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:40:24.083] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:40:24.083] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:40:25.160] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:40:25.161] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:40:25.201] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:40:25.210] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:40:25.317] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:41:19.404] [INFO] fileLog - GET /distf983287b85a312dbc38a.hot-update.json
+[2016-06-16 11:41:19.408] [INFO] fileLog - GET /dist0.f983287b85a312dbc38a.hot-update.js
+[2016-06-16 11:41:21.523] [INFO] fileLog - GET /video
+[2016-06-16 11:41:21.562] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:41:21.563] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:41:21.563] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:41:21.563] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:41:22.671] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:41:22.673] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:41:22.709] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:41:22.720] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:41:22.827] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:41:25.205] [INFO] fileLog - 视频删除成功----id： 2
+[2016-06-16 11:41:25.206] [INFO] fileLog - POST /api/v1/delVideo
+[2016-06-16 11:42:50.516] [INFO] fileLog - 添加视频数据------ { Name: '1', Url: 'http://1', Cate: '技术' }
+[2016-06-16 11:42:50.558] [INFO] fileLog - 视频添加成功
+[2016-06-16 11:42:50.559] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:43:08.286] [INFO] fileLog - GET /distb4970ee4f8bad88bca86.hot-update.json
+[2016-06-16 11:43:08.320] [INFO] fileLog - GET /dist0.b4970ee4f8bad88bca86.hot-update.js
+[2016-06-16 11:43:09.612] [INFO] fileLog - GET /video
+[2016-06-16 11:43:09.640] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:43:09.641] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:43:09.641] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:43:09.658] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:43:10.762] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:43:10.763] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:43:10.799] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:43:10.808] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:43:10.904] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:43:18.212] [INFO] fileLog - 添加视频数据------ { Name: '22', Url: 'http://22', Cate: '媒体' }
+[2016-06-16 11:43:18.254] [INFO] fileLog - 视频添加成功
+[2016-06-16 11:43:18.255] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:43:37.566] [INFO] fileLog - GET /dist102a9edee53084009bb7.hot-update.json
+[2016-06-16 11:43:37.569] [INFO] fileLog - GET /dist0.102a9edee53084009bb7.hot-update.js
+[2016-06-16 11:43:38.316] [INFO] fileLog - GET /video
+[2016-06-16 11:43:38.333] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:43:38.335] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:43:38.353] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:43:38.353] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:43:39.433] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:43:39.434] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:43:39.465] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:43:39.474] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:43:39.574] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:43:45.752] [INFO] fileLog - 添加视频数据------ { Name: '1', Url: 'http://111111111111', Cate: '媒体' }
+[2016-06-16 11:43:45.773] [INFO] fileLog - 视频添加成功
+[2016-06-16 11:43:45.774] [INFO] fileLog - POST /api/v1/addVideo
+[2016-06-16 11:43:49.771] [INFO] fileLog - GET /video
+[2016-06-16 11:43:49.809] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 11:43:49.810] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 11:43:49.810] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 11:43:49.811] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 11:43:50.908] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 11:43:50.909] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 11:43:50.946] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 11:43:50.956] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 11:43:51.077] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 11:43:53.401] [INFO] fileLog - 视频删除成功----id： 6
+[2016-06-16 11:43:53.402] [INFO] fileLog - POST /api/v1/delVideo
+[2016-06-16 11:43:55.328] [INFO] fileLog - 视频删除成功----id： 5
+[2016-06-16 11:43:55.328] [INFO] fileLog - POST /api/v1/delVideo
+[2016-06-16 11:44:08.008] [INFO] fileLog - GET /distcd655a17bcbee2594dba.hot-update.json
+[2016-06-16 11:44:08.012] [INFO] fileLog - GET /dist0.cd655a17bcbee2594dba.hot-update.js
+[2016-06-16 13:58:38.407] [INFO] fileLog - GET /distb4058ef3e68051b0b27c.hot-update.json
+[2016-06-16 13:58:38.411] [INFO] fileLog - GET /dist0.b4058ef3e68051b0b27c.hot-update.js
+[2016-06-16 13:58:58.399] [INFO] fileLog - GET /distda382279af40e126145a.hot-update.json
+[2016-06-16 13:58:58.403] [INFO] fileLog - GET /dist0.da382279af40e126145a.hot-update.js
+[2016-06-16 13:59:05.526] [INFO] fileLog - GET /dist80e4c39abc906b5c9c81.hot-update.json
+[2016-06-16 13:59:05.622] [INFO] fileLog - GET /dist0.80e4c39abc906b5c9c81.hot-update.js
+[2016-06-16 13:59:27.266] [INFO] fileLog - GET /dist63b30fa2c1b3d7c07a84.hot-update.json
+[2016-06-16 13:59:27.290] [INFO] fileLog - GET /dist0.63b30fa2c1b3d7c07a84.hot-update.js
+[2016-06-16 13:59:29.030] [INFO] fileLog - GET /dist253d3d2f743e0102c4d6.hot-update.json
+[2016-06-16 13:59:29.079] [INFO] fileLog - GET /dist0.253d3d2f743e0102c4d6.hot-update.js
+[2016-06-16 13:59:36.681] [INFO] fileLog - GET /dist190bfc8f0b029e8b275b.hot-update.json
+[2016-06-16 13:59:36.685] [INFO] fileLog - GET /dist0.190bfc8f0b029e8b275b.hot-update.js
+[2016-06-16 14:11:26.207] [INFO] fileLog - GET /dist16dfbd78037ed7380a7a.hot-update.json
+[2016-06-16 14:11:26.220] [INFO] fileLog - GET /dist0.16dfbd78037ed7380a7a.hot-update.js
+[2016-06-16 14:11:40.531] [INFO] fileLog - GET /dist10eb81a956b4382b4e36.hot-update.json
+[2016-06-16 14:11:40.536] [INFO] fileLog - GET /dist0.10eb81a956b4382b4e36.hot-update.js
+[2016-06-16 14:11:54.809] [INFO] fileLog - GET /dist4c4e1590318178353f0d.hot-update.json
+[2016-06-16 14:11:54.813] [INFO] fileLog - GET /dist0.4c4e1590318178353f0d.hot-update.js
+[2016-06-16 14:12:48.239] [INFO] fileLog - GET /dist215c06b46e8138a28198.hot-update.json
+[2016-06-16 14:12:48.243] [INFO] fileLog - GET /dist0.215c06b46e8138a28198.hot-update.js
+[2016-06-16 14:19:49.785] [INFO] fileLog - GET /distc799fe06ba1631029ac3.hot-update.json
+[2016-06-16 14:19:49.788] [INFO] fileLog - GET /dist0.c799fe06ba1631029ac3.hot-update.js
+[2016-06-16 14:19:54.348] [INFO] fileLog - GET /dist6d30bd12633dc729058b.hot-update.json
+[2016-06-16 14:19:54.360] [INFO] fileLog - GET /dist0.6d30bd12633dc729058b.hot-update.js
+[2016-06-16 14:24:24.214] [INFO] fileLog - GET /dist0074ec52d457a2162f39.hot-update.json
+[2016-06-16 14:24:24.218] [INFO] fileLog - GET /dist0.0074ec52d457a2162f39.hot-update.js
+[2016-06-16 14:24:31.466] [INFO] fileLog - GET /dist287df05608b3587676b5.hot-update.json
+[2016-06-16 14:24:31.471] [INFO] fileLog - GET /dist0.287df05608b3587676b5.hot-update.js
+[2016-06-16 14:25:09.411] [INFO] fileLog - GET /dist1e181fe764ec01deadd9.hot-update.json
+[2016-06-16 14:25:09.415] [INFO] fileLog - GET /dist0.1e181fe764ec01deadd9.hot-update.js
+[2016-06-16 14:25:16.240] [INFO] fileLog - GET /dist83676c8e3869ffd13618.hot-update.json
+[2016-06-16 14:25:16.244] [INFO] fileLog - GET /dist0.83676c8e3869ffd13618.hot-update.js
+[2016-06-16 14:27:41.993] [INFO] fileLog - GET /distc538acb494f01cd448ac.hot-update.json
+[2016-06-16 14:27:41.998] [INFO] fileLog - GET /dist0.c538acb494f01cd448ac.hot-update.js
+[2016-06-16 14:28:20.960] [INFO] fileLog - GET /dist309f90ab0d214038f361.hot-update.json
+[2016-06-16 14:28:20.963] [INFO] fileLog - GET /dist0.309f90ab0d214038f361.hot-update.js
+[2016-06-16 14:28:37.607] [INFO] fileLog - GET /dist2088ca7a7e4de5c65662.hot-update.json
+[2016-06-16 14:28:37.614] [INFO] fileLog - GET /dist0.2088ca7a7e4de5c65662.hot-update.js
+[2016-06-16 14:28:51.291] [INFO] fileLog - GET /distce3822d72c9c4a8fa345.hot-update.json
+[2016-06-16 14:28:51.296] [INFO] fileLog - GET /dist0.ce3822d72c9c4a8fa345.hot-update.js
+[2016-06-16 14:31:54.753] [INFO] fileLog - GET /dist07554e8695945f109c77.hot-update.json
+[2016-06-16 14:31:54.757] [INFO] fileLog - GET /dist0.07554e8695945f109c77.hot-update.js
+[2016-06-16 14:32:15.864] [INFO] fileLog - GET /dist26f81d17a41f03d128d6.hot-update.json
+[2016-06-16 14:32:15.868] [INFO] fileLog - GET /dist0.26f81d17a41f03d128d6.hot-update.js
+[2016-06-16 14:32:17.780] [INFO] fileLog - GET /video
+[2016-06-16 14:32:17.801] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:32:17.822] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:32:17.824] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:32:17.824] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:32:19.034] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:32:22.055] [INFO] fileLog - 验证吻合用户：1
+[2016-06-16 14:32:22.057] [INFO] fileLog - PUT /api/v1/login
+[2016-06-16 14:32:22.087] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:32:22.089] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:32:22.114] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:32:22.122] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:32:23.896] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:32:23.901] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:32:24.877] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:33:14.476] [INFO] fileLog - GET /distb11151a9275f3b891bcf.hot-update.json
+[2016-06-16 14:33:14.504] [INFO] fileLog - GET /dist0.b11151a9275f3b891bcf.hot-update.js
+[2016-06-16 14:33:20.081] [INFO] fileLog - GET /video
+[2016-06-16 14:33:20.099] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:33:20.101] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:33:20.103] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:33:20.122] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:33:21.203] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:33:21.203] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:33:21.238] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:33:21.246] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:33:21.342] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:33:23.138] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:34:15.138] [INFO] fileLog - GET /dist98e187b046e694e6811e.hot-update.json
+[2016-06-16 14:34:15.142] [INFO] fileLog - GET /dist0.98e187b046e694e6811e.hot-update.js
+[2016-06-16 14:34:24.309] [INFO] fileLog - GET /dist4e5c9996fcfca5a44e0a.hot-update.json
+[2016-06-16 14:34:24.337] [INFO] fileLog - GET /dist0.4e5c9996fcfca5a44e0a.hot-update.js
+[2016-06-16 14:34:26.386] [INFO] fileLog - GET /video
+[2016-06-16 14:34:26.423] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:34:26.424] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:34:26.425] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:34:26.425] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:34:27.532] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:34:27.533] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:34:27.571] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:34:27.579] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:34:28.604] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:34:29.990] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:35:34.186] [INFO] fileLog - GET /dist718fdcdcc842bae9a402.hot-update.json
+[2016-06-16 14:35:34.190] [INFO] fileLog - GET /dist0.718fdcdcc842bae9a402.hot-update.js
+[2016-06-16 14:35:42.249] [INFO] fileLog - GET /video
+[2016-06-16 14:35:42.270] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:35:42.271] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:35:42.271] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:35:42.289] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:35:43.387] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:35:43.387] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:35:43.423] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:35:43.430] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:35:43.526] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:35:44.973] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:36:20.832] [INFO] fileLog - GET /dista12b4200939110d26413.hot-update.json
+[2016-06-16 14:36:20.836] [INFO] fileLog - GET /dist0.a12b4200939110d26413.hot-update.js
+[2016-06-16 14:36:30.007] [INFO] fileLog - GET /dist3efeb5cc6f919f8fa3bc.hot-update.json
+[2016-06-16 14:36:30.011] [INFO] fileLog - GET /dist0.3efeb5cc6f919f8fa3bc.hot-update.js
+[2016-06-16 14:36:31.008] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:36:31.664] [INFO] fileLog - GET /video
+[2016-06-16 14:36:31.684] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:36:31.685] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:36:31.685] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:36:31.703] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:36:32.808] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:36:32.809] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:36:32.840] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:36:32.848] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:36:32.960] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:36:34.148] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:37:24.259] [INFO] fileLog - GET /dist6d12842cbf440f9ce4d8.hot-update.json
+[2016-06-16 14:37:24.263] [INFO] fileLog - GET /dist0.6d12842cbf440f9ce4d8.hot-update.js
+[2016-06-16 14:37:28.213] [INFO] fileLog - GET /dist0fd61943251d22f3bbae.hot-update.json
+[2016-06-16 14:37:28.218] [INFO] fileLog - GET /dist0.0fd61943251d22f3bbae.hot-update.js
+[2016-06-16 14:37:32.328] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:37:38.399] [INFO] fileLog - GET /dist2fd5bf48148219693fc0.hot-update.json
+[2016-06-16 14:37:38.403] [INFO] fileLog - GET /dist0.2fd5bf48148219693fc0.hot-update.js
+[2016-06-16 14:37:39.168] [INFO] fileLog - GET /video
+[2016-06-16 14:37:39.187] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:37:39.208] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:37:39.208] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:37:39.209] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:37:40.320] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:37:40.321] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:37:40.355] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:37:40.363] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:37:40.471] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:37:41.830] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:37:45.461] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:38:39.618] [INFO] fileLog - GET /distba20df31911078a8eb7e.hot-update.json
+[2016-06-16 14:38:39.622] [INFO] fileLog - GET /dist0.ba20df31911078a8eb7e.hot-update.js
+[2016-06-16 14:38:44.906] [INFO] fileLog - GET /video
+[2016-06-16 14:38:44.945] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:38:44.946] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:38:44.946] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:38:44.947] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:38:46.158] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:38:46.159] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:38:46.196] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:38:46.207] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:38:46.327] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:38:52.853] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:39:36.019] [INFO] fileLog - GET /dist35328b5c4725b0390fe4.hot-update.json
+[2016-06-16 14:39:36.026] [INFO] fileLog - GET /dist0.35328b5c4725b0390fe4.hot-update.js
+[2016-06-16 14:39:36.046] [INFO] fileLog - GET /diste463f05ffdd0c5591b91.hot-update.json
+[2016-06-16 14:39:36.071] [INFO] fileLog - GET /dist0.e463f05ffdd0c5591b91.hot-update.js
+[2016-06-16 14:39:38.104] [INFO] fileLog - GET /video
+[2016-06-16 14:39:38.122] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:39:38.143] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:39:38.144] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:39:38.144] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:39:39.273] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:39:39.274] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:39:39.306] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:39:39.313] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:39:39.421] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:39:40.960] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:40:14.965] [INFO] fileLog - GET /dist76f7375ff3633699d3c6.hot-update.json
+[2016-06-16 14:40:14.969] [INFO] fileLog - GET /dist0.76f7375ff3633699d3c6.hot-update.js
+[2016-06-16 14:40:17.746] [INFO] fileLog - GET /dist19fb188e129c6fa358cf.hot-update.json
+[2016-06-16 14:40:17.760] [INFO] fileLog - GET /dist0.19fb188e129c6fa358cf.hot-update.js
+[2016-06-16 14:40:20.919] [INFO] fileLog - GET /dist98c085891b9ef614f359.hot-update.json
+[2016-06-16 14:40:20.951] [INFO] fileLog - GET /dist0.98c085891b9ef614f359.hot-update.js
+[2016-06-16 14:40:49.893] [INFO] fileLog - GET /dist677c6253925f1665d24b.hot-update.json
+[2016-06-16 14:40:49.898] [INFO] fileLog - GET /dist0.677c6253925f1665d24b.hot-update.js
+[2016-06-16 14:40:55.115] [INFO] fileLog - GET /dist0881c306d3998fa83d77.hot-update.json
+[2016-06-16 14:40:55.134] [INFO] fileLog - GET /dist0.0881c306d3998fa83d77.hot-update.js
+[2016-06-16 14:40:56.314] [INFO] fileLog - GET /video
+[2016-06-16 14:40:56.335] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:40:56.336] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:40:56.355] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:40:56.356] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:40:57.471] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:40:57.473] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:40:57.504] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:40:57.513] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:40:57.633] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:40:58.738] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:41:05.646] [INFO] fileLog - GET /distad46f245366ba0429748.hot-update.json
+[2016-06-16 14:41:05.649] [INFO] fileLog - GET /dist0.ad46f245366ba0429748.hot-update.js
+[2016-06-16 14:41:07.739] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:41:09.537] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:41:12.303] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:44:26.657] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:44:32.730] [INFO] fileLog - POST /api/v1/editVideo
+[2016-06-16 14:45:07.992] [INFO] fileLog - GET /video
+[2016-06-16 14:45:08.007] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:45:08.007] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:45:08.008] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:45:08.027] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:45:09.170] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:45:09.180] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:45:09.186] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:45:09.194] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:45:09.305] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:45:10.895] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:45:14.264] [INFO] fileLog - 视频修改后的数据------ { Name: '视频1', Url: '1', Cate: '电子', key: 1 }
+[2016-06-16 14:45:14.303] [INFO] fileLog - 视频修改成功 id: 1
+[2016-06-16 14:45:14.304] [INFO] fileLog - POST /api/v1/editVideo
+[2016-06-16 14:45:18.830] [INFO] fileLog - GET /video
+[2016-06-16 14:45:18.866] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:45:18.867] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:45:18.868] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:45:18.869] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:45:19.952] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:45:19.953] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:45:19.990] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:45:19.999] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:45:20.110] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:45:25.414] [INFO] fileLog - GET /video
+[2016-06-16 14:45:25.435] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:45:25.436] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:45:25.436] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:45:25.452] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:45:26.548] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:45:26.549] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:45:26.580] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:45:26.588] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:45:26.691] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:45:47.792] [INFO] fileLog - GET /video
+[2016-06-16 14:45:47.810] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:45:47.828] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:45:47.829] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:45:47.829] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:45:48.918] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:45:48.919] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:45:48.954] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:45:48.962] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:45:49.073] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:47:31.445] [INFO] fileLog - GET /dist2c6924305681ecf6f37e.hot-update.json
+[2016-06-16 14:47:31.449] [INFO] fileLog - GET /dist0.2c6924305681ecf6f37e.hot-update.js
+[2016-06-16 14:47:33.825] [INFO] fileLog - GET /dist482e763cefa32f9e02d7.hot-update.json
+[2016-06-16 14:47:33.829] [INFO] fileLog - GET /dist0.482e763cefa32f9e02d7.hot-update.js
+[2016-06-16 14:47:40.883] [INFO] fileLog - GET /dist23192e8dae698b592504.hot-update.json
+[2016-06-16 14:47:40.908] [INFO] fileLog - GET /dist0.23192e8dae698b592504.hot-update.js
+[2016-06-16 14:49:57.119] [INFO] fileLog - GET /diste8b714c5f75362c80097.hot-update.json
+[2016-06-16 14:49:57.123] [INFO] fileLog - GET /dist0.e8b714c5f75362c80097.hot-update.js
+[2016-06-16 14:51:02.123] [INFO] fileLog - GET /distf842bdc5fac68521558e.hot-update.json
+[2016-06-16 14:51:02.127] [INFO] fileLog - GET /dist0.f842bdc5fac68521558e.hot-update.js
+[2016-06-16 14:51:31.803] [INFO] fileLog - GET /distf22d99d0d0cf3bd32275.hot-update.json
+[2016-06-16 14:51:31.807] [INFO] fileLog - GET /dist0.f22d99d0d0cf3bd32275.hot-update.js
+[2016-06-16 14:51:38.250] [INFO] fileLog - GET /distfd993fd761de2f1c19f8.hot-update.json
+[2016-06-16 14:51:38.278] [INFO] fileLog - GET /dist0.fd993fd761de2f1c19f8.hot-update.js
+[2016-06-16 14:51:40.298] [INFO] fileLog - GET /video
+[2016-06-16 14:51:40.338] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:51:40.339] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:51:40.339] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:51:40.339] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:51:41.432] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:51:41.435] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:51:41.460] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:51:41.470] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:51:41.569] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:51:44.728] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:51:47.439] [INFO] fileLog - 视频修改后的数据------ { Name: '1', Url: 'www.baidu.com1', Cate: '技术', key: 4 }
+[2016-06-16 14:51:47.485] [INFO] fileLog - 视频修改成功 id: 4
+[2016-06-16 14:51:47.486] [INFO] fileLog - POST /api/v1/editVideo
+[2016-06-16 14:51:49.184] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:51:53.255] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:52:01.485] [INFO] fileLog - 视频修改后的数据------ { Name: '视频1', Url: 'sina.cn', Cate: '电子', key: 1 }
+[2016-06-16 14:52:01.499] [INFO] fileLog - 视频修改成功 id: 1
+[2016-06-16 14:52:01.500] [INFO] fileLog - POST /api/v1/editVideo
+[2016-06-16 14:54:22.452] [INFO] fileLog - GET /dist8bfa692d17b822e25963.hot-update.json
+[2016-06-16 14:54:22.456] [INFO] fileLog - GET /dist0.8bfa692d17b822e25963.hot-update.js
+[2016-06-16 14:54:23.037] [INFO] fileLog - GET /video
+[2016-06-16 14:54:23.077] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:54:23.078] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:54:23.079] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:54:23.079] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:54:24.186] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:54:24.187] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:54:24.224] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:54:24.233] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:54:24.346] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:54:25.699] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:54:28.302] [INFO] fileLog - 视频修改后的数据------ { Name: '1', Url: 'www.baidu.com', Cate: '技术', key: 4 }
+[2016-06-16 14:54:28.335] [INFO] fileLog - 视频修改成功 id: 4
+[2016-06-16 14:54:28.336] [INFO] fileLog - POST /api/v1/editVideo
+[2016-06-16 14:54:29.869] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:54:32.309] [INFO] fileLog - 视频修改后的数据------ { Name: '视频1', Url: 'sina.cn2', Cate: '电子', key: 1 }
+[2016-06-16 14:54:32.354] [INFO] fileLog - 视频修改成功 id: 1
+[2016-06-16 14:54:32.355] [INFO] fileLog - POST /api/v1/editVideo
+[2016-06-16 14:54:34.790] [INFO] fileLog - GET /video
+[2016-06-16 14:54:34.809] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 14:54:34.811] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 14:54:34.811] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 14:54:34.827] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 14:54:35.904] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 14:54:35.905] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 14:54:35.940] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 14:54:35.949] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 14:54:36.053] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:58:06.515] [INFO] fileLog - GET /index
+[2016-06-16 14:58:06.521] [INFO] fileLog - GET /public/front/style/index.css
+[2016-06-16 14:58:06.522] [INFO] fileLog - GET /public/front/images/index_pic.png
+[2016-06-16 14:58:06.525] [INFO] fileLog - GET /public/front/images/index_pro.png
+[2016-06-16 14:58:06.525] [INFO] fileLog - GET /public/front/images/index_sou.png
+[2016-06-16 14:58:06.526] [INFO] fileLog - GET /public/front/images/index_page.png
+[2016-06-16 14:58:06.529] [INFO] fileLog - GET /public/front/images/index_support.png
+[2016-06-16 14:58:06.529] [INFO] fileLog - GET /public/front/images/index_vi.png
+[2016-06-16 14:58:06.530] [INFO] fileLog - GET /public/front/images/index_center.png
+[2016-06-16 14:58:06.536] [INFO] fileLog - GET /public/front/images/index_ci.png
+[2016-06-16 14:58:06.537] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:58:06.553] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:58:07.176] [INFO] fileLog - GET /index
+[2016-06-16 14:58:07.198] [INFO] fileLog - GET /public/front/style/index.css
+[2016-06-16 14:58:07.200] [INFO] fileLog - GET /public/front/images/index_pic.png
+[2016-06-16 14:58:07.247] [INFO] fileLog - GET /public/front/images/index_pro.png
+[2016-06-16 14:58:07.248] [INFO] fileLog - GET /public/front/images/index_sou.png
+[2016-06-16 14:58:07.249] [INFO] fileLog - GET /public/front/images/index_page.png
+[2016-06-16 14:58:07.250] [INFO] fileLog - GET /public/front/images/index_support.png
+[2016-06-16 14:58:07.251] [INFO] fileLog - GET /public/front/images/index_vi.png
+[2016-06-16 14:58:07.252] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:58:07.312] [INFO] fileLog - GET /public/front/images/index_center.png
+[2016-06-16 14:58:07.313] [INFO] fileLog - GET /public/front/images/index_ci.png
+[2016-06-16 14:58:07.336] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:58:09.772] [INFO] fileLog - GET /web/video_cate
+[2016-06-16 14:58:09.786] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 14:58:09.789] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 14:58:09.790] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 14:58:09.791] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 14:58:09.791] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 14:58:09.792] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 14:58:09.794] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 14:58:09.795] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 14:58:09.834] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 14:58:09.863] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 14:58:09.863] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:58:09.892] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:58:11.015] [INFO] fileLog - GET /web/video
+[2016-06-16 14:58:11.027] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 14:58:11.028] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 14:58:11.035] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 14:58:11.038] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 14:58:11.038] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 14:58:11.038] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 14:58:11.039] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 14:58:11.040] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 14:58:11.044] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 14:58:11.052] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 14:58:11.062] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 14:58:11.099] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 14:58:11.100] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:58:11.209] [INFO] fileLog - GET /web/1/LADY.mp4
+[2016-06-16 14:58:11.216] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:58:13.332] [INFO] fileLog - GET /web/video
+[2016-06-16 14:58:13.345] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 14:58:13.347] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 14:58:13.348] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 14:58:13.349] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 14:58:13.353] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 14:58:13.353] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 14:58:13.354] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 14:58:13.358] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 14:58:13.359] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 14:58:13.362] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 14:58:13.382] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 14:58:13.419] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 14:58:13.421] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:58:13.430] [INFO] fileLog - GET /web/1/LADY.mp4
+[2016-06-16 14:58:13.440] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:58:14.581] [INFO] fileLog - GET /web/video
+[2016-06-16 14:58:14.596] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 14:58:14.599] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 14:58:14.599] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 14:58:14.599] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 14:58:14.600] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 14:58:14.600] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 14:58:14.600] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 14:58:14.602] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 14:58:14.607] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 14:58:14.609] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 14:58:14.628] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 14:58:14.663] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 14:58:14.663] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:58:14.674] [INFO] fileLog - GET /web/1/LADY.mp4
+[2016-06-16 14:58:14.683] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:59:44.991] [INFO] fileLog - GET /web/video
+[2016-06-16 14:59:45.006] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 14:59:45.007] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 14:59:45.007] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 14:59:45.007] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 14:59:45.010] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 14:59:45.012] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 14:59:45.012] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 14:59:45.013] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 14:59:45.013] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 14:59:45.019] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 14:59:45.038] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 14:59:45.077] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 14:59:45.078] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:59:47.667] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 14:59:58.469] [INFO] fileLog - GET /web/video
+[2016-06-16 14:59:58.483] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 14:59:58.484] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 14:59:58.493] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 14:59:58.494] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 14:59:58.494] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 14:59:58.494] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 14:59:58.494] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 14:59:58.495] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 14:59:58.499] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 14:59:58.504] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 14:59:58.518] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 14:59:58.561] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 14:59:58.562] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 14:59:58.709] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:02:37.302] [INFO] fileLog - GET /web/video
+[2016-06-16 15:02:37.317] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:02:37.317] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:02:37.317] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:02:37.321] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:02:37.322] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:02:37.322] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:02:37.323] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:02:37.324] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:02:37.325] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:02:37.331] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:02:37.348] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:02:37.388] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:02:37.390] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:04:22.043] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:04:58.138] [INFO] fileLog - GET /web/video
+[2016-06-16 15:04:58.198] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:04:58.200] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:04:58.202] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:04:58.204] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:04:58.204] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:04:58.207] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:04:58.207] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:04:58.208] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:04:58.208] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:04:58.212] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:04:58.246] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:04:58.284] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:04:58.285] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:04:58.292] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:05:01.124] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:08:02.541] [INFO] fileLog - GET /web/video
+[2016-06-16 15:08:02.579] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:08:02.579] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:08:02.580] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:08:02.580] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:08:02.581] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:08:02.581] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:08:02.581] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:08:02.583] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:08:02.589] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:08:02.590] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:08:02.614] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:08:02.657] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:08:02.658] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:08:02.674] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:08:04.110] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:08:23.100] [INFO] fileLog - GET /web/video
+[2016-06-16 15:08:23.130] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:08:23.132] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:08:23.132] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:08:23.132] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:08:23.138] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:08:23.141] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:08:23.141] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:08:23.142] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:08:23.146] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:08:23.147] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:08:23.179] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:08:23.221] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:08:23.222] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:08:23.580] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:08:28.117] [INFO] fileLog - GET /web/video
+[2016-06-16 15:08:28.146] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:08:28.147] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:08:28.147] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:08:28.150] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:08:28.150] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:08:28.151] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:08:28.152] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:08:28.153] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:08:28.153] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:08:28.157] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:08:28.177] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:08:28.225] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:08:28.226] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:08:28.706] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:08:35.534] [INFO] fileLog - GET /web/video
+[2016-06-16 15:08:35.560] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:08:35.564] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:08:35.565] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:08:35.566] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:08:35.571] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:08:35.572] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:08:35.584] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:08:35.586] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:08:35.587] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:08:35.590] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:08:35.600] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:08:35.640] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:08:35.641] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:08:36.299] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:08:39.230] [INFO] fileLog - GET /web/video
+[2016-06-16 15:08:39.255] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:08:39.256] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:08:39.258] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:08:39.258] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:08:39.259] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:08:39.261] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:08:39.262] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:08:39.266] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:08:39.267] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:08:39.270] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:08:39.287] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:08:39.338] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:08:39.339] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:08:39.649] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:16:39.689] [INFO] fileLog - GET /web/video
+[2016-06-16 15:16:39.727] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css
+[2016-06-16 15:16:39.727] [INFO] fileLog - GET /public/front/style/common.css
+[2016-06-16 15:16:39.727] [INFO] fileLog - GET /public/front/style/style.css
+[2016-06-16 15:16:39.730] [INFO] fileLog - GET /public/front/js/jquery.min.js
+[2016-06-16 15:16:39.731] [INFO] fileLog - GET /public/front/js/common.js
+[2016-06-16 15:16:39.731] [INFO] fileLog - GET /public/front/bootstrap3/js/bootstrap.min.js
+[2016-06-16 15:16:39.732] [INFO] fileLog - GET /public/front/js/slider.js
+[2016-06-16 15:16:39.732] [INFO] fileLog - GET /public/front/style/actity.css
+[2016-06-16 15:16:39.737] [INFO] fileLog - GET /public/front/images/video_test.jpg
+[2016-06-16 15:16:39.737] [INFO] fileLog - GET /web/images/video_test.jpg
+[2016-06-16 15:16:39.757] [INFO] fileLog - GET /public/front/bootstrap3/css/bootstrap.css.map
+[2016-06-16 15:16:39.798] [INFO] fileLog - GET /public/front/images/back.png
+[2016-06-16 15:16:39.799] [INFO] fileLog - GET /public/front/fonts/IntelClear-Regular-webfont.ttf
+[2016-06-16 15:16:39.855] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:24:25.530] [INFO] fileLog - GET /home
+[2016-06-16 15:24:25.582] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 15:24:25.588] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 15:24:25.635] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 15:24:25.670] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 15:24:26.878] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:24:30.246] [INFO] fileLog - 验证吻合用户：1
+[2016-06-16 15:24:30.247] [INFO] fileLog - PUT /api/v1/login
+[2016-06-16 15:24:30.275] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 15:24:30.276] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 15:24:30.303] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 15:24:30.314] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:24:31.577] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:24:31.579] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 15:28:21.070] [INFO] fileLog - GET /video
+[2016-06-16 15:28:21.088] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 15:28:21.090] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 15:28:21.107] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 15:28:21.108] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 15:28:22.200] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 15:28:22.201] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 15:28:22.243] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 15:28:22.249] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 15:28:22.366] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 15:29:02.413] [INFO] fileLog - GET /video
+[2016-06-16 15:29:02.431] [INFO] fileLog - GET /ueditor/ueditor.config.js
+[2016-06-16 15:29:02.433] [INFO] fileLog - GET /ueditor/ueditor.all.min.js
+[2016-06-16 15:29:02.434] [INFO] fileLog - GET /ueditor/lang/zh-cn/zh-cn.js
+[2016-06-16 15:29:02.450] [INFO] fileLog - GET /dist/bundle.js
+[2016-06-16 15:29:03.512] [INFO] fileLog - 查找用户信息为： RowDataPacket {
+  Id: 1,
+  Name: 'admin',
+  Pwd: '9e91995bf987a4be7cd9838338a2306f',
+  Role: null }
+[2016-06-16 15:29:03.514] [INFO] fileLog - POST /api/v1/my
+[2016-06-16 15:29:03.551] [INFO] fileLog - POST /api/v1/menu
+[2016-06-16 15:29:03.559] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 15:29:03.662] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 16:05:12.774] [INFO] fileLog - POST /api/v1/activity
+[2016-06-16 16:05:12.781] [INFO] fileLog - GET /favicon.ico
+[2016-06-16 16:05:13.513] [INFO] fileLog - GET /api/v1/getVideo
+[2016-06-16 16:05:13.524] [INFO] fileLog - GET /favicon.ico

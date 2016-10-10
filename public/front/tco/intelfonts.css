@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "intel-clear";
+	src:url("fonts/intel-clear-latin.eot");
+	src:url("fonts/intel-clear-latin.eot?#iefix") format("embedded-opentype"), url('fonts/intel-clear-latin.woff') format('woff'), url('fonts/intel-clear-latin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "intel-clear";
+	src:url("fonts/intel-clear-latin-bold.eot");
+    src:url("fonts/intel-clear-latin-bold.eot?#iefix") format("embedded-opentype"), url("fonts/intel-clear-latin-bold.woff") format("woff"), url("fonts/intel-clear-latin-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "intel-clear";
+	src:url("fonts/intel-clear-latin-italic.eot");
+    src:url("fonts/intel-clear-latin-italic.eot?#iefix") format("embedded-opentype"), url("fonts/intel-clear-latin-italic.woff") format("woff"), url("fonts/intel-clear-latin-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "intel-clear";
+	src:url("fonts/intel-clear-latin-bold-italic.eot");
+    src:url("fonts/intel-clear-latin-bold-italic.eot?#iefix") format("embedded-opentype"), url("fonts/intel-clear-latin-bold-italic.woff") format("woff"), url("fonts/intel-clear-latin-bold-italic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "intel-clear";
+	src:url("fonts/intel-clear-latin-lite.eot");
+    src:url("fonts/intel-clear-latin-lite.eot?#iefix") format("embedded-opentype"), url("fonts/intel-clear-latin-lite.woff") format("woff"), url("fonts/intel-clear-latin-lite.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "intel-clear";
+	src:url("fonts/intel-clear-latin-lite-italic.eot");
+    src:url("fonts/intel-clear-latin-lite-italic.eot?#iefix") format("embedded-opentype"), url("fonts/intel-clear-latin-lite-italic.woff") format("woff"), url("fonts/intel-clear-latin-lite-italic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+	font-family:"intel-clear-headline";
+	src:url("fonts/intel-clear-headline.eot");
+	src:url("fonts/intel-clear-headline.eot?#iefix") format("embedded-opentype"), url("fonts/intel-clear-headline.woff") format("woff"), url("fonts/intel-clear-headline.ttf") format("truetype");
+	font-weight:400;
+	font-style:normal
+}

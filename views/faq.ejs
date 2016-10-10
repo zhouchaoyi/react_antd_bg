@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SSD微信公众号-在线支持</title>
+    <% include  public/head%>
+
+
+    <link rel="stylesheet" type="text/css" href="./../public/front/style/actity.css">
+
+
+
+    <!-- Demo styles -->
+</head>
+
+<body class="actity">
+<div class="container-fluid">
+    <div class="content mgtop">
+
+        <h3> 常见问题回答</h3>
+
+        <div class="faqItem">
+            <div class="faqname">我如何知道是否正确安装固态硬盘？</div>
+            <div class="itrConOverview"></div>
+            <div class="faqContent" style="display: none;">
+                <p>请转到设备管理器。在磁盘驱动器。如果驱动器始于 Intel® SSD，其正确安装。</p>
+            </div>
+        </div>
+        <div class="faqItem">
+            <div class="faqname">可以使用哪种类型的 USB 至 SATA 缆线？</div>
+            <div class="itrConOverview"></div>
+            <div class="faqContent" style="display: none;">
+                <p>英特尔提供 USB 至在升级中的 SATA 电缆和软件与该电缆的验证。有第三方 USB 至 SATA 缆线工作，但务必电缆导出到操作系统的正确模式字符串。如果未检测到的正确模式字符串，英特尔数据迁移软件将无法检测在操作系统中的硬盘，并且不会安装。电缆必须提供运行驱动器或驱动器脱机和复制失败。
+
+                </p>
+            </div>
+        </div>
+        <div class="faqItem">
+            <div class="faqname">可以使用哪种类型的 USB 至 SATA 缆线？</div>
+            <div class="itrConOverview"></div>
+            <div class="faqContent" style="display: none;">
+                <p>
+                    英特尔® 数据迁移软件无法识别的文件系统上的一个分区。专有的文件系统或发生错误的文件系统中，可能导致此错误。关闭该软件，请尝试清理的文件系统。
+                </p>
+            </div>
+        </div>
+        <div class="faqItem">
+            <div class="faqname">为什么在克隆过程中会得到一个操作失败的消息？</div>
+            <div class="itrConOverview"></div>
+            <div class="faqContent" style="display: none;">
+                <p>
+                    请确保您在克隆之前禁用全磁盘加密。
+                    删除所有管理配置式在克隆之前在您的系统上设置。
+                    启动驱动器上有多个分区。克隆工具移动一个一次。分区的大小也各不相同，因此某些比其他的更快地完成。如果一个分区克隆操作失败，其它克隆并完成。您可以通过克隆再次尝试操作来解决问题。
+                </p>
+            </div>
+        </div>
+        <div class="faqItem">
+            <div class="faqname">如何扫描和修复错误，在驱动器上？</div>
+            <div class="itrConOverview"></div>
+            <div class="faqContent" style="display: none;">
+                <p>完成的所有分区以下步骤在驱动器上，然后重试英特尔数据迁移软件工具。
+                   1、 单击 Windows开始 > 计算机。
+                   2、 右击的驱动器盘符，并选择属性。
+                   3、 单击工具 > 立即检查。显示用户帐户控制消息时，单击是。
+                   4、 选择自动修复文件系统错误复选框。单击开始。
+
+                </p>
+            </div>
+        </div>
+
+
+
+        <!--<button id="send" type="button">send</button>-->
+    </div>
+    <!--/content-->
+</div>
+<!--/container-fluid-->
+</body>
+<script>
+    $(function(){
+        $("body").on('click','.faqname',function(){
+            $(this).toggleClass("expand");
+            var faqItr=$(this).siblings(".faqContent:visible");
+            if(faqItr.length>0){
+                $(this).siblings(".faqContent").hide();
+
+            }else{
+                $(this).siblings(".faqContent").show();
+
+            }
+        });
+
+        var count=1
+        var  num=10
+        $('#send').click(function(){
+            console.log("加载了多少次：",count)
+            $.ajax({
+                type: "get",
+                url: "/web/faq",
+                data: {offset:(count*num+1),num:num},
+                success: function(data){
+                   console.log("success",data)
+                    var str="";
+                    data.result.forEach(function(x){
+                      str+="  <div class='faqItem'>"
+                        str+="       <div class='faqname'>"+ x.Name+"</div>"
+                        str+="      <div class='itrConOverview'></div> <div class='faqContent' style='display: none;'><p>"
+
+                        str+= x.Id
+
+                        str+="         </p></div></div>"
+
+
+                    })
+
+//                    $("#add").html(str)
+                  $(".faqItem:last").parent().append(str)
+
+                },
+                error:function(data){
+
+                    console.log("error")
+                }
+            });
+            count++
+
+        });
+
+
+
+    });
+</script>
+</html>

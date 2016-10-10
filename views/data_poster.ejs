@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SSD微信公众号-宣传资料</title>
+    <% include  public/head%>
+    <link rel="stylesheet" type="text/css" href="./../public/front/style/pic.css">
+</head>
+
+<body class="poster">
+<div class="container-fluid">
+    <div class="content">
+        <h3> <a href="javascript:history.go(-1)" class=" back">宣传海报</a></h3>
+        <div class="poster_box mgtop">
+
+            <% const tempExample=[];const tempProduct=[];  result.forEach(function(x){
+                if(x.Series=="案例海报"){
+                    tempExample.push(x)
+                }else if(x.Series=="产品海报"){
+                    tempProduct.push(x)
+                }
+
+            })%>
+            <h3>案例海报</h3>
+            <ul class="poster_ul">
+                <%    tempExample.forEach(function(ex){%>
+                    <li><a href="./data_poster_det?id=<%=ex.Id%>"><%= ex.Name%></a></li>
+                <%})%>
+
+            </ul>
+            <h3>产品海报</h3>
+            <ul class="poster_ul">
+                <%    tempProduct.forEach(function(ex){%>
+                <li><a href="./data_poster_det?id=<%=ex.Id%>"><%= ex.Name%></a></li>
+                <%})%>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

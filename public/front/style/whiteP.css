@@ -1,0 +1,54 @@
+.whiteP{
+	background: #0071C5;
+	
+}
+.whiteP .content{
+	padding: 0;
+	border: 0;
+	/*margin-top:20px;*/
+	font-size: 12.5px;
+
+}
+.whiteP ul{
+	padding: 0;
+}
+.whiteP ul li{
+	padding: 8px 20px 8px 35px;	
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+.whiteP ul li a{
+	display: block;
+}
+.whiteP ul li.title{
+	background: #fff;
+	color: #666;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.whiteP li:nth-of-type(even){
+	background-color: #eee;
+}
+.whiteP ul li .triangle_right{
+	position: absolute;
+	top:50%;
+	left:20px;
+	margin-top: -6px;
+    width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-left: 6px solid #666;
+	border-bottom: 6px solid transparent;
+	
+}
+.whiteP li a{
+	line-height: 1.6em;
+}
+.whiteP li a:hover{
+	color:#666;
+
+}
+.downArrows{
+	
+}

@@ -1,0 +1,749 @@
+/*
+// ------------------------------------
+// App-specific settings
+// ------------------------------------
+*/
+
+/* This style is used by the AcgApp.isEnanced() method to determine if we are using the enhanced stylesheet */
+body:after
+{
+	content:'default';
+	display:none;
+}
+
+#cssCheck
+{
+	font-weight:800;
+}
+
+.defaultMode
+{
+	display: block;
+}
+table.defaultMode
+{
+	display: table;
+}
+.enhancedMode
+{
+	display: none;
+}
+table.enhancedMode
+{
+	display: none;
+}
+.enhancedModeTableCell
+{
+	display:none;
+}
+.enhancedModeInlineBlock
+{
+	display:none;
+}
+
+
+.myButton
+{
+	cursor:hand;
+	cursor:pointer;
+}
+
+.myRoundButton
+{
+	display:inline-block;
+	font-size:1em;
+	
+	cursor:hand;
+	cursor:pointer;
+	
+	border: 2px solid #004281;
+	background-color:#004281;
+	color:#ffffff;
+	
+	padding:0em 1em 0.1em 1em;
+	
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+	
+	text-decoration:none;
+	
+}
+.myRoundButton.selected
+{
+	background-color:#ffffff;
+	color:#0171c5;
+	text-decoration:none;
+	pointer-events: none;
+	cursor: default;
+}
+.myHeaderButton
+{
+	jdisplay:table-cell;
+	display:inline-block;
+	font-size:1.2em;
+	pointer-events:auto;
+	
+	vertical-align:middle;
+	
+	height:2.5em;
+	min-height:40px;
+	
+	border: 1px solid #0099e0;
+	jborder: 1px solid #00ff00;
+	jborder-top:1px solid #ffffff;
+	jborder-left:1px solid #ffffff;
+	jborder-right:1px solid #034287;
+	border-right:1px solid #009ce3;
+	border-bottom:1px solid #009ce3;
+		
+	color:#ffffff;
+	text-align:center;
+	
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
+	
+/*
+	padding-left:0.5em;
+	padding-right:0.5em;
+	padding-top:1em;
+	padding-bottom:1em;
+	margin-bottom:0px;
+*/
+	
+	jmin-width:33.3%;
+	jwidth:1%;			/* not sure why this works */
+	
+	cursor:hand;
+	cursor:pointer;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+	background: #0088d5;
+/*
+	background: #006cac;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNmNhYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjMDA2Y2FjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjUlIiBzdG9wLWNvbG9yPSIjMDA1NTljIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNTU5YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  #006cac 0%, #006cac 5%, #00559c 65%, #00559c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006cac), color-stop(5%,#006cac), color-stop(65%,#00559c), color-stop(100%,#00559c));
+	background: -webkit-linear-gradient(top,  #006cac 0%,#006cac 5%,#00559c 65%,#00559c 100%);
+	background: -o-linear-gradient(top,  #006cac 0%,#006cac 5%,#00559c 65%,#00559c 100%);
+	background: -ms-linear-gradient(top,  #006cac 0%,#006cac 5%,#00559c 65%,#00559c 100%);
+	background: linear-gradient(to bottom,  #006cac 0%,#006cac 5%,#00559c 65%,#00559c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006cac', endColorstr='#00559c',GradientType=0 );
+*/
+}
+
+.myHeaderButton:hover
+{
+	background: #005f98;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNWY5OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjMDA1Zjk4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjUlIiBzdG9wLWNvbG9yPSIjMDA0NzgyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNDc4MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  #005f98 0%, #005f98 5%, #004782 65%, #004782 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005f98), color-stop(5%,#005f98), color-stop(65%,#004782), color-stop(100%,#004782));
+	background: -webkit-linear-gradient(top,  #005f98 0%,#005f98 5%,#004782 65%,#004782 100%);
+	background: -o-linear-gradient(top,  #005f98 0%,#005f98 5%,#004782 65%,#004782 100%);
+	background: -ms-linear-gradient(top,  #005f98 0%,#005f98 5%,#004782 65%,#004782 100%);
+	background: linear-gradient(to bottom,  #005f98 0%,#005f98 5%,#004782 65%,#004782 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005f98', endColorstr='#004782',GradientType=0 );
+}
+
+.mytabcontent
+{
+	display:none;
+}
+
+/*
+// Not sure why this was being included, but it causes problems with AddThis
+div, table
+{
+	position:relative;
+	z-index:0;
+}
+*/
+
+.headerBand
+{
+	width:100%;
+	jpadding-top:1em;
+	
+	/*
+	-webkit-box-shadow: 0px 2px 4px 0px #999999;
+	box-shadow: 0px 2px 4px 0px #999999;
+	*/
+	
+	background: #0071c5;
+/*
+	background: #005499;
+	background: -moz-linear-gradient(top,  #005499 0%, #0068b5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005499), color-stop(100%,#0068b5));
+	background: -webkit-linear-gradient(top,  #005499 0%,#0068b5 100%);
+	background: -o-linear-gradient(top,  #005499 0%,#0068b5 100%);
+	background: -ms-linear-gradient(top,  #005499 0%,#0068b5 100%);
+	background: linear-gradient(to bottom,  #005499 0%,#0068b5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005499', endColorstr='#0068b5',GradientType=0 );
+*/
+}
+
+.headerContent
+{
+	color:#ffffff;
+	margin:auto;
+	max-width:960px;	
+
+	padding: 0 0;
+}
+
+.mainBand
+{
+	position:relative;
+	width:100%;
+	
+	jheight:100%; /* Setting 100% sets the div to 100% browser height, but since we have the header, this isn't what we want */
+	jmin-height:100%;
+	jbackground-color:#00ff00;
+	jcolor:#959598;
+}
+
+.mainContent
+{
+	margin:auto;
+	max-width:960px;
+	height:100%;
+	
+	jbackground-color:#f3f3f3;
+	background-color:#0071c5;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+	/* padding:2em; */ /* Can't put padding here because of the "full-width" graphics */
+	jpadding-top:2em;
+	jpadding-left:1em;
+	jpadding-right:1em;
+}
+
+#headerPane
+{
+	display:table;
+	width:100%;
+	margin-bottom:1em;
+	padding-left:1em;
+	padding-right:1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+}
+
+#summaryPane
+{
+	display:table;
+	width:100%;
+	height:15em;
+	background-color:#ffffff;
+	vertical-align:top;
+	color:#0059a2;
+	padding:1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.mainContentTabContent
+{
+}
+
+.headerPadding
+{
+	padding:0 1em;
+}
+
+.mainPadding
+{
+	padding:1em 1em;
+}
+
+.title
+{
+	font-family:intel-clear-headline;
+	/*font-size:2.5em;*/
+	color:#ffffff;
+	font-weight:200;
+}
+
+/*
+.footerBand
+{
+	width:100%;
+	jheight:20px;
+	border-top: 1px solid #ffffff;
+	
+	background-color: #ebebeb;
+}
+*/
+.footerBand
+{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	z-index:99;
+	jheight:28px;
+	height:2em;
+	border-top: 1px solid #c1d8ea;
+	
+	background-color:#0071c5;
+}
+
+
+.footerContent
+{
+	margin:auto;
+	max-width:960px;
+	jfont-family: Verdana;
+	font-size:0.9em;
+	font-weight:normal;
+	color:#ffffff;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+	padding:0.5em 1.7em;
+}
+
+.footerContent span
+{
+	padding:0 0.25em;
+	white-space:nowrap;
+}
+
+span.show-tooltip-text
+{
+	display: none;
+	position: absolute;
+	font-size: 0.9em;
+	width:170px;
+	background-color: #007dc5;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	color: white;
+}
+
+#intelLogo
+{
+	clear:both;
+	jfloat:right;
+	jright:0;
+	jtop:50%;
+	jheight:44px;
+	position:relative;
+	overflow:hidden;
+	jmargin-left:auto;
+	jmargin-right:auto;
+	jmargin-top:2em;
+	jmargin-bottom:1em;
+	background-color:#ff0000;
+}
+
+.disclaimers:hover
+{
+	color:#008dd4;
+}
+
+ul
+{
+	list-style-type:square;
+}
+
+.myInlineButton
+{
+	display:inline-block;
+	jdisplay:table-cell;
+	jborder:1px solid #000000;
+	color:#ffffff;
+	padding:0em 2em 0.1em 2em;
+	jvertical-align:middle;
+	
+	cursor:hand;
+	cursor:pointer;
+	
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	
+	background: #a2a3a7;
+	background: -moz-linear-gradient(top,  #a2a3a7 0%, #6d6e72 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2a3a7), color-stop(100%,#6d6e72));
+	background: -webkit-linear-gradient(top,  #a2a3a7 0%,#6d6e72 100%);
+	background: -o-linear-gradient(top,  #a2a3a7 0%,#6d6e72 100%);
+	background: -ms-linear-gradient(top,  #a2a3a7 0%,#6d6e72 100%);
+	background: linear-gradient(to bottom,  #a2a3a7 0%,#6d6e72 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2a3a7', endColorstr='#6d6e72',GradientType=0 );
+	
+	-webkit-box-shadow: 2px 2px 4px 0px #999999;
+	box-shadow: 2px 2px 4px 0px #999999;	
+}
+
+.myInlineButton:hover
+{
+	background: rgb(140,142,145);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhjOGU5MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE1JSIgc3RvcC1jb2xvcj0iIzhjOGU5MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ODU5NWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(140,142,145,1) 0%, rgba(140,142,145,1) 15%, rgba(88,89,91,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(140,142,145,1)), color-stop(15%,rgba(140,142,145,1)), color-stop(100%,rgba(88,89,91,1)));
+	background: -webkit-linear-gradient(top,  rgba(140,142,145,1) 0%,rgba(140,142,145,1) 15%,rgba(88,89,91,1) 100%);
+	background: -o-linear-gradient(top,  rgba(140,142,145,1) 0%,rgba(140,142,145,1) 15%,rgba(88,89,91,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(140,142,145,1) 0%,rgba(140,142,145,1) 15%,rgba(88,89,91,1) 100%);
+	background: linear-gradient(to bottom,  rgba(140,142,145,1) 0%,rgba(140,142,145,1) 15%,rgba(88,89,91,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8e91', endColorstr='#58595b',GradientType=0 );
+}
+
+.myStepper
+{
+	text-align:center;
+	display:inline-block;
+	background-color:#0059a2;
+	color:#ffffff;
+	
+	jline-height:1.6em;
+	jheight:1.6em;
+	font-weight:bold; 
+	font-size:1.4em;
+	width:4.5em;
+	margin:0;
+	padding:0;
+	border:1px solid #0059a2;
+	
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	
+	j-webkit-box-sizing: border-box;
+	j-moz-box-sizing: border-box; 
+	jbox-sizing: border-box;
+}
+
+/*
+.mySliderAmount
+{
+	background-color:#0059a2;
+	color:#ffffff;
+	border:0;
+	font-weight:bold; 
+	font-size:1.4em;
+	text-align:right;
+	width:100%;
+	jwidth:2em;
+	jpadding:0 4px;
+	jpadding-right:4px;
+	margin:auto;
+	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing:border-box;
+}
+*/
+
+.myOuterStepper
+{
+	white-space:nowrap;
+	display:inline-block;
+}
+
+.acgStepperInc, .acgStepperDec
+{
+    display:inline-block;
+    jline-height:2em;
+	jheight:2em;
+	jheight:26px;
+	font-weight:bold; 
+	font-size:1.4em;
+	margin:0;
+	padding:0;
+	
+	width:1.5em;
+    border: 1px solid #0088d5;
+	text-align:center;
+	
+	-webkit-user-select: none;
+	
+	cursor:hand;
+	cursor:pointer;
+	
+	background-color:#0088d5;
+	color:#ffffff;	
+}
+
+.acgStepperInc
+{
+	border-top-right-radius:0.4em;
+	border-bottom-right-radius:0.4em;
+	border-left:0;
+}
+.acgStepperDec
+{
+	border-top-left-radius:0.4em;
+	border-bottom-left-radius:0.4em;
+	border-right:0;
+}
+
+.nontouch .acgStepperInc:hover, .nontouch .acgStepperDec:hover, .touch .acgStepperInc:active, .touch .acgStepperDec:active
+{
+	background: #00aeef;
+}
+
+/* this class is used to style the links/hot areas where a tooltip should go */
+.showAcgTooltip
+{
+	cursor:hand;
+	cursor:pointer;
+	jcolor:#0071c5;
+	border-bottom:1px dotted;
+}
+
+.acgTooltip
+{
+	position:absolute;
+	z-index:9999;
+	overflow:hidden;
+	max-width:320px;
+	width:80%;
+	
+	pointer-events:none;
+	font-size:1.1em;
+	padding:1em;
+	jopacity:0.9;
+	color:#004280;
+	
+	jborder:1px solid #939598;
+	border:2px solid #000000;
+	
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	
+	background-color:#ffffff;
+	
+/*
+	background: rgb(255,255,255);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZGNkY2QiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(205,205,205,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(205,205,205,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cdcdcd',GradientType=0 );
+*/
+}
+
+#acgTooltipOverlay
+{
+	cursor:hand;
+	cursor:pointer;
+	
+	position:fixed;
+	z-index:9998;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	/* IE won't detect mousemove events if there is no background, so we have to set a background and opacity to 0 */
+	background:#000;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+.ui-slider .ui-slider-handle
+{
+    width:16px; 
+    height:16px; 
+    jbackground:url(images/sliderThumb.png) no-repeat;
+	background-color:#ff0000;
+	background: url('images/sliderThumb.png') no-repeat 50% 50%;
+	joverflow: hidden; 
+    position:absolute;
+    top:-6px;
+	jright:-10px;
+    jborder-style:none; 
+	margin-left:-8px;
+	border:0;
+}
+.ui-slider
+{
+	height:4px;
+	border:1px solid #000000;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+.ui-slider-range
+{  
+    background:#fdb813;	/* must override background since it must specify an image or something. background-color won't do it */
+    border-radius:0;  
+} 
+.mySliderAmount
+{
+	background-color:#0059a2;
+	color:#ffffff;
+	border:0;
+	font-weight:bold; 
+	font-size:1em;
+	text-align:right;
+	width:100%;
+	jwidth:2em;
+	jpadding:0 4px;
+	jpadding-right:4px;	/* causes input to push to the right */
+	margin:auto;
+	
+	-webkit-box-sizing:border-box;	/* without this, iPad input fields display too wide */
+	-moz-box-sizing: border-box; 
+	box-sizing:border-box;
+}
+.sliderWithEdit
+{
+	display:inline-block;
+	width:8em;
+	text-align:right;
+	float:right;
+	jpadding:1em;
+	j-webkit-box-sizing: border-box;
+	j-moz-box-sizing: border-box; 
+	jbox-sizing: border-box;
+}
+
+.boxSizingBorderBox
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.column1
+{
+	width:50%;
+	border-right:1px solid #80b8e2;
+	border-bottom:1px solid #80b8e2;
+	padding-top:1em;
+	padding-bottom:1em;
+	jpadding-left:5%;	/* IE8 doesn't correctly handle "tables within tables" when padding is involved */
+	jpadding-right:5%;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.column2
+{
+	width:50%;
+	jborder-right:1px solid #80b8e2;
+	border-bottom:1px solid #80b8e2;
+	jpadding:1em 0;
+	padding-top:1em;
+	padding-bottom:1em;
+	jpadding-left:5%;
+	jpadding-right:5%;
+}
+.noBottomLine
+{
+	border-bottom:0;
+}
+.inputLabel
+{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	padding-left:1em;
+}
+.inputBlock
+{
+	display:table-cell;
+	vertical-align:middle;
+	padding-right:1em;
+}
+select
+{
+	/*color:#ffffff;*/
+	width:4em;
+	font-size:1em;
+	font-weight:bold;
+	/*background-color:#0059a2;*/
+	jtext-align:right;
+	border:solid 1px #0059a2;
+}
+#showAdvancedInputsButton,#hideAdvancedInputsButton
+{
+	width:1em;
+	font-size:2em;
+	padding-left:0.1em;
+}
+.legend
+{
+	padding-top:1em;
+	font-size:0.8em;
+}
+.legendBlock
+{
+	display:inline-block;
+	width:1em;
+	height:1em;
+	margin-left:0.5em;
+}
+.netSavingsLabel
+{
+	font-size:1.5em;
+}
+.netSavings
+{
+	font-size:2em;
+	color:#45a9ee;
+	font-weight:bold;
+}
+.breakEvenLabel
+{
+	font-size:1.5em;
+	padding-top:1em;
+}
+.breakEven
+{
+	color:#45a9ee;
+	font-size:1.5em;
+	font-weight:bold;
+}
+.chartAxis
+{
+	font-size:0.8em;
+}
+.savingsOverHdd
+{
+	display:table-cell;
+	width:25%;
+	vertical-align:bottom;
+	text-align:left;
+	color:#45a9ee;
+	jfont-weight:bold;
+}
+.axisLabel
+{
+}
+.axisLabelAmount
+{
+	jcolor:#45a9ee;
+	font-weight:bold;
+}
+.axisLabelInvestmentAmount
+{
+	jcolor:#e30033;
+	/* color:#45a9ee; */
+	font-weight:bold;
+}
+.heading3
+{
+	font-size:1.25em;
+	color:#004281;
+	font-weight:bold;
+}

@@ -1,0 +1,2 @@
+//tealium universal tag - utag.918 ut4.0.201604081557, Copyright 2016 Tealium.com Inc. All Rights Reserved.
+wap_tms=(typeof wap_tms!=="undefined")?wap_tms:{};wap_tms.custom=wap_tms.custom||{};wap_tms.custom.trackGaVirtualPageView=function(){trackGaPage(document.location.pathname+document.location.search+document.location.hash,wap_ga.callback);};

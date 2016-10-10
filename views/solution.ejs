@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SSD微信公众号-解决方案</title>
+    <% include  public/solutionHead%>
+</head>
+
+<body class="solution">
+    <div class="container-fluid">
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./../public/front/images/solution_banner1.jpg"></div>
+                    <div class="swiper-slide"><img src="./../public/front/images/solution_banner2.jpg"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+            </div>
+        </div>
+
+
+
+        <!--/swiper-->
+        <div class="content">
+            <% industryItem.forEach(function(x){ %>
+             <div class="section">
+                 <h3><i class="glyphicon glyphicon-plus"></i><%= x.Name%></h3>
+                 <div class="section_content">
+                     <div class="row case ">
+                         <% solutionItem.forEach(function(item){ %>
+                            <% if(item.IndustryId== x.Id){%>
+                                 <div class="col-sm-6 col-md-6">
+                                     <div class="case_line ">
+                                         <a href="./solution_detail?id=<%= item.Id%>">
+                                             <img src="./../<%= item.Url%>" class="img-responsive">
+                                             <p class="title"><%= item.Name%></p>
+                                             <p class="summary"><%= item.Intro%></p>
+                                         </a>
+                                     </div>
+                                 </div>
+                         <% }else{%>
+                                <!--<div class="noDate">没有数据</div>-->
+                         <% }}) %>
+
+                     </div>
+                  </div>
+             </div>
+            <% }) %>
+
+
+
+        </div><!--//content-->
+    </div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
+    });
+
+
+    jQuery(document).ready(function($) {
+
+
+
+        var elText = []; //超出显示省略号
+        var eChar = []; //英文个数
+        var limitcount = 30;
+        var pattern_char = /[a-zA-Z]/g;
+
+        $(".case_line .summary").each(function(index, el) {
+            elText.push($(this).text()); //存储完整内容
+
+            var _elength = $(this).text().length;
+            _matchText = $(this).text().match(pattern_char); //英文字符
+            _matchText != null ? eChar.push(_matchText.length) : eChar.push(0);
+            if (_elength > limitcount) {
+                $(this).html($(this).text().substring(0, limitcount + eChar[index]) + "...");
+            } //如果内容过长，省略...
+
+            $(this).click(function(event) {
+                $(this).html(elText[index]); //显示完整内容
+
+                // 添加类名用于检测是否第二次点击  第一次点击显示隐藏内容，第二次点击显示省略号
+                if ($(this).hasClass('openClick')) {
+                    if (_elength > limitcount) {
+                        $(this).html($(this).text().substring(0, limitcount + eChar[index]) + "...");
+                    }
+                    $(this).removeClass('openClick');
+
+                } else {
+                    $(this).addClass('openClick');
+
+                }
+
+
+                //重新计算高度
+                $(this).parents(".section_content").css("height","auto");
+
+                return false;
+            });
+        });
+        accordion();
+    });
+
+    function accordion() {
+        var sectionContentHeight = [];
+        $(".section").each(function(index) {
+            sectionContentHeight.push($(this).find('.section_content').css("height")); //存储section_content高度
+
+
+            $(this).children('h3').click(function() {
+                /* Act on the event */
+
+
+                _pthis = $(this).parent();
+                _edisplay = $(_pthis).find('.section_content').css("display");
+                if (_edisplay == "none") {
+                    //打开
+                    $(this).find("i").removeClass("glyphicon-plus").addClass("glyphicon-minus"); //+号变成-号
+                    $(_pthis).find('.section_content').css("height", "0"); //设置高度为0；
+                    $(_pthis).find('.section_content').css("display", "block");
+
+
+                    $(_pthis).find('.section_content').css("height",sectionContentHeight[index]).addClass('open');
+
+
+
+
+
+                } else {
+                    //关闭
+
+                    $(this).find("i").removeClass("glyphicon-minus").addClass("glyphicon-plus"); //-号变成+号
+
+
+
+                    $(_pthis).find('.section_content').removeClass('open').css("display", "none");
+
+                }
+
+
+
+            });
+        });
+
+    }
+</script>
+
+</html>

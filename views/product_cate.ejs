@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%=title%></title>
+    <% include  public/head%>
+</head>
+
+<body class="products_cat">
+<div class="container-fluid">
+    <div class="content ">
+        <h3> <a href="/index" class=" back">产品信息</a></h3>
+        <div class="mgtop">
+            <div class="title">
+            </div>
+            <div class="row ">
+                <% result.forEach(function(data){ %>
+                    <div class="col-sm-6 col-md-6 in1">
+                        <div class="row ">
+                            <div class="col-xs-7 col-lg-7">
+                                <a href="./product_series?cateId=<%=data.Id%>"><img src="../<%=data.Pic%>" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-5 col-lg-5">
+                                <div class="product_text">
+                                    <h3><a href="./product_series?cateId=<%=data.Id%>"><%=data.Name%></a></h3>
+                                    <div class="read"><a href="./product_series?cateId=<%=data.Id%>">查看详情</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <%})%>
+
+            </div>
+            <!--row-->
+        </div>
+    </div>
+</div>
+
+<!--container-fluid-->
+</body>
+<script>
+$(function(){
+
+    var data={
+        "d": [
+            {
+
+                "Series": {
+
+                    "SeriesId": 71178,
+                    "SeriesName": "Intel® SSD 525 Series"
+                },
+                "ProductId": 71179,
+                "ProductFamilyId": 83424,
+                "ProductSeriesId": 71178,
+                "CodeNameEPMId": 60903,
+                "Status": 6,
+                "ProductType": 19,
+                "MarketSegment": "MBL",
+                "LaunchDate": "/Date(1359331200000)/",
+                "BornOnDate": "Q1'13",
+
+            },
+            {
+                "Series": {
+
+                    "SeriesId": 71179,
+                    "SeriesName": "Intel® SSD 525 Series"
+                },
+                "ProductId": 71180,
+                "ProductFamilyId": 83424,
+                "ProductSeriesId": 71178,
+                "CodeNameEPMId": 60904,
+                "Status": 6,
+                "ProductType": 19,
+                "MarketSegment": "MBL",
+
+            },
+            {
+                "Series": {
+
+                    "SeriesId": 71180,
+                    "SeriesName": "Intel® SSD 525 Series"
+                },
+                "ProductId": 71180,
+                "ProductFamilyId": 83424,
+                "ProductSeriesId": 71178,
+                "CodeNameEPMId": 60904,
+                "Status": 6,
+                "ProductType": 19,
+                "MarketSegment": "MBL",
+
+            }
+
+    ]
+}
+const SeriesArry=[]
+const CodeNameEPMId=[]
+//var obj= eval("("+data+")");//string 转换成object类型
+const arry=data.d;
+const map=[]
+arry.forEach((x,index)=>{
+    let nowIndex=0
+    console.log(CodeNameEPMId)
+    if(CodeNameEPMId.length<=0){
+        map[index]=Object.assign({},{seriesId:x.Series.SeriesId})
+        CodeNameEPMId[index]=Object.assign({epmid:x.CodeNameEPMId,top:map})
+    }else{
+        CodeNameEPMId.forEach((e)=>{
+            if(e.epmid!=x.CodeNameEPMId){
+                console.log("不存在epmid",e.epmid)
+                console.log(index)
+                console.log("nowIndex",CodeNameEPMId)
+                CodeNameEPMId[index]=({epmid:x.CodeNameEPMId,top:Object.assign({},{seriesId:x.Series.SeriesId})})
+                console.log("nowIndex",CodeNameEPMId)
+            }else{
+//                console.log("已经存在epmid",e.epmid)
+//                map[index]=Object.assign({},{seriesId:x.Series.SeriesId})
+//                console.log("nowIndex",CodeNameEPMId)
+//                CodeNameEPMId[nowIndex]=Object.assign({top:map})
+            }
+        })
+    }
+
+
+
+
+//    if(CodeNameEPMId.indexOf(x.CodeNameEPMId)<=-1){
+//        console.log(x.CodeNameEPMId)
+//        map[index]=Object.assign({},{seriesId:x.Series.SeriesId})
+//        CodeNameEPMId[index]=Object.assign({epmid:x.CodeNameEPMId,top:map})
+//        nowIndex=index
+//    }else{
+//        //该大类已经存在
+//        map[index]=Object.assign({},{seriesId:x.Series.SeriesId})
+//        console.log("nowIndex",nowIndex)
+//        CodeNameEPMId[nowIndex]=Object.assign({top:map})
+//    }
+
+})
+
+console.log(CodeNameEPMId)
+
+
+
+})
+</script>
+</html>
+
+

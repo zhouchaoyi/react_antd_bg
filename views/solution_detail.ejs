@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SSD微信公众号-解决方案</title>
+    <% include  public/solutionHead%>
+
+</head>
+
+<body class="solution_detail">
+<div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="navbar-header">
+
+            <a href="javascript:history.go(-1)" class="navbar-brand back">back</a>
+        </div>
+
+    </nav>
+    <div class="content mgtop">
+        <div class="context_text">
+
+
+            <h3>  <%= result.Name%></h3>
+            <div class="media_meta">
+                <sapn class="copy_logo">原创</sapn>
+                <span class="time">  <%= time %></span>
+                <span>  <%= result.Publisher%></span>
+            </div>
+            <div>
+                <%- result.Text.replace(/\/public\/uploads\//g,"./../public/uploads/")%>
+            </div>
+        </div>
+    </div>
+</div>
+<!--container-fluid-->
+</body>
+
+</html>

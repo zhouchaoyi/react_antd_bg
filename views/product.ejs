@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%=title%></title>
+    <% include  public/head%>
+
+</head>
+<body class="product">
+<div class="container-fluid">
+<% var seriesName=""%>
+<%include public/productSeriesNav%>
+
+    <div class="content mgtop">
+        <ul class="product_list">
+            <!--显示标题-->
+            <% series.forEach(function(x){ %>
+                <% if(x.Id==para.currentSeriesId) { seriesName=x.Name %>
+                     <li class="title"><%= x.Name %></li>
+                <% } %>
+            <% }) %>
+
+            <!--显示产品列表-->
+
+            <% if(result.length>0){ %>
+                    <% result.forEach(function(x){ %>
+                         <li>
+                            <a href="./product_detail?id=<%= x.Id%>">
+                                <%= seriesName %>
+                                <div class="version">( <%= x.Name %>)</div>
+                            </a>
+                          </li>
+            <% })} else{%>
+                <div class="noData">没有数据</div>
+            <% }%>
+
+
+
+        </ul>
+    </div>
+</div><!--/container-fluid-->
+</body>
+
+
+
+
+
+
+
+</html>

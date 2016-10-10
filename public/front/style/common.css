@@ -1,0 +1,208 @@
+body {
+    font-family: 'Intel Clear';
+}
+
+@font-face {
+    font-family: 'Intel Clear';
+    /*这里是说明调用来的字体名字*/
+    src: url("../fonts/IntelClear-Regular-webfont.ttf");
+    /*这里是字体文件路径*/
+}
+
+
+.container-fluid {
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight:normal;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 0;
+    padding-top: 5px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*返回top*/
+
+.content {
+    margin-top: 0;
+    padding: 0;
+    border-top: 0;
+}
+
+.content >h3 {
+    height: 50px;
+    line-height: 50px;
+    color: #0078d7;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #eee;
+    background: #0071c5;
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+.content >h3  a{
+    height: 100%;
+    margin-left:15px;
+    display: block;
+}
+.content >h3  a:hover,.navbar-default  .back:hover{
+   color: #e5e4e4;
+}
+@media screen and (min-width: 1024px) {
+    .content,
+    .swiper {
+        width: 740px;
+        margin: 0 auto;
+    }
+    .content >h3 {
+        width: 740px;
+    }
+}
+
+
+
+.back{
+    background: url(../images/back.png)  left center no-repeat;
+    background-size: 12px;
+    padding-left: 20px;
+      color: #fff;
+
+}
+.navbar-default  .back{
+
+    background-position: 15px;
+    padding-left: 35px;
+    color: #fff;
+
+}
+.mgtop{
+    margin-top: 50px;
+}
+
+/*页面文字部分*/
+
+.content .context_text {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content .context_text h3 {
+    line-height: 180%;
+    border-bottom: 1px solid #e7e7eb;
+}
+
+.content .context_text p {
+    line-height: 1.75em;
+    color: #3e3e3e;
+    font-size: 17px;
+    /*font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;*/
+}
+
+.content .context_text img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content .context_text video {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content .context_text .media_meta {
+    color: #8c8c8c;
+    margin-bottom: 10px;
+}
+
+.content .context_text .media_meta .copy_logo {
+    padding: 0px 6px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.content .context_text .media_meta .time {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.center {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -o-box;
+    -o-box-orient: horizontal;
+    -o-box-pack: center;
+    -o-box-align: center;
+    display: -ms-box;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -ms-box-align: center;
+    display: box;
+    box-orient: horizontal;
+    box-pack: center;
+    box-align: center;
+}
+.noData{text-align: center;padding-top:20px; padding-bottom:20px;font-weight: bold}
+/******response***********/
+
+@media only screen and (max-width:540px) {
+    body {
+        font-size: 168.5%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    body {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    body {
+        font-size: 125%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    body {
+        font-size: 112.5%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    body {
+        font-size: 100%;
+    }
+}

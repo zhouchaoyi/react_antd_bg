@@ -10,7 +10,8 @@ import Footer from '../../components/Footer'
 import {fetchProfile, logout} from '../../actions/user';
 //import {getCookie, getParamFromToken} from '../../utils';
 
-import 'antd/style/index.less';
+//import 'antd/style/index.less'; 0.12版本的写法
+import 'antd/dist/antd.less';
 import './index.less';
 
 class App extends React.Component {

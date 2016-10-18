@@ -14,7 +14,7 @@ import {getNowTime} from '../utils';
 
 export default function (state = initialState, action = {}) {
 
-    console.log('action type=>' + action.type);
+    //console.log('action type=>' + action.type);
 
 
     switch (action.type) {

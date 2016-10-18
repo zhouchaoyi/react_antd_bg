@@ -13,14 +13,14 @@ import solution from '../reducers/solution'
 import whitePage from '../reducers/whitePage'
 import activity from '../reducers/activity'
 import material from '../reducers/material'
-import manage from '../reducers/manage'
+import user_type from '../reducers/user_type'
 import weChat_menu from '../reducers/weChat_menu'
 import follower from '../reducers/follower'
 import msg from '../reducers/msg'
 import video from '../reducers/video'
 
 
-const reducer = combineReducers({user, menu, movie,room,product,solution,whitePage,activity,material,manage,weChat_menu,follower,msg,video});
+const reducer = combineReducers({user, menu, movie,room,product,solution,whitePage,activity,material,user_type,weChat_menu,follower,msg,video});
 
 const createStoreWithMiddleware = applyMiddleware(
   thunkMiddleware,

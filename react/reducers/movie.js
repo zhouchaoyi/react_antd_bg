@@ -9,8 +9,8 @@ import initialState from '../store/movie'
 
 export default function (state = initialState, action = {}) {
 
-    console.log('action type=>' + action.type)
-console.log("sssssss")
+    //console.log('action type=>' + action.type)
+    //console.log("sssssss")
     switch (action.type) {
         case 'normal':
             return Object.assign({}, state, {msg: action.payload + ' --from reducer'})

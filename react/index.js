@@ -1,8 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 import {Provider} from 'react-redux';
-import {Router, Route, IndexRedirect, useRouterHistory, Link,Lifecycle} from 'react-router';
-import {createHistory, useBeforeUnload} from 'history'
+import {Router, Route, IndexRedirect, useRouterHistory, Link,Lifecycle,browserHistory} from 'react-router';
+import {createBrowserHistory, useBeforeUnload} from 'history'
 
 import configureStore from './store/configureStore';
 
@@ -15,7 +15,7 @@ import Container from './views/Container';
 
 import {getCookie} from './utils';
 
-const history = useRouterHistory(useBeforeUnload(createHistory))({basename: ''})
+//const history = useRouterHistory(createBrowserHistory)({basename: ''})
 // history.listenBeforeUnload(function () {
 //     return 'Are you sure you want to leave this page?'
 // })
@@ -35,7 +35,7 @@ const validate = function (next, replace, callback) {
 
 render(
     <Provider store={store}>
-        <Router history={history} >
+        <Router history={browserHistory} >
 
             <Route path="/" onEnter={validate}>
                 <IndexRedirect to="login"/>
@@ -45,7 +45,6 @@ render(
                 </Route> //app的结束
 
                 <Route path="login" component={Login}/>
-
             </Route>
             <Route path="*" component={PageNotFound}/>
         </Router>

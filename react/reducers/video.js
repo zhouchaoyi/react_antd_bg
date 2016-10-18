@@ -4,7 +4,7 @@
 
 import initialState from '../store/video'
 export default function(state=initialState,action={}){
-    console.log('action type=>' + action.type);
+    //console.log('action type=>' + action.type);
     switch (action.type){
         case 'show_videoBox':
             return Object.assign({},state,{isShowBox:action.payload})

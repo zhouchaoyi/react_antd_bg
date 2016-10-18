@@ -31,8 +31,8 @@ class Login extends React.Component {
         const isLoggingIn = nextProps.loggingIn;
         const user = nextProps.user
 
-        console.log("error="+error+"<<<<<<<");
-        console.log("this.props.loginErrors="+this.props.loginErrors);
+        console.log("error="+error+"<<<<<<<111");
+        //console.log("this.props.loginErrors="+this.props.loginErrors);
         // if(error != this.props.loginErrors && error && error.errorCode!='000000') {
         //     notification.error({
         //         message: 'Login Fail',
@@ -78,37 +78,12 @@ class Login extends React.Component {
     }
 
     render() {
-        const {getFieldProps, getFieldError, isFieldValidating} =this.props.form
+        const {getFieldDecorator, getFieldError, isFieldValidating} =this.props.form
         const formItemLayout={
             labelCol:{span:6},
             wrapperCol:{span:12}
         }
-        const userProps=getFieldProps("user",{
-            rules: [
-                { required: true, min: 1, message: '请输入用户名' }
-            ],
-            onChange: (e) => {
-                const value=e.target.value;
-                if(value.length<1){
-                    this.props.validateStatus.name="error"
-                }else{
-                    this.props.validateStatus.name="success"
-                }
-            }
-        })
-        const pwdProps=getFieldProps("password",{
-            rules: [
-                { required: true, min: 1, message: '请输入密码' }
-            ],
-            onChange: (e) => {
-                const value=e.target.value;
-                if(value.length<1){
-                    this.props.validateStatus.pwd="error"
-                }else{
-                    this.props.validateStatus.pwd="success"
-                }
-            }
-        })
+        
         return (
             <Row className="login-row" type="flex" justify="space-around">
                 <Col span="8">
@@ -122,7 +97,21 @@ class Login extends React.Component {
                             required
                             help={isFieldValidating('user')?'校验中...':(getFieldError('user') || []).join(',')}
                         >
-                            <Input placeholder='用户名' {...userProps} />
+                            {getFieldDecorator("user",{
+                                rules: [
+                                    { required: true, min: 1, message: '请输入用户名' }
+                                ],
+                                onChange: (e) => {
+                                    const value=e.target.value;
+                                    if(value.length<1){
+                                        this.props.validateStatus.name="error"
+                                    }else{
+                                        this.props.validateStatus.name="success"
+                                    }
+                                }
+                            })(
+                                <Input placeholder='用户名'  />
+                            )}
                         </FormItem>
                         <FormItem
                             label='密码'
@@ -131,7 +120,21 @@ class Login extends React.Component {
                             validateStatus={this.props.validateStatus.pwd}
                             required
                         >
-                            <Input type='password' placeholder='密码' {...pwdProps} />
+                            {getFieldDecorator("password",{
+                                rules: [
+                                    { required: true, min: 1, message: '请输入密码' }
+                                ],
+                                onChange: (e) => {
+                                    const value=e.target.value;
+                                    if(value.length<1){
+                                        this.props.validateStatus.pwd="error"
+                                    }else{
+                                        this.props.validateStatus.pwd="success"
+                                    }
+                                }
+                            })(
+                                <Input type='password' placeholder='密码' />
+                            )}
                         </FormItem>
 
 

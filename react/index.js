@@ -21,7 +21,7 @@ import {getCookie} from './utils';
 // })
 
 const store = configureStore();
-console.log("ffffffffffff")
+//console.log("ffffffffffff")
 const validate = function (next, replace, callback) {
         const isLoggedIn = !!getCookie('token')
      if (!isLoggedIn && next.location.pathname != '/login') {
@@ -41,7 +41,7 @@ render(
                 <IndexRedirect to="login"/>
                 <Route component={App}>
                     <Route path="home" component={Home}/>  
-                    <Route path="template/:folder/:name" component={Container}/>
+                    <Route path="template/:folder/:subfolder(/:name)" component={Container}/>
                 </Route> //app的结束
 
                 <Route path="login" component={Login}/>

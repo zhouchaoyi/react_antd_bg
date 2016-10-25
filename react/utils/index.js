@@ -13,6 +13,15 @@ export function isPromise(value) {
 //   if (parts.length == 2) return parts.pop().split(";").shift();
 // }
 
+export function getQueryString(name) {
+    var url=window.location.href;
+    //console.log(url);
+    url=url.substr(url.indexOf("?")+1);
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = url.match(reg);
+    if(r!=null)return  decodeURIComponent(r[2]); return null;
+}
+
 export function getCookie(name) {
     var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
     if(arr=document.cookie.match(reg)) {

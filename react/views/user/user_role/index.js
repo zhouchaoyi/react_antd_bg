@@ -5,43 +5,21 @@ import React, {PropTypes} from 'react'
 import {Link} from 'react-router'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
+import {Icon, Button, Table,Modal} from 'antd';
+import {getUserType,showBox,queryUserTypeById,delUserType} from '../../../actions/user_type'
+import UserTypeFormModel from './form'
 
-import {Icon, Input, Button, Select, Table,Modal,Form,Checkbox} from 'antd';
-const FormItem = Form.Item;
-
-const Option = Select.Option;
-
+const confirm = Modal.confirm;
 const contextTypes = {
     router: PropTypes.object.isRequired,
     store: PropTypes.object.isRequired
 };
 
-import {getUserType,showBox,addUserType,isExistUserByName} from '../../../actions/user_type'
-
-
-
-
-//---------------------table---------------------------
-
-// 通过 rowSelection 对象表明需要行选择
-const rowSelection = {
-    onChange(selectedRowKeys, selectedRows) {
-        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-    },
-    onSelect(record, selected, selectedRows) {
-        console.log(record, selected, selectedRows);
-    },
-    onSelectAll(selected, selectedRows, changeRows) {
-        console.log(selected, selectedRows, changeRows);
-    }
-};
-
+let keys=[];
 function noop() {
     return false;
 }
 
-
-//---------------------table---------------------------
 
 class UserType extends React.Component {
 
@@ -49,159 +27,157 @@ class UserType extends React.Component {
         super(props)
     }
 
+    componentWillMount(){
+        this.props.getUserType(1,this.props.tableData.pageSize);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.reloadGrid) {
+            //console.log("come in componentWillReceiveProps <<<<<<<<<<");
+            this.props.getUserType(this.props.tableData.currentPage,this.props.tableData.pageSize);
+        }
+    }
+
+    // componentWillUpdate(nextProps, nextState) {
+    //     //console.log("componentWillUpdate <<<<<<<<<<<<<");
+    // }
+
     onShowBox(e) {
       this.props.showBox(true)
     }
-    handleCancel(){
-        this.props.showBox(false)
-    }
-    handleOk(){
-        this.props.showBox(false)
-    }
-    handleSubmit(e){
-        e.preventDefault();
-        console.log('收到表单值：', this.props.form.getFieldsValue());
 
-        this.props.form.validateFields((errors, values) => {
-            if (!!errors) {
-                console.log('Errors in form!!!');
-                return;
-            }else{
-                this.props.addUserType(this.props.form.getFieldsValue());
-                this.props.showBox(false);
-                this.props.getUserType(); //刷新列表
-            }
+    editUserType(typeId,e) {
+        //console.log(e);
+        this.props.queryUserTypeById(typeId);
+        //this.props.showBox(true);
+    } 
 
+    delUserType(typeId,e) {
+        let _self = this;
+        if(typeId=="" && keys.length==0) {
+            Modal.warning({
+                title: '请选择要删除的项',
+                content: '',
+            });
+            return;
+        }
+        confirm({
+            title: '确定要删除吗',
+            content: '',
+            onOk() {
+                let ids = "";
+                if(typeId!="") {
+                    ids = typeId;
+                }else {
+                    ids = keys.join(",");
+                }
+                //console.log(ids);
+                _self.props.delUserType(ids,_self.props.tableData);
+            },
+            onCancel() {},
         });
-
-    }
-    handleBack(){
-        this.props.showBox(false)
-    }
-
+    } 
 
     render() {
-        const { getFieldDecorator, getFieldError, isFieldValidating } = this.props.form;
-        const formItemLayout = {
-            labelCol: {span: 6},
-            wrapperCol: {span: 14},
-        };
+        let _self = this;
+        const tableColumn = [
+            {title: '角色名', dataIndex: 'typeName',key:'typeName',
+                render: (text,record) => <a onClick={this.editUserType.bind(this,record.typeId)}>{text}</a>},
+            {title: '描述', dataIndex: 'remark',key:'remark'},
+            {title: '状态',dataIndex: 'status',key:'status',render: (text) => {
+                if(text=="1") {
+                    return <span style={{color:"green"}}>启用</span>
+                }else if(text=="0") {
+                    return <span style={{color:"red"}}>禁用</span>
+                }
+            }},
+            {title: '操作',dataIndex: 'operate',key:'operate',render: (text,record) => {
+                return <div>
+                            <a onClick={this.editUserType.bind(this,record.typeId)}><Icon type="edit" /></a> 
+                            <span> | </span> 
+                            <a onClick={this.delUserType.bind(this,record.typeId)}><Icon type="delete" /></a>
+                       </div>
+            }}
+        ];
         
+        const rowSelection = {
+            onChange(selectedRowKeys, selectedRows) {
+                // console.log("onChange<<<<<<");
+                // console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+                keys=selectedRowKeys;
+            },
+            onSelect(record, selected, selectedRows) {
+                // console.log("onSelect<<<<<<");
+                // console.log(record, selected, selectedRows);
+            },
+            onSelectAll(selected, selectedRows, changeRows) {
+                // console.log("onSelectAll<<<<<<");
+                // console.log(selected, selectedRows, changeRows);
+            }
+        };
+
+        const pagination = {
+            total: this.props.tableData.total,
+            pageSize: this.props.tableData.pageSize,
+            current: this.props.tableData.currentPage,
+            showQuickJumper: true,
+            showSizeChanger: true,
+            onShowSizeChange(current, pageSize) {
+                _self.props.getUserType(current,pageSize);
+            },
+            onChange(current) {
+                _self.props.getUserType(current,_self.props.tableData.pageSize);
+            },
+            showTotal: () => "共 "+this.props.tableData.total+" 条记录"
+        };
+
         return (
             <div>
-                <h1>用户类型</h1>
+                <h1>用户角色</h1>
                 <div style={{marginTop:'10px'}}>
 
                     <Button type="primary"   onClick={this.onShowBox.bind(this)}>
                         <Icon type="plus"/>
                         添加角色
                     </Button>
-                    <Button type="ghost" style={{marginLeft:'10px'}} onClick={this.onShowBox.bind(this)}>
+                    <Button type="ghost" style={{marginLeft:'10px'}} onClick={this.delUserType.bind(this,"")}>
                        <Icon type="delete" />
                         批量删除
                     </Button>
-                    <Modal title="角色编辑" visible={this.props.isShowBox} onOk={this.handleOk.bind(this)}
-                           onCancel={this.handleCancel.bind(this)}  footer="">
-                            <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
-                                <FormItem
-                                    {...formItemLayout}
-                                    label="角色编号："
-                                    hasFeedback
-                                    >
-                                    {getFieldDecorator('code', {
-                                        rules: [
-                                            { required: true, min: 1, message: '编号不能为空' }
-                                        ]
-                                    })(
-                                        <Input type="text"/>
-                                    )}
-                                </FormItem>
-
-                                <FormItem
-                                    {...formItemLayout}
-                                    label="角色名称："
-                                    hasFeedback
-                                    >
-                                    {getFieldDecorator('name', {
-                                        rules: [
-                                            { required: true, min: 1, message: '名称不能为空' }
-                                        ]
-                                    })(
-                                        <Input type="text" />
-                                    )}
-                                </FormItem>
-
-                                <FormItem
-                                    {...formItemLayout}
-                                    label="备注："
-                                >
-                                    {getFieldDecorator('remark',{
-                                        initialValue: ""
-                                    })(
-                                        <Input type="text" />
-                                    )}
-                                </FormItem>
-
-                                <FormItem
-                                    {...formItemLayout}
-                                    label="状态："
-                                >
-                                    {getFieldDecorator('status',{
-                                        initialValue: false
-                                    })(
-                                        <Checkbox>启用角色</Checkbox>
-                                    )}
-                                </FormItem>
-
-                                <FormItem wrapperCol={{ span: 16, offset: 6 }} style={{ marginTop: 24 }}>
-                                    <Button type="primary" htmlType="submit">保存</Button>
-                                    <Button style={{marginLeft:"40px"}}  type="primary" onClick={this.handleBack.bind(this)}>返回</Button>
-                                </FormItem>
-
-                            </Form>
-
-                    </Modal>
+                    
+                    <UserTypeFormModel></UserTypeFormModel>
 
                 </div>
 
                 <div style={{marginTop:'10px'}}>
-                    <Table size="small" rowKey="typeId" rowSelection={rowSelection} columns={this.props.tableColumn} dataSource={this.props.tableData}/>
+                    <Table size="small" rowKey="typeId" rowSelection={rowSelection} columns={tableColumn} 
+                            dataSource={this.props.tableData.items} pagination={pagination} loading={this.props.loading} />
                 </div>
             </div>
 
         )
     }
-    componentWillMount(){
-        this.props.getUserType();
-    }
-
-    componentWillReceiveProps(nextProps) {
-        //console.log("come in componentWillReceiveProps <<<<<<<<<<");
-        //this.props.getUserType();
-    }
+    
 }
 
 UserType.contextTypes = contextTypes;
+
 function mapStateToProps(state) {
-
     return {
-        tableColumn:state.user_type.tableColumn,
         tableData:state.user_type.tableData,
-        isShowBox:state.user_type.isShowBox,
-        validateStatus:state.user_type.validateStatus,
-        isExist:state.user_type.isExist
-
+        reloadGrid: state.user_type.reloadGrid,
+        loading: state.user_type.loading
     }
+    
 }
 function mapDispatchToProps(dispatch) {
     return {
         getUserType:bindActionCreators(getUserType,dispatch),
         showBox:bindActionCreators(showBox,dispatch),
-        addUserType:bindActionCreators(addUserType,dispatch),
-        isExistUserByName:bindActionCreators(isExistUserByName,dispatch)
+        queryUserTypeById:bindActionCreators(queryUserTypeById,dispatch),
+        delUserType:bindActionCreators(delUserType,dispatch)
     }
 }
-UserType= Form.create()(UserType)
 
 export default connect(mapStateToProps,mapDispatchToProps)(UserType)
 

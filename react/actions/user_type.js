@@ -5,31 +5,51 @@ import api from '../api'
 
 export function showBox(isShow){
     return{
-        type:'user_show',
+        type:'SHOW_BOX',
         payload:isShow
     }
 }
 
-export function getUserType(){
+export function showSaving(isShow){
+    return{
+        type:'SHOW_SAVING',
+        payload:isShow
+    }
+}
+
+export function getUserType(currentPage,pageSize){
     return{
         type:'GET_USER_TYPE',
         payload:{
             promise:api.post('/userMgmt/listUserType',{
                 data: {
-                    currentPage: 1,
-                    pageSize: 10
+                    currentPage: currentPage,
+                    pageSize: pageSize
                 }
             })
         }
     }
 }
-export function delUser(id){
+export function queryUserTypeById(typeId){
     return{
-        type:'DEL_USER',
+        type:'QUERY_USERTYPE_BY_ID',
         payload:{
-            promise:api.post('/delUser',{
+            promise:api.post('/userMgmt/queryUserTypeById',{
+                data: {
+                    typeId: typeId
+                }
+            })
+        }
+    }
+}
+export function delUserType(ids,tableData){
+    return{
+        type:'DEL_USER_TYPE',
+        meta: tableData,
+        payload:{
+            promise:api.post('/userMgmt/deleteUserType',{
                 data:{
-                    Id:id
+                    ids:ids
                 }
             })
         }
@@ -46,56 +66,12 @@ export function addUserType(data){
         }
     }
 }
-export function isExistUserByName(name){
+export function updateUserType(data){
     return{
-        type:'EXIST_USER',
+        type:'EDIT_USER_TYPE',
         payload:{
-            promise:api.post("/existUser",{
-                data:{
-                    Name:name
-                }
-            })
-        }
-    }
-}
-export function showEditBox(isShow,postValue){
-    return{
-        type:'editUser_show',
-        meta:postValue,
-        payload:isShow
-    }
-}
-export function showResetBox(isShow,postValue){
-    return{
-        type:'resetUser_show',
-        meta:postValue,
-        payload:isShow
-    }
-}
-export function editUser(id,data){
-    return{
-        type:'EDIT_USER',
-        meta:data,
-        payload:{
-            promise:api.post("/editUser",{
-                data:{
-                    Id:id,
-                    PostValue:data
-                }
-            })
-        }
-    }
-}
-export function reset(id,data){
-    return{
-        type:'RESETPWD',
-        meta:data,
-        payload:{
-            promise:api.post("/editUser",{
-                data:{
-                    Id:id,
-                    PostValue:data
-                }
+            promise:api.post("/userMgmt/updateUserType",{
+                data:data
             })
         }
     }

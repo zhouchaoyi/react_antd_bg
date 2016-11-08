@@ -6,9 +6,8 @@ import promiseSimpleMiddleware from '../middlewares/promiseSimpleMiddleware'
 import user from '../reducers/user';
 import menu from '../reducers/menu';
 import admin_list from '../reducers/admin_list'
-// 此处添加其他 reducer
-import room from '../reducers/room'
-import product from '../reducers/product'
+import set_user_group from '../reducers/set_user_group'
+import perm from '../reducers/perm'
 import solution from '../reducers/solution'
 import whitePage from '../reducers/whitePage'
 import activity from '../reducers/activity'
@@ -20,7 +19,7 @@ import msg from '../reducers/msg'
 import video from '../reducers/video'
 
 
-const reducer = combineReducers({user, menu, admin_list,room,product,solution,whitePage,activity,material,user_type,weChat_menu,follower,msg,video});
+const reducer = combineReducers({user, menu, admin_list,set_user_group,perm,solution,whitePage,activity,material,user_type,weChat_menu,follower,msg,video});
 
 const createStoreWithMiddleware = applyMiddleware(
   thunkMiddleware,

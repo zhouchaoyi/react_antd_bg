@@ -57,7 +57,6 @@ class _Api {
                   message: 'Fail',
                   description: json.status.errorMsg
                 });
-                return;
             }else if(json.status.errorCode=="000002") {
                 notification.error({
                   message: 'Fail',

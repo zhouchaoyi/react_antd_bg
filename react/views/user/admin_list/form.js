@@ -52,6 +52,7 @@ class AdminForm extends React.Component {
                     data.userType = "admin";
                     this.props.addItem(data);
                 }
+                //setTimeout(()=>this.props.showSaving(false),5000);
             }
         });
     }

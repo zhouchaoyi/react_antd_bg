@@ -2,7 +2,7 @@
  * Created by zhouchaoyi on 2016/10/24.
  */
 import React from 'react'
-import {FLAG} from '../actions/admin_list'
+import {FLAG} from '../actions/set_user_group'
 
 const _tableData = {
     pageSize: 10,
@@ -10,25 +10,20 @@ const _tableData = {
 };
 
 const _itemProp = {
-    userId: "",
-    loginName: "",
-    loginPassword: "",
-    userName: "",
-    idCardType: "0",
-    idCard: "",
-    sex: "0",
-    publicAccount: "0",
-    status: "0"
+    
 }
 
 const initialState = {
     tableData:_tableData,
-    isShowBox:false,
     reloadGrid: false,
-    itemProp: _itemProp,
     loading: true,
-    saving: false,
-    searchText: ""
+    searchText: "",
+    selectedRowKeys: [],
+    tableData2:_tableData,
+    reloadGrid2: false,
+    loading2: true,
+    searchText2: "",
+    selectedRowKeys2: []
 }
 
 export default function (state = initialState, action = {}) {
@@ -44,6 +39,13 @@ export default function (state = initialState, action = {}) {
                 loading: false
             })
 
+        case FLAG+'_LIST_ITEMS_2':
+            return Object.assign({}, state, {
+                tableData2: action.payload.data,
+                reloadGrid2: false,
+                loading2: false
+            })
+
         case FLAG+'_DEL_ITEM':
             let num = action.meta.total % action.meta.pageSize;
             if(num==1 && action.meta.currentPage==action.meta.pages) {
@@ -55,19 +57,7 @@ export default function (state = initialState, action = {}) {
             }
 
         case FLAG+'_ADD_ITEM':
-            if(action.payload.status.errorCode=='000001') {
-                return Object.assign({},state,{
-                    saving: false
-                })
-            }else {
-                let tableData = state.tableData;
-                tableData.currentPage = 1;
-                return Object.assign({},state,{
-                    reloadGrid: true, 
-                    saving: false,
-                    tableData: tableData
-                })
-            }
+            return Object.assign({},state,{reloadGrid: true})
 
         case FLAG+'_UPDATE_ITEM':
             //console.log(action);
@@ -90,8 +80,15 @@ export default function (state = initialState, action = {}) {
         case FLAG+'_RESET':
             return Object.assign({}, state, {itemProp: _itemProp });
 
-        case FLAG+'_SEARCH_CHANGE':
-            return Object.assign({}, state, {searchText: action.payload});
+        case FLAG+'_SEARCH_CHANGE_2':
+            return Object.assign({}, state, {searchText2: action.payload});
+        
+        case FLAG+'_CHANGE_ROW_KEYS':
+            return Object.assign({}, state, {selectedRowKeys: action.payload});
+        
+        case FLAG+'_CHANGE_ROW_KEYS_2':
+            return Object.assign({}, state, {selectedRowKeys2: action.payload});
+            
 
         default:
             return state;

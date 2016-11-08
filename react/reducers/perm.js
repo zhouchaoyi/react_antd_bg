@@ -1,47 +1,50 @@
 /**
  * Created by zhouchaoyi on 2016/10/24.
  */
-import React from 'react'
-import {FLAG} from '../actions/admin_list'
+import {FLAG} from '../actions/perm'
 
 const _tableData = {
-    pageSize: 10,
-    currentPage: 1
 };
 
-const _itemProp = {
-    userId: "",
-    loginName: "",
-    loginPassword: "",
-    userName: "",
-    idCardType: "0",
-    idCard: "",
-    sex: "0",
-    publicAccount: "0",
-    status: "0"
-}
-
 const initialState = {
-    tableData:_tableData,
-    isShowBox:false,
-    reloadGrid: false,
-    itemProp: _itemProp,
-    loading: true,
-    saving: false,
-    searchText: ""
+    tableData: _tableData,
+    checkedKeys: [],
+    expandedKeys: [],
+    showInfo: false,
+    infoText: "",
+    showDetail: "none",
+    itemProp: {}
 }
 
 export default function (state = initialState, action = {}) {
     switch (action.type) {
 
-        case FLAG+'_SHOW_SAVING':
-            return Object.assign({},state,{saving: action.payload})
+        case FLAG+'_ON_CHECK':
+            return Object.assign({},state,{checkedKeys: action.payload})
+        
+        case FLAG+'_ON_EXPAND':
+            return Object.assign({},state,{expandedKeys: action.payload})
+
+        case FLAG+'_ON_SELECT':
+            return Object.assign({},state,{showDetail: "",itemProp: action.payload})
 
         case FLAG+'_LIST_ITEMS':
+            //console.log("LIST_ITEMS<<<<<<<");
+            let items = action.payload.data.items;
+            let checkedKeys = [];
+            let expandedKeys = [];
+            for(let i=0; i<items.length; i++) {
+                if(items[i].hasPerm=='1') {
+                    checkedKeys.push(items[i].moduleId+'');
+                }
+                if(items[i].isParent=='1') {
+                    expandedKeys.push(items[i].moduleId+'');
+                }
+            }
             return Object.assign({}, state, {
                 tableData: action.payload.data,
-                reloadGrid: false,
-                loading: false
+                checkedKeys: checkedKeys,
+                expandedKeys: expandedKeys
             })
 
         case FLAG+'_DEL_ITEM':
@@ -60,12 +63,9 @@ export default function (state = initialState, action = {}) {
                     saving: false
                 })
             }else {
-                let tableData = state.tableData;
-                tableData.currentPage = 1;
                 return Object.assign({},state,{
-                    reloadGrid: true, 
-                    saving: false,
-                    tableData: tableData
+                    showInfo: true,
+                    infoText: "保存成功"
                 })
             }
 
@@ -88,10 +88,10 @@ export default function (state = initialState, action = {}) {
             return Object.assign({}, state, {itemProp: action.payload.data });
 
         case FLAG+'_RESET':
-            return Object.assign({}, state, {itemProp: _itemProp });
+            return Object.assign({}, state, {tableData: _tableData,showDetail: "none"});
 
-        case FLAG+'_SEARCH_CHANGE':
-            return Object.assign({}, state, {searchText: action.payload});
+        case FLAG+'_IS_SHOW_INFO':
+            return Object.assign({}, state, {showInfo: action.payload});
 
         default:
             return state;

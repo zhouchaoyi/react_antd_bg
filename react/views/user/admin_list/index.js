@@ -5,8 +5,8 @@ import React, {PropTypes} from 'react'
 import {Link} from 'react-router'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import {Icon, Button, Table,Modal} from 'antd';
-import {listItems,delItem} from '../../../actions/admin_list'
+import {Icon, Button, Table,Modal,Input} from 'antd';
+import {listItems,delItem,searchChange} from '../../../actions/admin_list'
 import UserTypeFormModel from './form'
 
 const confirm = Modal.confirm;
@@ -16,6 +16,7 @@ const contextTypes = {
 };
 
 let keys=[];
+let rows=[];
 function noop() {
     return false;
 }
@@ -28,13 +29,14 @@ class Admin extends React.Component {
     }
 
     componentWillMount(){
-        this.props.listItems(1,this.props.tableData.pageSize);
+        console.log("componentWillMount<<<<<<<<<");
+        this.props.listItems(this.props.tableData.currentPage,this.props.tableData.pageSize,this.props.searchText);
     }
 
     componentWillReceiveProps(nextProps) {
         if(nextProps.reloadGrid) {
             //console.log("come in componentWillReceiveProps <<<<<<<<<<");
-            this.props.listItems(this.props.tableData.currentPage,this.props.tableData.pageSize);
+            this.props.listItems(this.props.tableData.currentPage,this.props.tableData.pageSize,this.props.searchText);
         }
     }
 
@@ -80,6 +82,66 @@ class Admin extends React.Component {
         });
     } 
 
+    search(e) {
+        //console.log(this.refs.searchText.refs.input.value);
+        this.props.listItems(1,this.props.tableData.pageSize,this.props.searchText);
+    }
+
+    handleInputChange(e) {
+        this.props.searchChange(e.target.value);
+    }
+
+    setUserGroup(e) {
+        if(keys.length==0) {
+            Modal.warning({
+                title: '请选择记录',
+                content: '',
+            });
+            return;
+        }
+        if(keys.length>1) {
+            Modal.warning({
+                title: '只能选择一条记录',
+                content: '',
+            });
+            return;
+        }
+        //console.log(rows);
+        this.context.router.push({
+            pathname: "/template/user/set_user_group",
+            query: {
+                userId: keys[0],
+                loginName: rows[0].loginName    
+            }
+        });
+    }
+
+    setPerm(e) {
+        if(keys.length==0) {
+            Modal.warning({
+                title: '请选择记录',
+                content: '',
+            });
+            return;
+        }
+        if(keys.length>1) {
+            Modal.warning({
+                title: '只能选择一条记录',
+                content: '',
+            });
+            return;
+        }
+        //console.log(rows);
+        this.context.router.push({
+            pathname: "/template/perm/perm",
+            query: {
+                id: keys[0],
+                name: rows[0].loginName,
+                type: 0    
+            }
+        });
+    }
+
     render() {
         let _self = this;
         const tableColumn = [
@@ -120,6 +182,7 @@ class Admin extends React.Component {
         const rowSelection = {
             onChange(selectedRowKeys, selectedRows) {
                 keys=selectedRowKeys;
+                rows=selectedRows;
             }
         };
 
@@ -130,10 +193,10 @@ class Admin extends React.Component {
             showQuickJumper: true,
             showSizeChanger: true,
             onShowSizeChange(current, pageSize) {
-                _self.props.listItems(current,pageSize);
+                _self.props.listItems(current,pageSize,_self.props.searchText);
             },
             onChange(current) {
-                _self.props.listItems(current,_self.props.tableData.pageSize);
+                _self.props.listItems(current,_self.props.tableData.pageSize,_self.props.searchText);
             },
             showTotal: () => "共 "+this.props.tableData.total+" 条记录"
         };
@@ -148,17 +211,23 @@ class Admin extends React.Component {
                         添加管理员
                     </Button>
                     <span style={{marginLeft:"10px"}}>选择用户：</span>
-                    <Button onClick={this.onShowBox.bind(this)}>
+                    <Button onClick={this.setUserGroup.bind(this)}>
                         <Icon type="setting"/>所属用户组
                     </Button>
-                    <Button style={{marginLeft:'10px'}} onClick={this.onShowBox.bind(this)}>
+                    <Button style={{marginLeft:'10px'}} onClick={this.setPerm.bind(this)}>
                         <Icon type="setting"/>设置权限
                     </Button>
                     <Button type="ghost" style={{marginLeft:'10px'}} onClick={this.delItem.bind(this,"")}>
                        <Icon type="delete" />
                         批量删除
                     </Button>
-                    
+                    <div style={{float:"right"}}> 
+                        <Input value={this.props.searchText} style={{width:'150px',marginRight:'10px'}} onChange={this.handleInputChange.bind(this)}
+                            onPressEnter={this.search.bind(this)} placeholder="请输入关键词" />
+                        <Button type="primary" shape="circle">
+                            <Icon type="search" onClick={this.search.bind(this)} />
+                        </Button>
+                    </div>
                 </div>
 
                 <div style={{marginTop:'10px'}}>
@@ -178,14 +247,16 @@ function mapStateToProps(state) {
     return {
         tableData:state.admin_list.tableData,
         reloadGrid: state.admin_list.reloadGrid,
-        loading: state.admin_list.loading
+        loading: state.admin_list.loading,
+        searchText: state.admin_list.searchText
     }
     
 }
 function mapDispatchToProps(dispatch) {
     return {
         listItems:bindActionCreators(listItems,dispatch),
-        delItem:bindActionCreators(delItem,dispatch)
+        delItem:bindActionCreators(delItem,dispatch),
+        searchChange:bindActionCreators(searchChange,dispatch)
     }
 }
 

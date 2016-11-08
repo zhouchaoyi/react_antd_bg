@@ -3,7 +3,7 @@
  */
 import api from '../api'
 
-export const FLAG = "ADMIN";
+export const FLAG = "PERM";
 
 export function reset(){
     return{
@@ -11,31 +11,33 @@ export function reset(){
     }
 }
 
-export function showSaving(isShow){
+export function onCheck(checkedKeys){
     return{
-        type: FLAG+'_SHOW_SAVING',
-        payload:isShow
+        type: FLAG+'_ON_CHECK',
+        payload: checkedKeys
     }
 }
 
-export function listItems(currentPage,pageSize,searchText){
-    // console.log("currentPage="+currentPage);
-    // console.log("pageSize="+pageSize);
-    // console.log("searchText="+searchText);
-    if(!searchText) {
-        searchText = "";
+export function onExpand(expandedKeys){
+    return{
+        type: FLAG+'_ON_EXPAND',
+        payload: expandedKeys
     }
+}
+
+export function onSelect(item){
+    return{
+        type: FLAG+'_ON_SELECT',
+        payload: item
+    }
+}
+
+export function listItems(param){
     return{
         type: FLAG+'_LIST_ITEMS',
         payload:{
-            promise:api.post('/userMgmt/listUserByType',{
-                data: {
-                    userType: "admin",
-                    currentPage: currentPage,
-                    pageSize: pageSize,
-                    searchStr: searchText,
-                    orderBy: "userId,-1"
-                }
+            promise:api.post('/permMgmt/listModuleForPerm',{
+                data: param
             })
         }
     }
@@ -69,7 +71,7 @@ export function addItem(data){
     return{
         type: FLAG+'_ADD_ITEM',
         payload:{
-            promise:api.post("/userMgmt/addUser",{
+            promise:api.post("/permMgmt/addPerm",{
                 data:data
             })
         }
@@ -86,9 +88,9 @@ export function updateItem(data){
     }
 }
 
-export function searchChange(text){
+export function isShowInfo(val){
     return{
-        type: FLAG+'_SEARCH_CHANGE',
-        payload: text
+        type: FLAG+'_IS_SHOW_INFO',
+        payload: val
     }
 }

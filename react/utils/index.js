@@ -205,5 +205,36 @@ function base64decode(str){
 }
 
 
+export function getOptions(data,OptionKey,OptionLabel) {
+    let result=[];
+    if(data && data.length>0) {
+        data.map(item => {
+            let tempItem = Object.assign({},item);
+            result.push(tempItem);
+        });
+    }
+    if(result && result.length>0) {
+        for (var i = 0; i < result.length; i++) {
+            for(var j=0;j<result[i].classId.length/10;j++){
+                if(result[i][OptionLabel].indexOf("└")==-1) {
+                    result[i][OptionLabel]="└"+result[i][OptionLabel];
+                }
+                if(j>0) {
+                    result[i][OptionLabel] = "　" + result[i][OptionLabel];
+                }
+            }
+        }
+        if(result[0][OptionKey]!=-1) {
+            var obj={};
+            obj[OptionKey]=-1;
+            obj[OptionLabel]="-请选择-";
+            obj.classId = "";
+            result.unshift(obj);
+        }
+    }
+    return result; 
+}
+
+
 
 

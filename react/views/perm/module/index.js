@@ -6,7 +6,7 @@ import {Link} from 'react-router'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {Icon, Button, Tree,Modal,Input} from 'antd';
-import {listItems,onCheck,reset,onExpand,addItem,isShowInfo,onSelect} from '../../../actions/perm'
+import {listItems,onCheck,reset,onExpand,addItem,isShowInfo,onSelect,doMove,delItem} from '../../../actions/module'
 import {getQueryString} from '../../../utils'
 
 const confirm = Modal.confirm;
@@ -16,10 +16,9 @@ const contextTypes = {
     store: PropTypes.object.isRequired
 };
 
-let id="";
-let name="";
-let type="";
 let disableCheckbox = [];
+let mySelectedKey = [];
+let type = "";
 function noop() {
     return false;
 }
@@ -33,9 +32,6 @@ class Perm extends React.Component {
 
     componentWillMount(){
         //console.log("componentWillMount<<<<<<<<<");
-        id = getQueryString("id");
-        name = getQueryString("name");
-        type = getQueryString("type");
         this.loadData();
     }
 
@@ -51,6 +47,9 @@ class Perm extends React.Component {
                 }
             });
         }
+        if(nextProps.reload) {
+            this.loadData();
+        }
     }
 
     loadData() {
@@ -59,85 +58,131 @@ class Perm extends React.Component {
         param.pageSize=-1;
         param.orderBy="classId,1";
         param.searchStr="";
-        param.permUserId=id;
-        param.permType=type;
         this.props.listItems(param);
     }
 
     handleBack(e){
-        this.props.reset();
-        if(type=="0") {
-            this.context.router.replace('/template/user/admin_list');
-        }else if(type=="1") {
-            this.context.router.replace('/template/user/user_group_list');
-        }
     }
 
     onCheck(checkedKeys,e) {
-        //console.log("前",checkedKeys);
-        //console.log(e.node.props.eventKey);
-        let eventKey = e.node.props.eventKey;
-        let classId="";
-        let items = this.props.tableData.items;
-        for(let i=0; items&&i<items.length; i++) {
-            if(items[i].moduleId==eventKey && items[i].isParent=='1') {
-                classId = items[i].classId;
-                break;
-            }
-        }
-        for(let i=0; classId.length>0&&i<items.length; i++) {
-            if(items[i].classId.indexOf(classId)==0 && items[i].classId!=classId) { //是子节点
-                if(items[i].permType!=1 && items[i].permType!=2) { //不是通用权限或组权限
-                    if(e.checked) {
-                        if(checkedKeys.indexOf(items[i].moduleId+'')==-1) {
-                            checkedKeys.push(items[i].moduleId+'');
-                        }
-                    }else {
-                        let pos = checkedKeys.indexOf(items[i].moduleId+'')
-                        if(pos!=-1) {
-                            checkedKeys.splice(pos,1);
-                        }
-                    }
-                }
-            }    
-        }
-        //console.log("后",checkedKeys);
-        this.props.onCheck(checkedKeys);
+        
     }
 
     onExpand(expandedKeys) {
         this.props.onExpand(expandedKeys);
     }
 
-    save() {
-        let checkedKeys = [];
-        for(let i=0;i<this.props.checkedKeys.length;i++) {
-            let key = this.props.checkedKeys[i];
-            if(disableCheckbox.indexOf(key)==-1) {
-                checkedKeys.push(key);
-            }
-        }
-        //alert(checkedKeys.join(","));
-        let param={};
-        param.id=id;
-        param.type=type;
-        param.moduleIds=checkedKeys.join(",");
-        this.props.addItem(param);
-    }
-
     onSelect(selectedKey) {
         //console.log(selectedKey);
+        mySelectedKey = selectedKey;
         if(selectedKey.length>0) {
-            let itemProp = {};
-            for(let i=0;i<this.props.tableData.items.length;i++) {
-                let item = this.props.tableData.items[i];
-                if(item.moduleId == selectedKey) {
-                    itemProp = Object.assign({},item);
-                    break;
+            if(selectedKey=="-1") {
+                let rootNode = {};
+                rootNode.moduleId="-1";
+                rootNode.moduleName="模块/权限设置"; 
+                this.props.onSelect(rootNode);
+            }else {
+                let itemProp = {};
+                for(let i=0;i<this.props.tableData.items.length;i++) {
+                    let item = this.props.tableData.items[i];
+                    if(item.moduleId == selectedKey) {
+                        itemProp = Object.assign({},item);
+                        break;
+                    }
                 }
+                this.props.onSelect(itemProp);
             }
-            this.props.onSelect(itemProp);
         }
+    }
+
+    addItem() {
+        this.context.router.push({
+            pathname: "/template/perm/module/form",
+            query: {
+                parentId: mySelectedKey[0]
+            }
+        });
+    }
+
+    editItem() {
+        if(mySelectedKey.length==0) {
+            Modal.warning({
+                title: '请选择要编辑的节点',
+                content: '',
+            });
+            return;
+        }
+        if(mySelectedKey=="-1") {
+            Modal.warning({
+                title: '不能编辑根节点',
+                content: '',
+            });
+            return;
+        }
+        this.context.router.push({
+            pathname: "/template/perm/module/form",
+            query: {
+                id: mySelectedKey[0]
+            }
+        });
+    }
+
+    doMove(position,e) {
+        if(mySelectedKey.length==0) {
+            Modal.warning({
+                title: '请选择要移动的节点',
+                content: '',
+            });
+            return;
+        }
+        if(mySelectedKey=="-1") {
+            Modal.warning({
+                title: '不能移动根节点',
+                content: '',
+            });
+            return;
+        }
+        let param = {};
+        param.move=position;
+        param.moduleId=mySelectedKey[0];
+        this.props.doMove(param);
+    }
+
+    delItem(e) {
+        const _self = this;
+        if(mySelectedKey.length==0) {
+            Modal.warning({
+                title: '请选择要删除的节点',
+                content: '',
+            });
+            return;
+        }
+        if(mySelectedKey=="-1") {
+            Modal.warning({
+                title: '不能删除根节点',
+                content: '',
+            });
+            return;
+        }
+        let mySelectedTitle = "";
+        let items = this.props.tableData.items;
+        for(let i=0;i<items.length;i++) {
+            if(items[i].moduleId==mySelectedKey[0]) {
+                mySelectedTitle = items[i].moduleName;
+                break;
+            }
+        }
+        //console.log(mySelectedTitle);
+        confirm({
+            title: '确定要删除“'+mySelectedTitle+'”节点吗',
+            content: '',
+            onOk() {
+                let param = {};
+                param.moduleId = mySelectedKey[0];
+                _self.props.delItem(param);
+            },
+            onCancel() {},
+        });
     }
 
     render() {
@@ -180,10 +225,18 @@ class Perm extends React.Component {
                 }
             }
             //console.log("treeData",tempArray[0]);
-            treeData = tempArray[0];
+            //treeData = tempArray[0];
+            let rootNode = {};
+            rootNode.moduleId="-1";
+            rootNode.moduleName="模块/权限设置";
+            rootNode.children=tempArray[0];
+            treeData[0] = rootNode;
         }
 
         const getIconUrl = item => {
+            if(item.moduleId=="-1") { //根节点
+                return "../../../../public/img/module/manage.gif"
+            }
             let icon = "";
             if(item.bExt=="1") { //是分类目录
                 if(item.url!="") { //路径不为空
@@ -255,59 +308,70 @@ class Perm extends React.Component {
         });
 
         let itemDetail="";
-        let itemProp = this.props.itemProp;
-        if(itemProp.bExt=="1"&&itemProp.url.length==0) {
-            itemDetail = (
-                <div>
-                    <div>名称：{itemProp.moduleName}</div><br/>
-                    <div>代码：{itemProp.moduleCode}</div><br/>
-                    <div>说明：{itemProp.remark}</div><br/>
-                    <div>类别：{itemProp.bExt==1?'分类目录':'权限/模块'}</div><br/>
-                    <div>状态：{itemProp.status==1?'启用':'禁用'}</div>
-                </div>
-            );
-        }else {
-            //console.log(relationUrl);
-            if(itemProp.relationUrl && itemProp.relationUrl.split) {
-                itemProp.relationUrl = itemProp.relationUrl.split("\n").map((item,index) => {
-                    return <span key={index}><br/>{item}</span>
-                });
+        let itemProp = this.props.itemDetail;
+        if(itemProp.moduleId!="-1") {
+            if(itemProp.bExt=="1"&&itemProp.url.length==0) {
+                itemDetail = (
+                    <div>
+                        <div>名称：{itemProp.moduleName}</div><br/>
+                        <div>代码：{itemProp.moduleCode}</div><br/>
+                        <div>说明：{itemProp.remark}</div><br/>
+                        <div>类别：{itemProp.bExt==1?'分类目录':'权限/模块'}</div><br/>
+                        <div>状态：{itemProp.status==1?'启用':'禁用'}</div>
+                    </div>
+                );
+            }else {
+                //console.log(relationUrl);
+                if(itemProp.relationUrl && itemProp.relationUrl.split) {
+                    itemProp.relationUrl = itemProp.relationUrl.split("\n").map((item,index) => {
+                        return <span key={index}><br/>{item}</span>
+                    });
+                }
+                itemDetail = (
+                    <div>
+                        <div>名称：{itemProp.moduleName}</div><br/>
+                        <div>代码：{itemProp.moduleCode}</div><br/>
+                        <div>通用权限：{itemProp.userType}</div><br/>
+                        <div>路径：{itemProp.url}</div><br/>
+                        <div>关联接口：{itemProp.relationUrl}</div><br/>
+                        <div>说明：{itemProp.remark}</div><br/>
+                        <div>类别：{itemProp.bExt==1?'分类目录':'权限/模块'}</div><br/>
+                        <div>状态：{itemProp.status==1?'启用':'禁用'}</div>
+                    </div>
+                );
             }
-            itemDetail = (
-                <div>
-                    <div>名称：{itemProp.moduleName}</div><br/>
-                    <div>代码：{itemProp.moduleCode}</div><br/>
-                    <div>通用权限：{itemProp.userType}</div><br/>
-                    <div>路径：{itemProp.url}</div><br/>
-                    <div>关联接口：{itemProp.relationUrl}</div><br/>
-                    <div>说明：{itemProp.remark}</div><br/>
-                    <div>类别：{itemProp.bExt==1?'分类目录':'权限/模块'}</div><br/>
-                    <div>状态：{itemProp.status==1?'启用':'禁用'}</div>
-                </div>
-            );
+        }else {
+            itemDetail="根节点";
         }
 
         return (
             <div>
                 <div style={{float:"left"}}>
-                    <h2>设置权限 - {name}</h2>
+                    <h2>权限定义</h2>
                     <div style={{marginTop:'10px'}}>
-                        请勾选修改权限设置，修改完成请点击“保存”按钮。
-                        <Button type="primary" onClick={this.save.bind(this)}>
-                            <Icon type="save"/>
-                            保存
+                        选择节点：
+                        <Button type="primary" onClick={this.addItem.bind(this)}>
+                            <Icon type="plus"/>
+                            添加子节点
                         </Button>
-                        <Button onClick={this.loadData.bind(this)} style={{marginLeft:"10px"}}>
-                            重置
+                        <Button onClick={this.editItem.bind(this)} style={{marginLeft:"10px"}}>
+                            <Icon type="edit"/>编辑
                         </Button>
-                        <Button onClick={this.handleBack.bind(this)} style={{marginLeft:"10px"}}>
-                            <Icon type="rollback"/>返回
+                        <Button onClick={this.delItem.bind(this)} style={{marginLeft:"10px"}}>
+                            <Icon type="delete"/>删除
+                        </Button>
+                        <Button style={{marginLeft:'10px'}} onClick={this.doMove.bind(this,"1")}>
+                            <Icon type="arrow-up"/>上移
+                        </Button>
+                        <Button style={{marginLeft:'10px'}} onClick={this.doMove.bind(this,"-1")}>
+                            <Icon type="arrow-down"/>下移
                         </Button>
                     </div>
+                    {/*<span>
+                        <img src="../../../../public/img/module/manage.gif"></img>模块权限设置
+                    </span>*/}
                     <Tree
-                        checkable={true} checkStrictly={true} 
                         expandedKeys={this.props.expandedKeys} onExpand={this.onExpand.bind(this)} autoExpandParent={false}
-                        checkedKeys={this.props.checkedKeys} onCheck={this.onCheck.bind(this)} 
                         onSelect={this.onSelect.bind(this)}
                     >
                         {loop(treeData)}
@@ -326,13 +390,14 @@ Perm.contextTypes = contextTypes;
 
 function mapStateToProps(state) {
     return {
-        tableData:state.perm.tableData,
-        checkedKeys:state.perm.checkedKeys,
-        expandedKeys:state.perm.expandedKeys,
-        showInfo:state.perm.showInfo,
-        infoText:state.perm.infoText,
-        showDetail:state.perm.showDetail,
-        itemProp:state.perm.itemProp
+        tableData:state.module.tableData,
+        checkedKeys:state.module.checkedKeys,
+        expandedKeys:state.module.expandedKeys,
+        showInfo:state.module.showInfo,
+        infoText:state.module.infoText,
+        showDetail:state.module.showDetail,
+        itemDetail:state.module.itemDetail,
+        reload:state.module.reload
     }
     
 }
@@ -344,7 +409,9 @@ function mapDispatchToProps(dispatch) {
         onExpand:bindActionCreators(onExpand,dispatch),
         addItem:bindActionCreators(addItem,dispatch),
         isShowInfo:bindActionCreators(isShowInfo,dispatch),
-        onSelect:bindActionCreators(onSelect,dispatch)
+        onSelect:bindActionCreators(onSelect,dispatch),
+        doMove:bindActionCreators(doMove,dispatch),
+        delItem:bindActionCreators(delItem,dispatch)
     }
 }
 

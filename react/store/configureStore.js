@@ -9,9 +9,9 @@ import admin_list from '../reducers/admin_list'
 import set_user_group from '../reducers/set_user_group'
 import perm from '../reducers/perm'
 import department_list from '../reducers/department_list'
-import whitePage from '../reducers/whitePage'
-import activity from '../reducers/activity'
-import material from '../reducers/material'
+import user_group from '../reducers/user_group'
+import user_group_member from '../reducers/user_group_member'
+import module from '../reducers/module'
 import user_type from '../reducers/user_type'
 import weChat_menu from '../reducers/weChat_menu'
 import follower from '../reducers/follower'
@@ -19,7 +19,7 @@ import msg from '../reducers/msg'
 import video from '../reducers/video'
 
 
-const reducer = combineReducers({user, menu, admin_list,set_user_group,perm,department_list,whitePage,activity,material,user_type,weChat_menu,follower,msg,video});
+const reducer = combineReducers({user, menu, admin_list,set_user_group,perm,department_list,user_group,user_group_member,module,user_type,weChat_menu,follower,msg,video});
 
 const createStoreWithMiddleware = applyMiddleware(
   thunkMiddleware,

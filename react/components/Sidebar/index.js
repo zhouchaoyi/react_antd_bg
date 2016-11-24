@@ -25,8 +25,8 @@ class Sidebar extends React.Component {
     constructor(props) {
         super(props)
 
-        console.log('props=>')
-        console.log(props)
+        //console.log('props=>')
+        //console.log(props)
 
         this.menuClickHandle = this.menuClickHandle.bind(this);
     }
@@ -34,39 +34,39 @@ class Sidebar extends React.Component {
 
     componentDidMount() {
 
-        console.log('begin load menu...router=>')
+        //console.log('begin load menu...router=>')
 
-        console.log('props=>')
-        console.log(this.props)
+        //console.log('props=>')
+        //console.log(this.props)
 
 
         let currentPath = window.location.pathname
-        console.log('currentPath=>' + currentPath)
+        //console.log('currentPath=>' + currentPath)
 
         this.props.getAllMenu(currentPath)
-        console.log('end load menu...')
+        //console.log('end load menu...')
 
     }
 
     componentWillReceiveProps(nextProps) {
 
 
-        console.log(nextProps)
+        //console.log(nextProps)
     }
 
     menuClickHandle(item) {
         // console.log(item)
         // console.log(item.key, item.keyPath)
-        //console.log(window.location.pathname)
-        //暂时不用
-        //this.props.updateNavPath(item.keyPath, item.key, window.location.pathname)
+        // console.log(window.location.pathname)
+        //更新面包屑导航
+        this.props.updateNavPath(item.keyPath, item.key, window.location.pathname)
     }
 
     render() {
 
         const {items} = this.props
-        console.log('render menu...')
-        console.log(items)
+        //console.log('render menu...')
+        //console.log(items)
 
         let openKey = []
         const menu = items.map((item) => {

@@ -24,6 +24,7 @@ const initialState = {
     tableData: _tableData,
     checkedKeys: [],
     expandedKeys: ["-1"],
+    selectedKeys: [],
     showInfo: false,
     infoText: "",
     showDetail: "none",
@@ -44,7 +45,11 @@ export default function (state = initialState, action = {}) {
             return Object.assign({},state,{expandedKeys: action.payload})
 
         case FLAG+'_ON_SELECT':
-            return Object.assign({},state,{showDetail: "",itemDetail: action.payload})
+            return Object.assign({},state,{
+                showDetail: "",
+                itemDetail: action.payload.item,
+                selectedKeys: action.payload.selectedKey,
+            })
 
         case FLAG+'_LIST_ITEMS':
             //console.log("LIST_ITEMS<<<<<<<");
@@ -55,7 +60,11 @@ export default function (state = initialState, action = {}) {
             })
 
         case FLAG+'_DEL_ITEM':
-            return Object.assign({},state,{reload: true,showDetail: "none"})
+            return Object.assign({},state,{
+                reload: true,
+                showDetail: "none",
+                selectedKeys: []
+            })
 
         case FLAG+'_ADD_ITEM':
             if(action.payload.status.errorCode=='000001') {

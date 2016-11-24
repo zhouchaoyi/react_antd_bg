@@ -42,7 +42,7 @@ render(
                 <Route component={App}>
                     <Route path="home" component={Home}/>  
                     <Route path="template/:folder/:subfolder(/:name)" component={Container}/>
-                </Route> //app的结束
+                </Route> 
 
                 <Route path="login" component={Login}/>
             </Route>

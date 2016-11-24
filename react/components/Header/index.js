@@ -37,12 +37,17 @@ const contextTypes = {
    }
 
   render () {
+    //console.log("this.props=",this.props);
     const {user} = this.props
+    let loginName = "";
+    if(user.user) {
+      loginName = user.user.loginName;
+    }
     return (
       <div className='ant-layout-header'>
         <Menu className="header-menu"
         mode="horizontal">
-          <SubMenu title={<span><Icon type="user" />{user.user}</span>}  >
+          <SubMenu title={<span><Icon type="user" />{loginName}</span>}  >
             {/*<Menu.Item key="setting:2" >选项2</Menu.Item>
             <Menu.Divider />*/}
             <Menu.Item key="setting:3" > <a onClick={this.logout.bind(this)}>注销</a></Menu.Item>
@@ -54,10 +59,6 @@ const contextTypes = {
       </div>
     )
   }
-
-
-
-
 
 }
 function mapStateToProps(state) {

@@ -329,7 +329,7 @@ class FormComponent extends React.Component {
                         {getFieldDecorator('relationUrl',{
                             initialValue: this.props.itemProp.relationUrl
                         })(
-                            <Input type="textarea" autosize={{minRows: 5}}/>
+                            <Input type="textarea" autosize={{minRows: 8}}/>
                         )}
                         <div style={{color:"gray"}}>多个接口用回车间隔</div>
                     </FormItem>

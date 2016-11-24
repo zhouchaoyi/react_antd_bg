@@ -53,42 +53,81 @@ function trans(menus) {
 export default function menu(state = initialState, action = {}) {
     switch (action.type) {
 
-
         case GET_ALL_MENU:
-
             let menus = action.payload.data.menu;
+            //console.log(menus);
             //let cPath = getCurrentKey(menus,action.meta)
             //转换一下格式
             menus = trans(menus);
             let cPath="";
-            return Object.assign({}, initialState, {items: menus, selectedKey: cPath});
+            let path = action.meta;
+            let navPath=[];
+            if(path!="/home") {
+                menus.map(item1 => {
+                    item1.child.map(item2 => {
+                        let tmpOb = _.find(item2.child, function (o) {
+                            return path == ('/'+o.url.substring(0,o.url.indexOf("\.")));
+                        });
+                        if(tmpOb) {
+                            navPath.push({
+                                key: item1.itemId,
+                                name: item1.itemName
+                            });
+                            navPath.push({
+                                key: item2.itemId,
+                                name: item2.itemName
+                            });
+                            navPath.push({
+                                key: tmpOb.itemId,
+                                name: tmpOb.itemName
+                            });
+                        }
+                    });
+                });
+            }
+            return Object.assign({}, initialState, {items: menus, selectedKey: cPath,navpath: navPath});
 
+        // case UPDATE_NAVPATH_BY_RELOAD:
+        //     let path = action.payload;
 
         case UPDATE_NAVPATH:
+            //console.log(state.items);
             let navpath = [], tmpOb, tmpKey, child;
             if (action.payload.data) {
                 action.payload.data.reverse().map((item)=> {
                     if (item.indexOf('sub') != -1) {
                         tmpKey = item.replace('sub', '');
                         tmpOb = _.find(state.items, function (o) {
-                            return o.key == tmpKey;
+                            return o.itemId == tmpKey;
                         });
                         child = tmpOb.child;
                         navpath.push({
-                            key: tmpOb.key,
-                            name: tmpOb.name
+                            key: tmpOb.itemId,
+                            name: tmpOb.itemName
                         })
                     }
                     if (item.indexOf('menu') != -1) {
                         tmpKey = item.replace('menu', '');
+                        let tmpChild;
                         if (child) {
-                            tmpOb = _.find(child, function (o) {
-                                return o.key == tmpKey;
+                            child.map(item => {
+                                let tmp = _.find(item.child, function (o) {
+                                    return o.itemId == tmpKey;
+                                });
+                                if(tmp) {
+                                    tmpOb = tmp;
+                                    tmpChild=item;
+                                    //console.log("tmpChild="+tmpChild+"<<<<<<");
+                                }
                             });
                         }
                         navpath.push({
-                            key: tmpOb.key,
-                            name: tmpOb.name
+                            key: tmpChild.itemId,
+                            name: tmpChild.itemName
+                        })
+                        navpath.push({
+                            key: tmpOb.itemId,
+                            name: tmpOb.itemName
                         })
                     }
                 })

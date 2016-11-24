@@ -25,10 +25,13 @@ export function onExpand(expandedKeys){
     }
 }
 
-export function onSelect(item){
+export function onSelect(item,selectedKey){
     return{
         type: FLAG+'_ON_SELECT',
-        payload: item
+        payload: {
+            item: item,
+            selectedKey: selectedKey
+        }
     }
 }
 

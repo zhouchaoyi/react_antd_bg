@@ -22,7 +22,8 @@ export function fetchProfile() {
         payload: {
           promise: api.post('/userMgmt/queryUserById',{
               data:{
-                  id:userId
+                  id:userId,
+                  showName: 1
               }
           })
         }

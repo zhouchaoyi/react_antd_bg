@@ -17,7 +17,7 @@ const contextTypes = {
 };
 
 let disableCheckbox = [];
-let mySelectedKey = [];
+//let mySelectedKey = [];
 let type = "";
 function noop() {
     return false;
@@ -74,24 +74,25 @@ class Perm extends React.Component {
 
     onSelect(selectedKey) {
         //console.log(selectedKey);
-        mySelectedKey = selectedKey;
-        if(selectedKey.length>0) {
-            if(selectedKey=="-1") {
-                let rootNode = {};
-                rootNode.moduleId="-1";
-                rootNode.moduleName="模块/权限设置"; 
-                this.props.onSelect(rootNode);
-            }else {
-                let itemProp = {};
-                for(let i=0;i<this.props.tableData.items.length;i++) {
-                    let item = this.props.tableData.items[i];
-                    if(item.moduleId == selectedKey) {
-                        itemProp = Object.assign({},item);
-                        break;
-                    }
+        //mySelectedKey = selectedKey;
+        if(selectedKey.length==0) {
+            selectedKey = this.props.selectedKeys;
+        }
+        if(selectedKey=="-1") {
+            let rootNode = {};
+            rootNode.moduleId="-1";
+            rootNode.moduleName="模块/权限设置"; 
+            this.props.onSelect(rootNode,selectedKey);
+        }else {
+            let itemProp = {};
+            for(let i=0;i<this.props.tableData.items.length;i++) {
+                let item = this.props.tableData.items[i];
+                if(item.moduleId == selectedKey) {
+                    itemProp = Object.assign({},item);
+                    break;
                 }
-                this.props.onSelect(itemProp);
             }
+            this.props.onSelect(itemProp,selectedKey);
         }
     }
 
@@ -99,12 +100,13 @@ class Perm extends React.Component {
         this.context.router.push({
             pathname: "/template/perm/module/form",
             query: {
-                parentId: mySelectedKey[0]
+                parentId: this.props.selectedKeys[0]
             }
         });
     }
 
     editItem() {
+        let mySelectedKey = this.props.selectedKeys;
         if(mySelectedKey.length==0) {
             Modal.warning({
                 title: '请选择要编辑的节点',
@@ -128,6 +130,7 @@ class Perm extends React.Component {
     }
 
     doMove(position,e) {
+        let mySelectedKey = this.props.selectedKeys;
         if(mySelectedKey.length==0) {
             Modal.warning({
                 title: '请选择要移动的节点',
@@ -149,6 +152,7 @@ class Perm extends React.Component {
     }
 
     delItem(e) {
+        let mySelectedKey = this.props.selectedKeys;
         const _self = this;
         if(mySelectedKey.length==0) {
             Modal.warning({
@@ -372,7 +376,7 @@ class Perm extends React.Component {
                     </span>*/}
                     <Tree
                         expandedKeys={this.props.expandedKeys} onExpand={this.onExpand.bind(this)} autoExpandParent={false}
-                        onSelect={this.onSelect.bind(this)}
+                        onSelect={this.onSelect.bind(this)} selectedKeys={this.props.selectedKeys}
                     >
                         {loop(treeData)}
                     </Tree>
@@ -397,7 +401,8 @@ function mapStateToProps(state) {
         infoText:state.module.infoText,
         showDetail:state.module.showDetail,
         itemDetail:state.module.itemDetail,
-        reload:state.module.reload
+        reload:state.module.reload,
+        selectedKeys:state.module.selectedKeys
     }
     
 }

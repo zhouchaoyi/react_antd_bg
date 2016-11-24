@@ -15,6 +15,13 @@ export function updateNavPath(path, key,aPath) {
   }
 }
 
+export function updateNavPathByReload(path) {
+  return {
+    type: UPDATE_NAVPATH_BY_RELOAD,
+    payload: path
+  }
+}
+
 export function getAllMenu(aPath) {
   return {
     type: GET_ALL_MENU,

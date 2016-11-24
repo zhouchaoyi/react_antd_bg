@@ -228,11 +228,46 @@ export function getOptions(data,OptionKey,OptionLabel) {
             var obj={};
             obj[OptionKey]=-1;
             obj[OptionLabel]="-请选择-";
-            obj.classId = "";
+            if(OptionKey!="classId") {
+                obj.classId = "";
+            }
             result.unshift(obj);
         }
     }
     return result; 
+}
+
+//将线性数据转换成树形数据
+export function transToTreeData(items,idName,pIdName) {
+    let tempArray=[];
+    for(let i=0; items&&i<items.length; i++) {
+        let j = items[i].classId.length/10;
+        let myItem = Object.assign({},items[i]); //浅复制，防止出现引用变量
+        if(tempArray[j-1]) {
+            tempArray[j-1].push(myItem);
+        }else {
+            tempArray[j-1]=[];
+            tempArray[j-1].push(myItem);  
+        }
+    }
+    //console.log("tempArray",tempArray);
+    for(let i=tempArray.length-1; i>=1; i--) {
+        for(let j=0; j<tempArray[i-1].length; j++) {
+            let item = tempArray[i-1][j];
+            for(let k=0; k<tempArray[i].length; k++) {
+                let item2 = tempArray[i][k];
+                if(item2[pIdName] == item[idName]) {
+                    if(item.children) {
+                        item.children.push(item2);
+                    }else {
+                        item.children=[];
+                        item.children.push(item2);
+                    }
+                }
+            }
+        }
+    }
+    return tempArray[0];
 }
 
 

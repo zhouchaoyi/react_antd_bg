@@ -20,26 +20,16 @@ const isDeveloping = !isProduction;
 
 const app = express();
 
-var wx = require('./weixin_api')
-app.use('/', wx)
-
-
-
-
-var apiRouter = require('./route_api_v1')
-var webRouter = require('./route_web')
 
 var log4js = require('./logHelper');
 app.use(log4js.forUse());
 
 exports.logger=function(name){
     var logger = log4js.getLogger(name);
-    console.log("dddddddddddd")
+    //console.log("dddddddddddd")
     logger.setLevel('INFO');
     return logger;
 }
-
-
 
 
 // Webpack developer
@@ -86,11 +76,6 @@ app.use("/ueditor/ueditor", ueditor(path.join(__dirname, ''), function(req, res,
 }));
 
 
-
-
-
-
-
 //const port = isProduction ? (process.env.PORT || 80) : 3000;
 const port = isProduction ? (process.env.PORT || 3000) : 3000;
 
@@ -99,7 +84,7 @@ app.set('view engine', 'ejs');
 
 //app.use('/api/v1', apiRouter)
 app.use('/api/v1', httpProxy)
-app.use('/', webRouter)
+//app.use('/', webRouter)
 
 // this is necessary to handle URL correctly since client uses Browser History
 app.get('*', function (req, res) {

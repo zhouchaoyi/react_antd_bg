@@ -17,7 +17,7 @@ const _itemProp = {
     idCardType: "0",
     idCard: "",
     sex: "0",
-    publicAccount: "0",
+    publicAccount: "0",  
     status: "0"
 }
 

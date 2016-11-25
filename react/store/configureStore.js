@@ -14,12 +14,9 @@ import user_group_member from '../reducers/user_group_member'
 import module from '../reducers/module'
 import user_type from '../reducers/user_type'
 import control_panel from '../reducers/control_panel'
-import follower from '../reducers/follower'
-import msg from '../reducers/msg'
-import video from '../reducers/video'
 
 
-const reducer = combineReducers({user, menu, admin_list,set_user_group,perm,department_list,user_group,user_group_member,module,user_type,control_panel,follower,msg,video});
+const reducer = combineReducers({user, menu, admin_list,set_user_group,perm,department_list,user_group,user_group_member,module,user_type,control_panel});
 
 const createStoreWithMiddleware = applyMiddleware(
   thunkMiddleware,
